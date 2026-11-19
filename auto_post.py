@@ -38,7 +38,11 @@ PYQS_PATH = ROOT_DIR / "pyqs.json"
 PUBLISHED_DIR = ROOT_DIR / "published"
 PENDING_PATH = ROOT_DIR / ".pending_post.json"
 
-IG_API_BASE = "https://graph.instagram.com/v21.0"
+IG_API_BASE = (
+    "https://graph.instagram.com/v21.0"
+    if os.environ.get("IG_ACCESS_TOKEN", "").startswith("IG")
+    else "https://graph.facebook.com/v21.0"
+)
 
 
 def format_question_html(question: str, highlight_phrase: str | None) -> str:
