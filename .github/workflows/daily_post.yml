@@ -1,0 +1,56 @@
+name: Daily SSC CGL Carousel Post
+
+on:
+  schedule:
+    # Runs every day at 9:00 AM IST (03:30 UTC)
+    - cron: "30 3 * * *"
+  workflow_dispatch: # Lets you trigger a test post manually anytime
+
+permissions:
+  contents: write
+
+jobs:
+  render-and-post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install jinja2 pillow selenium requests
+
+      - name: Render next unposted 2-slide carousel
+        run: python3 auto_post.py --render-only
+
+      - name: Commit and push rendered JPEGs so raw GitHub URLs go live
+        run: |
+          if [ -f ".pending_post.json" ]; then
+            git config user.name "ssc1-daily-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add published/
+            git commit -m "Render daily SSC CGL carousel slides" || true
+            git push
+          fi
+
+      - name: Wait for GitHub raw CDN propagation
+        run: sleep 10
+
+      - name: Publish 2-slide carousel to Instagram (@ssc1.daily)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python3 auto_post.py --publish-only
+
+      - name: Save updated pyqs.json status
+        run: |
+          git config user.name "ssc1-daily-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add pyqs.json
+          git commit -m "Mark PYQ as posted" || true
+          git push
