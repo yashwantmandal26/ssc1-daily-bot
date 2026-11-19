@@ -1,24 +1,49 @@
 [
   {
     "id": "ssc_polity_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL 2024 • POLITY",
     "question": "Which of the following Articles of the Indian Constitution contains Fundamental Duties?",
     "highlight_phrase": "Fundamental Duties",
     "options": [
-      { "letter": "A", "text": "Article 45A" },
-      { "letter": "B", "text": "Article 32A" },
-      { "letter": "C", "text": "Article 51A" },
-      { "letter": "D", "text": "Article 62B" }
+      {
+        "letter": "A",
+        "text": "Article 45A"
+      },
+      {
+        "letter": "B",
+        "text": "Article 32A"
+      },
+      {
+        "letter": "C",
+        "text": "Article 51A"
+      },
+      {
+        "letter": "D",
+        "text": "Article 62B"
+      }
     ],
     "correct_answer": "(C) Article 51A",
     "revision_notes": [
-      { "label": "Part IV-A", "detail": "Article 51A is the only Article in Part IV-A." },
-      { "label": "42nd Amendment (1976)", "detail": "Added 10 duties via Swaran Singh Committee (USSR)." },
-      { "label": "86th Amendment (2002)", "detail": "Added 11th duty — Art. 51A(k) (education, ages 6–14)." },
-      { "label": "Exam Trap", "detail": "Art. 51 is DPSP (International Peace), NOT Fundamental Duties!" }
-    ]
+      {
+        "label": "Part IV-A",
+        "detail": "Article 51A is the only Article in Part IV-A."
+      },
+      {
+        "label": "42nd Amendment (1976)",
+        "detail": "Added 10 duties via Swaran Singh Committee (USSR)."
+      },
+      {
+        "label": "86th Amendment (2002)",
+        "detail": "Added 11th duty — Art. 51A(k) (education, ages 6–14)."
+      },
+      {
+        "label": "Exam Trap",
+        "detail": "Art. 51 is DPSP (International Peace), NOT Fundamental Duties!"
+      }
+    ],
+    "ig_media_id": "18112267397186887"
   },
   {
     "id": "ssc_polity_02",
@@ -28,17 +53,41 @@
     "question": "Which Article of the Indian Constitution empowers High Courts to issue writs similar to Article 32?",
     "highlight_phrase": "issue writs",
     "options": [
-      { "letter": "A", "text": "Article 214" },
-      { "letter": "B", "text": "Article 226" },
-      { "letter": "C", "text": "Article 124" },
-      { "letter": "D", "text": "Article 131" }
+      {
+        "letter": "A",
+        "text": "Article 214"
+      },
+      {
+        "letter": "B",
+        "text": "Article 226"
+      },
+      {
+        "letter": "C",
+        "text": "Article 124"
+      },
+      {
+        "letter": "D",
+        "text": "Article 131"
+      }
     ],
     "correct_answer": "(B) Article 226",
     "revision_notes": [
-      { "label": "High Court Writs", "detail": "Article 226 empowers High Courts to issue 5 types of writs." },
-      { "label": "Supreme Court Writs", "detail": "Article 32 grants writ jurisdiction to the Supreme Court." },
-      { "label": "Wider Scope", "detail": "Art. 226 covers both Fundamental Rights and other legal rights." },
-      { "label": "5 Writs", "detail": "Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto." }
+      {
+        "label": "High Court Writs",
+        "detail": "Article 226 empowers High Courts to issue 5 types of writs."
+      },
+      {
+        "label": "Supreme Court Writs",
+        "detail": "Article 32 grants writ jurisdiction to the Supreme Court."
+      },
+      {
+        "label": "Wider Scope",
+        "detail": "Art. 226 covers both Fundamental Rights and other legal rights."
+      },
+      {
+        "label": "5 Writs",
+        "detail": "Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto."
+      }
     ]
   },
   {
@@ -49,17 +98,41 @@
     "question": "Which Article of the Indian Constitution directs the State to organize Village Panchayats?",
     "highlight_phrase": "Village Panchayats",
     "options": [
-      { "letter": "A", "text": "Article 38" },
-      { "letter": "B", "text": "Article 40" },
-      { "letter": "C", "text": "Article 44" },
-      { "letter": "D", "text": "Article 48" }
+      {
+        "letter": "A",
+        "text": "Article 38"
+      },
+      {
+        "letter": "B",
+        "text": "Article 40"
+      },
+      {
+        "letter": "C",
+        "text": "Article 44"
+      },
+      {
+        "letter": "D",
+        "text": "Article 48"
+      }
     ],
     "correct_answer": "(B) Article 40",
     "revision_notes": [
-      { "label": "Gandhian DPSP", "detail": "Article 40 (Part IV) promotes Gram Panchayats as self-government units." },
-      { "label": "73rd Amendment (1992)", "detail": "Gave constitutional status to Panchayati Raj (Part IX, 11th Schedule)." },
-      { "label": "Art. 44 Trap", "detail": "Article 44 deals with Uniform Civil Code (UCC), frequently asked in SSC." },
-      { "label": "First State", "detail": "Rajasthan (Nagaur, 1959) was the first state to adopt Panchayati Raj." }
+      {
+        "label": "Gandhian DPSP",
+        "detail": "Article 40 (Part IV) promotes Gram Panchayats as self-government units."
+      },
+      {
+        "label": "73rd Amendment (1992)",
+        "detail": "Gave constitutional status to Panchayati Raj (Part IX, 11th Schedule)."
+      },
+      {
+        "label": "Art. 44 Trap",
+        "detail": "Article 44 deals with Uniform Civil Code (UCC), frequently asked in SSC."
+      },
+      {
+        "label": "First State",
+        "detail": "Rajasthan (Nagaur, 1959) was the first state to adopt Panchayati Raj."
+      }
     ]
   },
   {
@@ -70,17 +143,41 @@
     "question": "Sattriya, one of India's classical dance forms, originated in which Indian state?",
     "highlight_phrase": "Sattriya",
     "options": [
-      { "letter": "A", "text": "Manipur" },
-      { "letter": "B", "text": "Odisha" },
-      { "letter": "C", "text": "Assam" },
-      { "letter": "D", "text": "Kerala" }
+      {
+        "letter": "A",
+        "text": "Manipur"
+      },
+      {
+        "letter": "B",
+        "text": "Odisha"
+      },
+      {
+        "letter": "C",
+        "text": "Assam"
+      },
+      {
+        "letter": "D",
+        "text": "Kerala"
+      }
     ],
     "correct_answer": "(C) Assam",
     "revision_notes": [
-      { "label": "Founder", "detail": "Introduced in the 15th century by Vaishnava saint Srimanta Sankardev." },
-      { "label": "Recognition", "detail": "Recognized as a classical dance by Sangeet Natak Akademi in 2000." },
-      { "label": "Origin", "detail": "Evolved inside Assamese monasteries known as 'Sattras'." },
-      { "label": "8 Classical Dances", "detail": "Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam, Sattriya." }
+      {
+        "label": "Founder",
+        "detail": "Introduced in the 15th century by Vaishnava saint Srimanta Sankardev."
+      },
+      {
+        "label": "Recognition",
+        "detail": "Recognized as a classical dance by Sangeet Natak Akademi in 2000."
+      },
+      {
+        "label": "Origin",
+        "detail": "Evolved inside Assamese monasteries known as 'Sattras'."
+      },
+      {
+        "label": "8 Classical Dances",
+        "detail": "Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam, Sattriya."
+      }
     ]
   },
   {
@@ -91,17 +188,41 @@
     "question": "Under which Article of the Indian Constitution is the Finance Commission constituted?",
     "highlight_phrase": "Finance Commission",
     "options": [
-      { "letter": "A", "text": "Article 263" },
-      { "letter": "B", "text": "Article 280" },
-      { "letter": "C", "text": "Article 315" },
-      { "letter": "D", "text": "Article 324" }
+      {
+        "letter": "A",
+        "text": "Article 263"
+      },
+      {
+        "letter": "B",
+        "text": "Article 280"
+      },
+      {
+        "letter": "C",
+        "text": "Article 315"
+      },
+      {
+        "letter": "D",
+        "text": "Article 324"
+      }
     ],
     "correct_answer": "(B) Article 280",
     "revision_notes": [
-      { "label": "Appointed By", "detail": "President of India constitutes it every 5 years (or earlier)." },
-      { "label": "Composition", "detail": "1 Chairman + 4 other members; quasi-judicial constitutional body." },
-      { "label": "Main Role", "detail": "Recommends distribution of net tax proceeds between Centre and States." },
-      { "label": "Other Options", "detail": "Art. 263: Inter-State Council | Art. 315: UPSC | Art. 324: Election Commission." }
+      {
+        "label": "Appointed By",
+        "detail": "President of India constitutes it every 5 years (or earlier)."
+      },
+      {
+        "label": "Composition",
+        "detail": "1 Chairman + 4 other members; quasi-judicial constitutional body."
+      },
+      {
+        "label": "Main Role",
+        "detail": "Recommends distribution of net tax proceeds between Centre and States."
+      },
+      {
+        "label": "Other Options",
+        "detail": "Art. 263: Inter-State Council | Art. 315: UPSC | Art. 324: Election Commission."
+      }
     ]
   },
   {
@@ -112,17 +233,41 @@
     "question": "In which year was the historic Battle of Plassey fought between Siraj-ud-Daulah and the British?",
     "highlight_phrase": "Battle of Plassey",
     "options": [
-      { "letter": "A", "text": "1757" },
-      { "letter": "B", "text": "1761" },
-      { "letter": "C", "text": "1764" },
-      { "letter": "D", "text": "1773" }
+      {
+        "letter": "A",
+        "text": "1757"
+      },
+      {
+        "letter": "B",
+        "text": "1761"
+      },
+      {
+        "letter": "C",
+        "text": "1764"
+      },
+      {
+        "letter": "D",
+        "text": "1773"
+      }
     ],
     "correct_answer": "(A) 1757",
     "revision_notes": [
-      { "label": "Date & Place", "detail": "23 June 1757, on the banks of the Bhagirathi River in Bengal." },
-      { "label": "Key Leaders", "detail": "Robert Clive (East India Company) defeated Nawab Siraj-ud-Daulah." },
-      { "label": "Betrayal", "detail": "Mir Jafar (commander of Nawab's army) sided with the British." },
-      { "label": "Exam Trap", "detail": "1761: 3rd Battle of Panipat | 1764: Battle of Buxar." }
+      {
+        "label": "Date & Place",
+        "detail": "23 June 1757, on the banks of the Bhagirathi River in Bengal."
+      },
+      {
+        "label": "Key Leaders",
+        "detail": "Robert Clive (East India Company) defeated Nawab Siraj-ud-Daulah."
+      },
+      {
+        "label": "Betrayal",
+        "detail": "Mir Jafar (commander of Nawab's army) sided with the British."
+      },
+      {
+        "label": "Exam Trap",
+        "detail": "1761: 3rd Battle of Panipat | 1764: Battle of Buxar."
+      }
     ]
   },
   {
@@ -133,17 +278,41 @@
     "question": "Deficiency of which vitamin causes Scurvy, characterized by bleeding gums?",
     "highlight_phrase": "Scurvy",
     "options": [
-      { "letter": "A", "text": "Vitamin A" },
-      { "letter": "B", "text": "Vitamin B1" },
-      { "letter": "C", "text": "Vitamin C" },
-      { "letter": "D", "text": "Vitamin D" }
+      {
+        "letter": "A",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin B1"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin D"
+      }
     ],
     "correct_answer": "(C) Vitamin C",
     "revision_notes": [
-      { "label": "Chemical Name", "detail": "Vitamin C is scientifically known as Ascorbic Acid." },
-      { "label": "Solubility", "detail": "Water-soluble vitamin (along with Vitamin B-complex)." },
-      { "label": "Rich Sources", "detail": "Amla (Indian gooseberry), lemon, orange, and guava." },
-      { "label": "Quick Match", "detail": "Vit A: Night Blindness | Vit B1: Beriberi | Vit D: Rickets." }
+      {
+        "label": "Chemical Name",
+        "detail": "Vitamin C is scientifically known as Ascorbic Acid."
+      },
+      {
+        "label": "Solubility",
+        "detail": "Water-soluble vitamin (along with Vitamin B-complex)."
+      },
+      {
+        "label": "Rich Sources",
+        "detail": "Amla (Indian gooseberry), lemon, orange, and guava."
+      },
+      {
+        "label": "Quick Match",
+        "detail": "Vit A: Night Blindness | Vit B1: Beriberi | Vit D: Rickets."
+      }
     ]
   },
   {
@@ -154,17 +323,41 @@
     "question": "Kaziranga National Park, famous for the one-horned rhinoceros, is located in which state?",
     "highlight_phrase": "Kaziranga National Park",
     "options": [
-      { "letter": "A", "text": "West Bengal" },
-      { "letter": "B", "text": "Assam" },
-      { "letter": "C", "text": "Arunachal Pradesh" },
-      { "letter": "D", "text": "Meghalaya" }
+      {
+        "letter": "A",
+        "text": "West Bengal"
+      },
+      {
+        "letter": "B",
+        "text": "Assam"
+      },
+      {
+        "letter": "C",
+        "text": "Arunachal Pradesh"
+      },
+      {
+        "letter": "D",
+        "text": "Meghalaya"
+      }
     ],
     "correct_answer": "(B) Assam",
     "revision_notes": [
-      { "label": "UNESCO Status", "detail": "Declared a UNESCO World Heritage Site in 1985." },
-      { "label": "River Basin", "detail": "Lies in the floodplains of the Brahmaputra River." },
-      { "label": "Biodiversity", "detail": "Hosts the world's largest population of Great Indian One-Horned Rhinos." },
-      { "label": "Assam Parks", "detail": "Manas, Nameri, Orang, Dibru-Saikhowa, Raimona, Dehing Patkai." }
+      {
+        "label": "UNESCO Status",
+        "detail": "Declared a UNESCO World Heritage Site in 1985."
+      },
+      {
+        "label": "River Basin",
+        "detail": "Lies in the floodplains of the Brahmaputra River."
+      },
+      {
+        "label": "Biodiversity",
+        "detail": "Hosts the world's largest population of Great Indian One-Horned Rhinos."
+      },
+      {
+        "label": "Assam Parks",
+        "detail": "Manas, Nameri, Orang, Dibru-Saikhowa, Raimona, Dehing Patkai."
+      }
     ]
   },
   {
@@ -175,17 +368,41 @@
     "question": "The Reserve Bank of India (RBI) was established in 1935 on the recommendation of which Commission?",
     "highlight_phrase": "Reserve Bank of India",
     "options": [
-      { "letter": "A", "text": "Simon Commission" },
-      { "letter": "B", "text": "Hilton Young Commission" },
-      { "letter": "C", "text": "Hunter Commission" },
-      { "letter": "D", "text": "Sarkaria Commission" }
+      {
+        "letter": "A",
+        "text": "Simon Commission"
+      },
+      {
+        "letter": "B",
+        "text": "Hilton Young Commission"
+      },
+      {
+        "letter": "C",
+        "text": "Hunter Commission"
+      },
+      {
+        "letter": "D",
+        "text": "Sarkaria Commission"
+      }
     ],
     "correct_answer": "(B) Hilton Young Commission",
     "revision_notes": [
-      { "label": "Established", "detail": "1 April 1935 under the Reserve Bank of India Act, 1934." },
-      { "label": "Nationalization", "detail": "Nationalized on 1 January 1949; HQ moved from Kolkata to Mumbai in 1937." },
-      { "label": "First Governor", "detail": "Sir Osborne Smith (first Indian Governor: C. D. Deshmukh)." },
-      { "label": "Exam Trap", "detail": "Sarkaria Commission (1983) was for Centre–State relations." }
+      {
+        "label": "Established",
+        "detail": "1 April 1935 under the Reserve Bank of India Act, 1934."
+      },
+      {
+        "label": "Nationalization",
+        "detail": "Nationalized on 1 January 1949; HQ moved from Kolkata to Mumbai in 1937."
+      },
+      {
+        "label": "First Governor",
+        "detail": "Sir Osborne Smith (first Indian Governor: C. D. Deshmukh)."
+      },
+      {
+        "label": "Exam Trap",
+        "detail": "Sarkaria Commission (1983) was for Centre–State relations."
+      }
     ]
   },
   {
@@ -196,17 +413,41 @@
     "question": "Which landmark Supreme Court judgment established the 'Basic Structure Doctrine' of the Indian Constitution?",
     "highlight_phrase": "Basic Structure Doctrine",
     "options": [
-      { "letter": "A", "text": "Golaknath Case (1967)" },
-      { "letter": "B", "text": "Kesavananda Bharati Case (1973)" },
-      { "letter": "C", "text": "Minerva Mills Case (1980)" },
-      { "letter": "D", "text": "Maneka Gandhi Case (1978)" }
+      {
+        "letter": "A",
+        "text": "Golaknath Case (1967)"
+      },
+      {
+        "letter": "B",
+        "text": "Kesavananda Bharati Case (1973)"
+      },
+      {
+        "letter": "C",
+        "text": "Minerva Mills Case (1980)"
+      },
+      {
+        "letter": "D",
+        "text": "Maneka Gandhi Case (1978)"
+      }
     ],
     "correct_answer": "(B) Kesavananda Bharati Case (1973)",
     "revision_notes": [
-      { "label": "Largest Bench", "detail": "Decided by a historic 13-judge Supreme Court bench (7–6 majority)." },
-      { "label": "Core Ruling", "detail": "Parliament can amend the Constitution under Art. 368, but cannot alter its Basic Structure." },
-      { "label": "Minerva Mills (1980)", "detail": "Reinforced balance between Fundamental Rights and DPSP." },
-      { "label": "Maneka Gandhi (1978)", "detail": "Expanded Article 21 (Right to Life & Personal Liberty)." }
+      {
+        "label": "Largest Bench",
+        "detail": "Decided by a historic 13-judge Supreme Court bench (7–6 majority)."
+      },
+      {
+        "label": "Core Ruling",
+        "detail": "Parliament can amend the Constitution under Art. 368, but cannot alter its Basic Structure."
+      },
+      {
+        "label": "Minerva Mills (1980)",
+        "detail": "Reinforced balance between Fundamental Rights and DPSP."
+      },
+      {
+        "label": "Maneka Gandhi (1978)",
+        "detail": "Expanded Article 21 (Right to Life & Personal Liberty)."
+      }
     ]
   }
 ]
