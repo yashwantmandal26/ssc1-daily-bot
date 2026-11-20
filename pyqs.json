@@ -2,7 +2,7 @@
   {
     "id": "mon_polity_01",
     "day_theme": "Monday • Indian Polity",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL 2024 • POLITY",
     "repeat_tag": "Asked 6x+ in SSC",
@@ -11,21 +11,37 @@
     "question_hi": "संविधान का कौन सा अनुच्छेद उच्च न्यायालयों को अनुच्छेद 32 के समान रिट जारी करने की शक्ति देता है?",
     "highlight_phrase": "issue writs",
     "options": [
-      { "letter": "A", "text": "Article 214" },
-      { "letter": "B", "text": "Article 226" },
-      { "letter": "C", "text": "Article 124" },
-      { "letter": "D", "text": "Article 131" }
+      {
+        "letter": "A",
+        "text": "Article 214"
+      },
+      {
+        "letter": "B",
+        "text": "Article 226"
+      },
+      {
+        "letter": "C",
+        "text": "Article 124"
+      },
+      {
+        "letter": "D",
+        "text": "Article 131"
+      }
     ],
     "correct_answer": "(B) Article 226",
     "verified_source": "SSC CGL 2024 Official Key • NCERT Class 11 Polity",
     "revision_notes": [
-      { "label": "High Court Writs", "detail": "Art. 226 covers both Fundamental Rights and other legal rights (wider than SC's Art. 32)." }
-    ]
+      {
+        "label": "High Court Writs",
+        "detail": "Art. 226 covers both Fundamental Rights and other legal rights (wider than SC's Art. 32)."
+      }
+    ],
+    "ig_media_id": "18134569942702250"
   },
   {
     "id": "mon_polity_02",
     "day_theme": "Monday • Indian Polity",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "repeat_tag": "Asked 5x+ in SSC",
@@ -34,21 +50,37 @@
     "question_hi": "संविधान का कौन सा अनुच्छेद राज्य को ग्राम पंचायतों का गठन करने का निर्देश देता है?",
     "highlight_phrase": "Village Panchayats",
     "options": [
-      { "letter": "A", "text": "Article 38" },
-      { "letter": "B", "text": "Article 40" },
-      { "letter": "C", "text": "Article 44" },
-      { "letter": "D", "text": "Article 48" }
+      {
+        "letter": "A",
+        "text": "Article 38"
+      },
+      {
+        "letter": "B",
+        "text": "Article 40"
+      },
+      {
+        "letter": "C",
+        "text": "Article 44"
+      },
+      {
+        "letter": "D",
+        "text": "Article 48"
+      }
     ],
     "correct_answer": "(B) Article 40",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
     "revision_notes": [
-      { "label": "Gandhian DPSP", "detail": "Art. 40 (Part IV) promotes Gram Panchayats; 73rd Amendment (1992) gave constitutional status." }
-    ]
+      {
+        "label": "Gandhian DPSP",
+        "detail": "Art. 40 (Part IV) promotes Gram Panchayats; 73rd Amendment (1992) gave constitutional status."
+      }
+    ],
+    "ig_media_id": "18134569942702250"
   },
   {
     "id": "mon_polity_03",
     "day_theme": "Monday • Indian Polity",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "repeat_tag": "Asked 6x+ in SSC",
@@ -57,16 +89,32 @@
     "question_hi": "भारतीय संविधान की किस अनुसूची में दल-बदल विरोधी कानून का प्रावधान है?",
     "highlight_phrase": "Anti-Defection Law",
     "options": [
-      { "letter": "A", "text": "8th Schedule" },
-      { "letter": "B", "text": "9th Schedule" },
-      { "letter": "C", "text": "10th Schedule" },
-      { "letter": "D", "text": "11th Schedule" }
+      {
+        "letter": "A",
+        "text": "8th Schedule"
+      },
+      {
+        "letter": "B",
+        "text": "9th Schedule"
+      },
+      {
+        "letter": "C",
+        "text": "10th Schedule"
+      },
+      {
+        "letter": "D",
+        "text": "11th Schedule"
+      }
     ],
     "correct_answer": "(C) 10th Schedule",
     "verified_source": "SSC CGL Official PYQ • Constitution of India",
     "revision_notes": [
-      { "label": "52nd Amendment (1985)", "detail": "Added the 10th Schedule; Speaker/Chairman decides disqualification." }
-    ]
+      {
+        "label": "52nd Amendment (1985)",
+        "detail": "Added the 10th Schedule; Speaker/Chairman decides disqualification."
+      }
+    ],
+    "ig_media_id": "18134569942702250"
   },
   {
     "id": "tue_eng_01",
@@ -80,15 +128,30 @@
     "question_hi": "मुहावरे 'Bite the bullet' का सही अर्थ चुनें",
     "highlight_phrase": "Bite the bullet",
     "options": [
-      { "letter": "A", "text": "To face a difficult situation bravely" },
-      { "letter": "B", "text": "To speak rudely to someone" },
-      { "letter": "C", "text": "To eat something very fast" },
-      { "letter": "D", "text": "To escape from danger" }
+      {
+        "letter": "A",
+        "text": "To face a difficult situation bravely"
+      },
+      {
+        "letter": "B",
+        "text": "To speak rudely to someone"
+      },
+      {
+        "letter": "C",
+        "text": "To eat something very fast"
+      },
+      {
+        "letter": "D",
+        "text": "To escape from danger"
+      }
     ],
     "correct_answer": "(A) Face a difficult situation bravely",
     "verified_source": "SSC CGL Tier-1 & Tier-2 Official PYQ",
     "revision_notes": [
-      { "label": "Memory Hook", "detail": "Soldiers used to bite a bullet during painful surgery—meaning enduring hardship bravely." }
+      {
+        "label": "Memory Hook",
+        "detail": "Soldiers used to bite a bullet during painful surgery—meaning enduring hardship bravely."
+      }
     ]
   },
   {
@@ -103,15 +166,30 @@
     "question_hi": "अनेक भाषाएं जानने और बोलने वाला व्यक्ति क्या कहलाता है?",
     "highlight_phrase": "many languages",
     "options": [
-      { "letter": "A", "text": "Philanthropist" },
-      { "letter": "B", "text": "Polyglot" },
-      { "letter": "C", "text": "Bibliophile" },
-      { "letter": "D", "text": "Calligrapher" }
+      {
+        "letter": "A",
+        "text": "Philanthropist"
+      },
+      {
+        "letter": "B",
+        "text": "Polyglot"
+      },
+      {
+        "letter": "C",
+        "text": "Bibliophile"
+      },
+      {
+        "letter": "D",
+        "text": "Calligrapher"
+      }
     ],
     "correct_answer": "(B) Polyglot",
     "verified_source": "SSC CGL Official PYQ • Blackbook High-Freq",
     "revision_notes": [
-      { "label": "Root Word", "detail": "'Poly' (many) + 'glot' (tongue/language). Bibliophile = lover of books." }
+      {
+        "label": "Root Word",
+        "detail": "'Poly' (many) + 'glot' (tongue/language). Bibliophile = lover of books."
+      }
     ]
   },
   {
@@ -126,15 +204,30 @@
     "question_hi": "मुहावरे 'Spill the beans' का सही अर्थ चुनें",
     "highlight_phrase": "Spill the beans",
     "options": [
-      { "letter": "A", "text": "To waste food carelessly" },
-      { "letter": "B", "text": "To reveal a secret accidentally" },
-      { "letter": "C", "text": "To start a big argument" },
-      { "letter": "D", "text": "To work extremely hard" }
+      {
+        "letter": "A",
+        "text": "To waste food carelessly"
+      },
+      {
+        "letter": "B",
+        "text": "To reveal a secret accidentally"
+      },
+      {
+        "letter": "C",
+        "text": "To start a big argument"
+      },
+      {
+        "letter": "D",
+        "text": "To work extremely hard"
+      }
     ],
     "correct_answer": "(B) Reveal a secret accidentally",
     "verified_source": "SSC CGL Official PYQ • Tier-1 & Tier-2",
     "revision_notes": [
-      { "label": "Similar Idiom", "detail": "'Let the cat out of the bag' also means revealing a secret unintentionally." }
+      {
+        "label": "Similar Idiom",
+        "detail": "'Let the cat out of the bag' also means revealing a secret unintentionally."
+      }
     ]
   },
   {
@@ -149,15 +242,30 @@
     "question_hi": "भारत का शास्त्रीय नृत्य 'सत्त्रिया' किस राज्य से संबंधित है?",
     "highlight_phrase": "Sattriya",
     "options": [
-      { "letter": "A", "text": "Manipur" },
-      { "letter": "B", "text": "Odisha" },
-      { "letter": "C", "text": "Assam" },
-      { "letter": "D", "text": "Kerala" }
+      {
+        "letter": "A",
+        "text": "Manipur"
+      },
+      {
+        "letter": "B",
+        "text": "Odisha"
+      },
+      {
+        "letter": "C",
+        "text": "Assam"
+      },
+      {
+        "letter": "D",
+        "text": "Kerala"
+      }
     ],
     "correct_answer": "(C) Assam",
     "verified_source": "SSC CGL Official PYQ • Sangeet Natak Akademi",
     "revision_notes": [
-      { "label": "Founder", "detail": "15th-century Vaishnava saint Srimanta Sankardev; recognized as classical in 2000." }
+      {
+        "label": "Founder",
+        "detail": "15th-century Vaishnava saint Srimanta Sankardev; recognized as classical in 2000."
+      }
     ]
   },
   {
@@ -172,15 +280,30 @@
     "question_hi": "सिराजुद्दौला और अंग्रेजों के बीच ऐतिहासिक प्लासी का युद्ध किस वर्ष लड़ा गया था?",
     "highlight_phrase": "Battle of Plassey",
     "options": [
-      { "letter": "A", "text": "1757" },
-      { "letter": "B", "text": "1761" },
-      { "letter": "C", "text": "1764" },
-      { "letter": "D", "text": "1773" }
+      {
+        "letter": "A",
+        "text": "1757"
+      },
+      {
+        "letter": "B",
+        "text": "1761"
+      },
+      {
+        "letter": "C",
+        "text": "1764"
+      },
+      {
+        "letter": "D",
+        "text": "1773"
+      }
     ],
     "correct_answer": "(A) 1757",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
     "revision_notes": [
-      { "label": "Key Date", "detail": "23 June 1757 (Robert Clive vs Siraj-ud-Daulah). Trap: 1764 = Battle of Buxar." }
+      {
+        "label": "Key Date",
+        "detail": "23 June 1757 (Robert Clive vs Siraj-ud-Daulah). Trap: 1764 = Battle of Buxar."
+      }
     ]
   },
   {
@@ -195,15 +318,30 @@
     "question_hi": "1828 में हिंदू समाज में सुधार और सती प्रथा के अंत के लिए 'ब्रह्म समाज' की स्थापना किसने की?",
     "highlight_phrase": "Brahmo Samaj",
     "options": [
-      { "letter": "A", "text": "Swami Dayanand Saraswati" },
-      { "letter": "B", "text": "Raja Ram Mohan Roy" },
-      { "letter": "C", "text": "Swami Vivekananda" },
-      { "letter": "D", "text": "Jyotiba Phule" }
+      {
+        "letter": "A",
+        "text": "Swami Dayanand Saraswati"
+      },
+      {
+        "letter": "B",
+        "text": "Raja Ram Mohan Roy"
+      },
+      {
+        "letter": "C",
+        "text": "Swami Vivekananda"
+      },
+      {
+        "letter": "D",
+        "text": "Jyotiba Phule"
+      }
     ],
     "correct_answer": "(B) Raja Ram Mohan Roy",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
     "revision_notes": [
-      { "label": "Trap Check", "detail": "Brahmo Samaj (1828) = Raja Ram Mohan Roy | Arya Samaj (1875) = Dayanand Saraswati." }
+      {
+        "label": "Trap Check",
+        "detail": "Brahmo Samaj (1828) = Raja Ram Mohan Roy | Arya Samaj (1875) = Dayanand Saraswati."
+      }
     ]
   },
   {
@@ -218,15 +356,30 @@
     "question_hi": "किस विटामिन की कमी से स्कर्वी रोग होता है (मसूड़ों से खून आना)?",
     "highlight_phrase": "Scurvy",
     "options": [
-      { "letter": "A", "text": "Vitamin A" },
-      { "letter": "B", "text": "Vitamin B1" },
-      { "letter": "C", "text": "Vitamin C" },
-      { "letter": "D", "text": "Vitamin D" }
+      {
+        "letter": "A",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin B1"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin D"
+      }
     ],
     "correct_answer": "(C) Vitamin C",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 6 Science",
     "revision_notes": [
-      { "label": "Chemical Name", "detail": "Vitamin C = Ascorbic Acid (water-soluble). Vit A = Night Blindness, Vit D = Rickets." }
+      {
+        "label": "Chemical Name",
+        "detail": "Vitamin C = Ascorbic Acid (water-soluble). Vit A = Night Blindness, Vit D = Rickets."
+      }
     ]
   },
   {
@@ -241,15 +394,30 @@
     "question_hi": "विद्युत प्रतिरोध (Electrical Resistance) का SI मात्रक क्या है?",
     "highlight_phrase": "electrical resistance",
     "options": [
-      { "letter": "A", "text": "Ampere" },
-      { "letter": "B", "text": "Volt" },
-      { "letter": "C", "text": "Ohm" },
-      { "letter": "D", "text": "Watt" }
+      {
+        "letter": "A",
+        "text": "Ampere"
+      },
+      {
+        "letter": "B",
+        "text": "Volt"
+      },
+      {
+        "letter": "C",
+        "text": "Ohm"
+      },
+      {
+        "letter": "D",
+        "text": "Watt"
+      }
     ],
     "correct_answer": "(C) Ohm",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
     "revision_notes": [
-      { "label": "Ohm's Law", "detail": "V = I × R (Ohm = Ω). Trap: Resistivity's SI unit is Ohm-metre (Ω·m)." }
+      {
+        "label": "Ohm's Law",
+        "detail": "V = I × R (Ohm = Ω). Trap: Resistivity's SI unit is Ohm-metre (Ω·m)."
+      }
     ]
   },
   {
@@ -264,15 +432,30 @@
     "question_hi": "बेकिंग सोडा (सोडियम बाइकार्बोनेट) का रासायनिक सूत्र क्या है?",
     "highlight_phrase": "Baking Soda",
     "options": [
-      { "letter": "A", "text": "Na2CO3" },
-      { "letter": "B", "text": "NaHCO3" },
-      { "letter": "C", "text": "CaOCl2" },
-      { "letter": "D", "text": "NaOH" }
+      {
+        "letter": "A",
+        "text": "Na2CO3"
+      },
+      {
+        "letter": "B",
+        "text": "NaHCO3"
+      },
+      {
+        "letter": "C",
+        "text": "CaOCl2"
+      },
+      {
+        "letter": "D",
+        "text": "NaOH"
+      }
     ],
     "correct_answer": "(B) NaHCO3",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Chemistry",
     "revision_notes": [
-      { "label": "Formula Match", "detail": "NaHCO3 = Baking Soda | Na2CO3·10H2O = Washing Soda | CaOCl2 = Bleaching Powder." }
+      {
+        "label": "Formula Match",
+        "detail": "NaHCO3 = Baking Soda | Na2CO3·10H2O = Washing Soda | CaOCl2 = Bleaching Powder."
+      }
     ]
   },
   {
@@ -287,15 +470,30 @@
     "question_hi": "दिए गए शब्द 'BENEVOLENT' का सही समानार्थी (Synonym) चुनें",
     "highlight_phrase": "BENEVOLENT",
     "options": [
-      { "letter": "A", "text": "Cruel" },
-      { "letter": "B", "text": "Generous" },
-      { "letter": "C", "text": "Stingy" },
-      { "letter": "D", "text": "Hostile" }
+      {
+        "letter": "A",
+        "text": "Cruel"
+      },
+      {
+        "letter": "B",
+        "text": "Generous"
+      },
+      {
+        "letter": "C",
+        "text": "Stingy"
+      },
+      {
+        "letter": "D",
+        "text": "Hostile"
+      }
     ],
     "correct_answer": "(B) Generous",
     "verified_source": "SSC CGL Official PYQ • Tier-1 & Tier-2",
     "revision_notes": [
-      { "label": "Root Word", "detail": "'Bene' = good/well (Benevolent = kind & generous). Antonym: Malevolent." }
+      {
+        "label": "Root Word",
+        "detail": "'Bene' = good/well (Benevolent = kind & generous). Antonym: Malevolent."
+      }
     ]
   },
   {
@@ -310,15 +508,30 @@
     "question_hi": "सही क्रिया (Verb) चुनकर रिक्त स्थान भरें",
     "highlight_phrase": "Neither of the two",
     "options": [
-      { "letter": "A", "text": "were" },
-      { "letter": "B", "text": "are" },
-      { "letter": "C", "text": "was" },
-      { "letter": "D", "text": "have been" }
+      {
+        "letter": "A",
+        "text": "were"
+      },
+      {
+        "letter": "B",
+        "text": "are"
+      },
+      {
+        "letter": "C",
+        "text": "was"
+      },
+      {
+        "letter": "D",
+        "text": "have been"
+      }
     ],
     "correct_answer": "(C) was",
     "verified_source": "SSC CGL Official PYQ • Subject-Verb Agreement",
     "revision_notes": [
-      { "label": "Golden Rule", "detail": "'Neither of / Either of / Each of' + Plural Noun ALWAYS takes a SINGULAR verb (was)." }
+      {
+        "label": "Golden Rule",
+        "detail": "'Neither of / Either of / Each of' + Plural Noun ALWAYS takes a SINGULAR verb (was)."
+      }
     ]
   },
   {
@@ -333,15 +546,30 @@
     "question_hi": "दिए गए शब्द 'EPHEMERAL' का सही विलोम (Antonym) चुनें",
     "highlight_phrase": "EPHEMERAL",
     "options": [
-      { "letter": "A", "text": "Transient" },
-      { "letter": "B", "text": "Temporary" },
-      { "letter": "C", "text": "Permanent" },
-      { "letter": "D", "text": "Brief" }
+      {
+        "letter": "A",
+        "text": "Transient"
+      },
+      {
+        "letter": "B",
+        "text": "Temporary"
+      },
+      {
+        "letter": "C",
+        "text": "Permanent"
+      },
+      {
+        "letter": "D",
+        "text": "Brief"
+      }
     ],
     "correct_answer": "(C) Permanent",
     "verified_source": "SSC CGL Official PYQ • High-Freq Vocab",
     "revision_notes": [
-      { "label": "Meaning", "detail": "Ephemeral = lasting for a very short time (synonym: Transient). Antonym: Permanent." }
+      {
+        "label": "Meaning",
+        "detail": "Ephemeral = lasting for a very short time (synonym: Transient). Antonym: Permanent."
+      }
     ]
   },
   {
@@ -356,15 +584,30 @@
     "question_hi": "MS Excel में किसी सेल में वर्तमान दिनांक (Current Date) डालने का शॉर्टकट क्या है?",
     "highlight_phrase": "current date",
     "options": [
-      { "letter": "A", "text": "Ctrl + D" },
-      { "letter": "B", "text": "Ctrl + ; (Semicolon)" },
-      { "letter": "C", "text": "Ctrl + Shift + :" },
-      { "letter": "D", "text": "Alt + D" }
+      {
+        "letter": "A",
+        "text": "Ctrl + D"
+      },
+      {
+        "letter": "B",
+        "text": "Ctrl + ; (Semicolon)"
+      },
+      {
+        "letter": "C",
+        "text": "Ctrl + Shift + :"
+      },
+      {
+        "letter": "D",
+        "text": "Alt + D"
+      }
     ],
     "correct_answer": "(B) Ctrl + ; (Semicolon)",
     "verified_source": "SSC CGL Tier-2 Computer PYQ • MS Excel",
     "revision_notes": [
-      { "label": "Shortcut Pair", "detail": "Ctrl + ; inserts Current Date | Ctrl + Shift + ; inserts Current Time." }
+      {
+        "label": "Shortcut Pair",
+        "detail": "Ctrl + ; inserts Current Date | Ctrl + Shift + ; inserts Current Time."
+      }
     ]
   },
   {
@@ -379,15 +622,30 @@
     "question_hi": "OSI (ओपन सिस्टम्स इंटरकनेक्शन) नेटवर्किंग मॉडल में कुल कितनी परतें (Layers) होती हैं?",
     "highlight_phrase": "OSI",
     "options": [
-      { "letter": "A", "text": "4 Layers" },
-      { "letter": "B", "text": "5 Layers" },
-      { "letter": "C", "text": "7 Layers" },
-      { "letter": "D", "text": "8 Layers" }
+      {
+        "letter": "A",
+        "text": "4 Layers"
+      },
+      {
+        "letter": "B",
+        "text": "5 Layers"
+      },
+      {
+        "letter": "C",
+        "text": "7 Layers"
+      },
+      {
+        "letter": "D",
+        "text": "8 Layers"
+      }
     ],
     "correct_answer": "(C) 7 Layers",
     "verified_source": "SSC CGL Tier-2 Computer Official PYQ",
     "revision_notes": [
-      { "label": "Mnemonic", "detail": "Please Do Not Throw Sausage Pizza Away (Physical, Data Link, Network, Transport, Session, Presentation, Application)." }
+      {
+        "label": "Mnemonic",
+        "detail": "Please Do Not Throw Sausage Pizza Away (Physical, Data Link, Network, Transport, Session, Presentation, Application)."
+      }
     ]
   },
   {
@@ -402,15 +660,30 @@
     "question_hi": "भारतीय रिज़र्व बैंक (RBI) की स्थापना 1935 में किस आयोग की सिफारिश पर हुई थी?",
     "highlight_phrase": "Reserve Bank of India",
     "options": [
-      { "letter": "A", "text": "Simon Commission" },
-      { "letter": "B", "text": "Hilton Young Commission" },
-      { "letter": "C", "text": "Hunter Commission" },
-      { "letter": "D", "text": "Sarkaria Commission" }
+      {
+        "letter": "A",
+        "text": "Simon Commission"
+      },
+      {
+        "letter": "B",
+        "text": "Hilton Young Commission"
+      },
+      {
+        "letter": "C",
+        "text": "Hunter Commission"
+      },
+      {
+        "letter": "D",
+        "text": "Sarkaria Commission"
+      }
     ],
     "correct_answer": "(B) Hilton Young Commission",
     "verified_source": "SSC CGL Official PYQ • RBI Official History",
     "revision_notes": [
-      { "label": "Key Dates", "detail": "Established 1 April 1935 (RBI Act 1934); Nationalized on 1 Jan 1949." }
+      {
+        "label": "Key Dates",
+        "detail": "Established 1 April 1935 (RBI Act 1934); Nationalized on 1 Jan 1949."
+      }
     ]
   },
   {
@@ -425,15 +698,30 @@
     "question_hi": "एक सींग वाले गैंडे के लिए प्रसिद्ध काजीरंगा राष्ट्रीय उद्यान किस राज्य में स्थित है?",
     "highlight_phrase": "Kaziranga National Park",
     "options": [
-      { "letter": "A", "text": "West Bengal" },
-      { "letter": "B", "text": "Assam" },
-      { "letter": "C", "text": "Arunachal Pradesh" },
-      { "letter": "D", "text": "Meghalaya" }
+      {
+        "letter": "A",
+        "text": "West Bengal"
+      },
+      {
+        "letter": "B",
+        "text": "Assam"
+      },
+      {
+        "letter": "C",
+        "text": "Arunachal Pradesh"
+      },
+      {
+        "letter": "D",
+        "text": "Meghalaya"
+      }
     ],
     "correct_answer": "(B) Assam",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
     "revision_notes": [
-      { "label": "UNESCO Site", "detail": "Declared UNESCO World Heritage Site in 1985; lies in the Brahmaputra floodplain." }
+      {
+        "label": "UNESCO Site",
+        "detail": "Declared UNESCO World Heritage Site in 1985; lies in the Brahmaputra floodplain."
+      }
     ]
   },
   {
@@ -448,15 +736,30 @@
     "question_hi": "भारत में किस नदी को 'दक्षिण गंगा' के नाम से जाना जाता है?",
     "highlight_phrase": "Dakshin Ganga",
     "options": [
-      { "letter": "A", "text": "Krishna" },
-      { "letter": "B", "text": "Godavari" },
-      { "letter": "C", "text": "Kaveri" },
-      { "letter": "D", "text": "Narmada" }
+      {
+        "letter": "A",
+        "text": "Krishna"
+      },
+      {
+        "letter": "B",
+        "text": "Godavari"
+      },
+      {
+        "letter": "C",
+        "text": "Kaveri"
+      },
+      {
+        "letter": "D",
+        "text": "Narmada"
+      }
     ],
     "correct_answer": "(B) Godavari",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
     "revision_notes": [
-      { "label": "Peninsular Giant", "detail": "Rises from Trimbakeshwar (Nashik, MH); longest Peninsular river (~1,465 km)." }
+      {
+        "label": "Peninsular Giant",
+        "detail": "Rises from Trimbakeshwar (Nashik, MH); longest Peninsular river (~1,465 km)."
+      }
     ]
   },
   {
@@ -471,15 +774,30 @@
     "question_hi": "भारतीय संविधान के किस अनुच्छेद के तहत वित्त आयोग का गठन किया जाता है?",
     "highlight_phrase": "Finance Commission",
     "options": [
-      { "letter": "A", "text": "Article 263" },
-      { "letter": "B", "text": "Article 280" },
-      { "letter": "C", "text": "Article 315" },
-      { "letter": "D", "text": "Article 324" }
+      {
+        "letter": "A",
+        "text": "Article 263"
+      },
+      {
+        "letter": "B",
+        "text": "Article 280"
+      },
+      {
+        "letter": "C",
+        "text": "Article 315"
+      },
+      {
+        "letter": "D",
+        "text": "Article 324"
+      }
     ],
     "correct_answer": "(B) Article 280",
     "verified_source": "SSC CGL Official PYQ • Constitution of India",
     "revision_notes": [
-      { "label": "Appointed By", "detail": "President constitutes it every 5 years (1 Chairman + 4 members) for Centre–State tax sharing." }
+      {
+        "label": "Appointed By",
+        "detail": "President constitutes it every 5 years (1 Chairman + 4 members) for Centre–State tax sharing."
+      }
     ]
   }
 ]
