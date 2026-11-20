@@ -1,0 +1,29 @@
+name: Auto-Reply to SSC CGL Reel Comments
+
+on:
+  schedule:
+    # Runs 2x daily ~2 hours after each post (10:17 AM IST & 9:17 PM IST)
+    - cron: '47 4 * * *'
+    - cron: '47 15 * * *'
+  workflow_dispatch:
+
+jobs:
+  reply-to-comments:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install -q requests
+
+      - name: Reply to new Reel comments via Official Meta API
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 reply_comments.py
