@@ -1,17 +1,26 @@
 #!/usr/bin/env python3
 """
-Automated SSC CGL 3-Question Mini Mock Carousel Publisher (@ssc1.daily)
------------------------------------------------------------------------
-Picks the next 3 unposted PYQs from `pyqs.json`, renders a 4-slide 1080x1350
-bilingual carousel (Slides 1-3: Questions, Slide 4: Answer Key + X/3 Scorecard),
-and auto-publishes it to Instagram via Meta's Content Publishing API.
+Viral Hybrid SSC CGL Auto-Publisher (@ssc1.daily) — v5
+------------------------------------------------------
+Engineered for maximum 2026 Instagram discovery reach, comments & saves:
+  - Mon / Tue / Thu / Fri / Sat -> 6-second Open-Loop Exam-Paper Quiz Reel (MP4)
+      * Pattern-interrupt cream exam-paper UI + bold yellow trap highlighter
+      * NO answer shown on screen -> drives 150%+ looping watch time & comments
+      * Verified answer hidden below caption fold (`...more`)
+      * Pulls from `reel_pyqs.json` (high-curiosity trap PYQs), falls back to `pyqs.json`
+  - Wed / Sun -> 4-Slide 3-Question Mini Mock Carousel (Dark Obsidian + Orange)
+      * Drives high Saves & DM Sends for revision
+
+Supports manual override via `--mode auto|reel|carousel`.
 """
 
 import argparse
 import base64
+import datetime
 import html
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import time
@@ -27,6 +36,7 @@ from selenium.webdriver.common.by import By
 ROOT_DIR = Path(__file__).resolve().parent
 TEMPLATE_PATH = ROOT_DIR / "slide_template.html"
 PYQS_PATH = ROOT_DIR / "pyqs.json"
+REEL_PYQS_PATH = ROOT_DIR / "reel_pyqs.json"
 PUBLISHED_DIR = ROOT_DIR / "published"
 PENDING_PATH = ROOT_DIR / ".pending_post.json"
 
@@ -36,15 +46,27 @@ IG_API_BASE = (
     else "https://graph.facebook.com/v21.0"
 )
 
+# IST = UTC+5:30; Wed(2) & Sun(6) -> 4-Slide Mini Mock Carousel; other 5 days -> Viral Open-Loop Reel
+CAROUSEL_WEEKDAYS = {2, 6}
 
-def format_question_html(question: str, highlight_phrase: str | None) -> str:
+
+def resolve_mode(requested: str) -> str:
+    if requested in ("carousel", "reel"):
+        return requested
+    ist_now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
+    return "carousel" if ist_now.weekday() in CAROUSEL_WEEKDAYS else "reel"
+
+
+def format_question_html(
+    question: str, highlight_phrase: str | None, css_class: str = "highlight-orange"
+) -> str:
     escaped_q = html.escape(question)
     if highlight_phrase:
         escaped_hl = html.escape(highlight_phrase)
         if escaped_hl in escaped_q:
             return escaped_q.replace(
                 escaped_hl,
-                f'<span class="highlight-orange">{escaped_hl}</span>',
+                f'<span class="{css_class}">{escaped_hl}</span>',
                 1,
             )
     return escaped_q
@@ -63,15 +85,15 @@ def create_driver(width: int = 1080, height: int = 1500) -> webdriver.Chrome:
     return webdriver.Chrome(options=options)
 
 
-def render_html_to_jpeg(
+def render_html_to_image(
     driver: webdriver.Chrome,
     html_content: str,
-    output_jpeg: Path,
+    output_path: Path,
     width: int = 1080,
     height: int = 1350,
     quality: int = 95,
 ) -> None:
-    output_jpeg.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     b64_html = base64.b64encode(html_content.encode("utf-8")).decode("ascii")
     driver.get(f"data:text/html;charset=utf-8;base64,{b64_html}")
 
@@ -83,33 +105,51 @@ def render_html_to_jpeg(
             rgb_img = img.convert("RGB")
             if rgb_img.size != (width, height):
                 rgb_img = rgb_img.resize((width, height), Image.Resampling.LANCZOS)
-            rgb_img.save(output_jpeg, format="JPEG", quality=quality, optimize=True)
+            fmt = "PNG" if output_path.suffix.lower() == ".png" else "JPEG"
+            save_kwargs = {"optimize": True}
+            if fmt == "JPEG":
+                save_kwargs["quality"] = quality
+            rgb_img.save(output_path, format=fmt, **save_kwargs)
 
 
-def build_mock_caption(batch: list[dict]) -> str:
+def build_carousel_caption(batch: list[dict]) -> str:
     handle = batch[0].get("brand_handle", "@ssc1.daily")
     topics = " • ".join(q.get("highlight_phrase", "Static GK") for q in batch)
     return (
         f"SSC CGL Daily 3-Question Mini Mock ({topics}) — Can you score 3/3? 🔥👇\n\n"
-        f"Solve Q1, Q2, and Q3 honestly, then swipe to Slide 4 for the verified Answer Key & NCERT notes!\n\n"
+        f"90% aspirants miss at least 1 question! Solve Q1, Q2, and Q3 honestly, then swipe to Slide 4 for the verified Answer Key & NCERT notes.\n\n"
         f"💬 Comment your score: 3/3 🔥 | 2/3 ⚡ | 1/3 📖\n"
-        f"✈️ Send this to your SSC study buddy and challenge them to beat your score!\n"
+        f"✈️ Send this to your SSC study buddy and challenge them!\n"
         f"🔖 Save for 1-minute revision • Follow {handle} for daily PYQ mocks.\n\n"
         f"#SSCCGL2026 #SSCMiniMock #SSCStaticGK #SSCPYQ"
     )
 
 
-def render_next_mini_mock() -> None:
-    pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
-    unposted = [q for q in pyqs if not q.get("posted", False)]
-    if len(unposted) < 3:
-        print(
-            f"Need at least 3 unposted PYQs for a Mini Mock (found {len(unposted)}). Add more to pyqs.json!"
-        )
-        sys.exit(0)
+def build_viral_reel_caption(quiz: dict) -> str:
+    handle = quiz.get("brand_handle", "@ssc1.daily")
+    topic = quiz.get("highlight_phrase", "SSC CGL PYQ")
+    ans = quiz["correct_answer"]
+    src = quiz.get("verified_source", "Official SSC PYQ & NCERT")
+    explanation = quiz.get("explanation")
+    if not explanation and quiz.get("revision_notes"):
+        first = quiz["revision_notes"][0]
+        explanation = f"{first.get('label', '')}: {first.get('detail', '')}".strip(": ")
+    explanation = explanation or "Verified from Official SSC Answer Key & NCERT."
 
-    batch = unposted[:3]
-    template = Template(TEMPLATE_PATH.read_text(encoding="utf-8"))
+    return (
+        f"Comment (a), (b), (c), or (d) BEFORE checking the answer! 👇🔥\n"
+        f"Most SSC CGL aspirants fall for this '{topic}' trap — let's see who gets it right!\n\n"
+        f"✈️ Send this to your SSC study partner to test them!\n"
+        f"🔖 Save for quick revision • Follow {handle} for daily PYQ traps.\n"
+        f".\n.\n.\n.\n"
+        f"✅ Correct Answer: {ans}\n"
+        f"📖 Explanation: {explanation}\n"
+        f"✓ Source: {src}\n\n"
+        f"#SSCCGL2026 #SSCPYQ #SSCStaticGK #GovtJobsIndia"
+    )
+
+
+def render_mini_mock(driver: webdriver.Chrome, template: Template, batch: list[dict]) -> dict:
     mock_id = f"mock_{batch[0]['id']}"
     handle = batch[0].get("brand_handle", "@ssc1.daily")
 
@@ -118,73 +158,183 @@ def render_next_mini_mock() -> None:
         "Q2 of 3  •  Swipe for Q3 →",
         "Last Question!  Swipe for Score & Answers →",
     ]
+    hooks = [
+        "⚡ CAN YOU SCORE 3/3? • 90% ASPIRANTS MISS Q3!",
+        "",
+        "",
+    ]
 
     slide_rels: list[str] = []
-    driver = create_driver()
-    try:
-        # Slides 1, 2, 3: Questions
-        for idx, quiz in enumerate(batch):
-            slide_html = template.render(
-                slide_type="question",
-                badge_text=f"MINI MOCK • {quiz['exam_tag']}",
-                page_label=f"Q{idx + 1} / 3",
-                repeat_tag=quiz.get("repeat_tag", ""),
-                difficulty=quiz.get("difficulty", ""),
-                question_html=format_question_html(
-                    quiz["question"], quiz.get("highlight_phrase")
-                ),
-                question_hi=quiz.get("question_hi", ""),
-                options=quiz["options"],
-                cta_text=ctas[idx],
-                brand_handle=handle,
-            )
-            out_path = PUBLISHED_DIR / f"{mock_id}_slide{idx + 1}.jpg"
-            render_html_to_jpeg(driver, slide_html, out_path)
-            slide_rels.append(f"published/{out_path.name}")
-
-        # Slide 4: Answer Key + Scorecard
-        mock_answers = []
-        for quiz in batch:
-            first_note = (quiz.get("revision_notes") or [{}])[0]
-            mock_answers.append(
-                {
-                    "correct_answer": quiz["correct_answer"],
-                    "note_label": first_note.get("label", "Key Fact"),
-                    "note_detail": first_note.get("detail", ""),
-                    "verified_source": quiz.get(
-                        "verified_source", "Official SSC Answer Key & NCERT"
-                    ),
-                }
-            )
-
-        slide4_html = template.render(
-            slide_type="scorecard",
-            badge_text="SSC CGL MINI MOCK • RESULTS",
-            page_label="4 / 4",
-            mock_answers=mock_answers,
-            cta_text="Comment your score (X/3) & send to a buddy ✈️",
+    for idx, quiz in enumerate(batch):
+        slide_html = template.render(
+            slide_type="question",
+            badge_text=f"MINI MOCK • {quiz['exam_tag']}",
+            page_label=f"Q{idx + 1} / 3",
+            hook_text=hooks[idx],
+            repeat_tag=quiz.get("repeat_tag", ""),
+            difficulty=quiz.get("difficulty", ""),
+            question_html=format_question_html(
+                quiz["question"], quiz.get("highlight_phrase"), "highlight-orange"
+            ),
+            question_hi=quiz.get("question_hi", ""),
+            options=quiz["options"],
+            cta_text=ctas[idx],
             brand_handle=handle,
         )
-        out_path4 = PUBLISHED_DIR / f"{mock_id}_slide4.jpg"
-        render_html_to_jpeg(driver, slide4_html, out_path4)
-        slide_rels.append(f"published/{out_path4.name}")
-    finally:
-        driver.quit()
+        out_path = PUBLISHED_DIR / f"{mock_id}_slide{idx + 1}.jpg"
+        render_html_to_image(driver, slide_html, out_path)
+        slide_rels.append(f"published/{out_path.name}")
+
+    mock_answers = []
+    for quiz in batch:
+        first_note = (quiz.get("revision_notes") or [{}])[0]
+        mock_answers.append(
+            {
+                "correct_answer": quiz["correct_answer"],
+                "note_label": first_note.get("label", "Key Fact"),
+                "note_detail": first_note.get("detail", ""),
+                "verified_source": quiz.get(
+                    "verified_source", "Official SSC Answer Key & NCERT"
+                ),
+            }
+        )
+
+    slide4_html = template.render(
+        slide_type="scorecard",
+        badge_text="SSC CGL MINI MOCK • RESULTS",
+        page_label="4 / 4",
+        mock_answers=mock_answers,
+        cta_text="Comment your score (X/3) & send to a buddy ✈️",
+        brand_handle=handle,
+    )
+    out_path4 = PUBLISHED_DIR / f"{mock_id}_slide4.jpg"
+    render_html_to_image(driver, slide4_html, out_path4)
+    slide_rels.append(f"published/{out_path4.name}")
+
+    return {
+        "post_type": "carousel",
+        "source_file": "pyqs.json",
+        "mock_id": mock_id,
+        "question_ids": [q["id"] for q in batch],
+        "slides": slide_rels,
+        "caption": build_carousel_caption(batch),
+    }
+
+
+def render_viral_open_loop_reel(
+    driver: webdriver.Chrome, template: Template, quiz: dict, source_file: str
+) -> dict:
+    qid = quiz["id"]
+    handle = quiz.get("brand_handle", "@ssc1.daily")
+    video_path = PUBLISHED_DIR / f"reel_{qid}.mp4"
+    preview_path = PUBLISHED_DIR / f"reel_{qid}_preview.jpg"
+    PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Normalize option letters to lowercase exam-paper style (a), (b), (c), (d)
+    paper_options = [
+        {"letter": opt["letter"].lower(), "text": opt["text"]}
+        for opt in quiz["options"]
+    ]
+
+    reel_html = template.render(
+        slide_type="viral_reel",
+        badge_text=quiz["exam_tag"],
+        hook_text=quiz.get("curiosity_tag", "90% Aspirants Get This Wrong!"),
+        question_html=format_question_html(
+            quiz["question"], quiz.get("highlight_phrase"), "highlight-yellow"
+        ),
+        question_hi=quiz.get("question_hi", ""),
+        options=paper_options,
+        brand_handle=handle,
+    )
+    render_html_to_image(driver, reel_html, preview_path, quality=96)
+
+    # 6-second crisp static-image-to-Reel MP4 (loops 2-3x while viewer reads & opens comments)
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-loop", "1",
+        "-i", str(preview_path),
+        "-f", "lavfi",
+        "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+        "-t", "6",
+        "-c:v", "libx264",
+        "-tune", "stillimage",
+        "-r", "30",
+        "-pix_fmt", "yuv420p",
+        "-c:a", "aac",
+        "-b:a", "128k",
+        "-shortest",
+        "-movflags", "+faststart",
+        str(video_path),
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    if res.returncode != 0 or not video_path.exists():
+        raise RuntimeError(f"ffmpeg failed: {res.stderr}")
+
+    return {
+        "post_type": "reel",
+        "source_file": source_file,
+        "mock_id": f"reel_{qid}",
+        "question_ids": [qid],
+        "video_rel": f"published/{video_path.name}",
+        "preview_rel": f"published/{preview_path.name}",
+        "caption": build_viral_reel_caption(quiz),
+    }
+
+
+def render_next(mode: str) -> None:
+    chosen_mode = resolve_mode(mode)
+    template = Template(TEMPLATE_PATH.read_text(encoding="utf-8"))
+
+    if chosen_mode == "reel":
+        source_file = "reel_pyqs.json"
+        unposted_reel = []
+        if REEL_PYQS_PATH.exists():
+            reel_pyqs = json.loads(REEL_PYQS_PATH.read_text(encoding="utf-8"))
+            unposted_reel = [q for q in reel_pyqs if not q.get("posted", False)]
+
+        if unposted_reel:
+            target_quiz = unposted_reel[0]
+        else:
+            source_file = "pyqs.json"
+            pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
+            unposted = [q for q in pyqs if not q.get("posted", False)]
+            if not unposted:
+                print("All PYQs posted! Add more questions to reel_pyqs.json or pyqs.json.")
+                sys.exit(0)
+            target_quiz = unposted[0]
+
+        driver = create_driver()
+        try:
+            pending = render_viral_open_loop_reel(driver, template, target_quiz, source_file)
+        finally:
+            driver.quit()
+    else:
+        pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
+        unposted = [q for q in pyqs if not q.get("posted", False)]
+        if len(unposted) < 3:
+            if len(unposted) >= 1:
+                print("Less than 3 PYQs left in pyqs.json; falling back to Viral Reel mode.")
+                driver = create_driver()
+                try:
+                    pending = render_viral_open_loop_reel(driver, template, unposted[0], "pyqs.json")
+                finally:
+                    driver.quit()
+            else:
+                print("All PYQs posted! Add more questions to pyqs.json.")
+                sys.exit(0)
+        else:
+            driver = create_driver()
+            try:
+                pending = render_mini_mock(driver, template, unposted[:3])
+            finally:
+                driver.quit()
 
     PENDING_PATH.write_text(
-        json.dumps(
-            {
-                "mock_id": mock_id,
-                "question_ids": [q["id"] for q in batch],
-                "slides": slide_rels,
-                "caption": build_mock_caption(batch),
-            },
-            indent=2,
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
+        json.dumps(pending, indent=2, ensure_ascii=False), encoding="utf-8"
     )
-    print(f"Rendered 4-slide Mini Mock: {mock_id} ({len(slide_rels)} slides)")
+    print(f"Rendered ({pending['post_type']} from {pending['source_file']}): {pending['mock_id']}")
 
 
 def ig_post(endpoint: str, payload: dict) -> dict:
@@ -195,9 +345,26 @@ def ig_post(endpoint: str, payload: dict) -> dict:
     return data
 
 
+def wait_for_container(container_id: str, token: str, timeout_sec: int = 90) -> None:
+    start = time.time()
+    while time.time() - start < timeout_sec:
+        resp = requests.get(
+            f"{IG_API_BASE}/{container_id}",
+            params={"fields": "status_code", "access_token": token},
+            timeout=20,
+        ).json()
+        status = resp.get("status_code")
+        if status == "FINISHED":
+            return
+        if status in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Media container failed: {resp}")
+        time.sleep(5)
+    raise TimeoutError(f"Timed out waiting for container {container_id}")
+
+
 def publish_pending() -> None:
     if not PENDING_PATH.exists():
-        print("No pending Mini Mock found (.pending_post.json missing). Skipping.")
+        print("No pending post found (.pending_post.json missing). Skipping.")
         return
 
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
@@ -211,43 +378,60 @@ def publish_pending() -> None:
     pending = json.loads(PENDING_PATH.read_text(encoding="utf-8"))
     raw_base = f"https://raw.githubusercontent.com/{repo}/{branch}"
 
-    child_ids = []
-    for rel in pending["slides"]:
-        img_url = f"{raw_base}/{rel}"
-        print(f"Uploading carousel slide: {img_url}")
-        cid = ig_post(
+    if pending.get("post_type") == "reel":
+        video_url = f"{raw_base}/{pending['video_rel']}"
+        print(f"Publishing 6s Viral Open-Loop Quiz Reel from: {video_url}")
+        container_id = ig_post(
             f"{ig_user_id}/media",
-            {"image_url": img_url, "is_carousel_item": "true", "access_token": token},
+            {
+                "media_type": "REELS",
+                "video_url": video_url,
+                "caption": pending["caption"],
+                "share_to_feed": "true",
+                "access_token": token,
+            },
         )["id"]
-        child_ids.append(cid)
+        wait_for_container(container_id, token)
+        published = ig_post(
+            f"{ig_user_id}/media_publish",
+            {"creation_id": container_id, "access_token": token},
+        )
+    else:
+        child_ids = []
+        for rel in pending["slides"]:
+            img_url = f"{raw_base}/{rel}"
+            print(f"Uploading carousel slide: {img_url}")
+            cid = ig_post(
+                f"{ig_user_id}/media",
+                {"image_url": img_url, "is_carousel_item": "true", "access_token": token},
+            )["id"]
+            child_ids.append(cid)
+        time.sleep(6)
+        parent_id = ig_post(
+            f"{ig_user_id}/media",
+            {
+                "media_type": "CAROUSEL",
+                "children": ",".join(child_ids),
+                "caption": pending["caption"],
+                "access_token": token,
+            },
+        )["id"]
+        time.sleep(6)
+        published = ig_post(
+            f"{ig_user_id}/media_publish",
+            {"creation_id": parent_id, "access_token": token},
+        )
 
-    time.sleep(6)
+    print(f"Published ({pending['post_type']})! Media ID: {published['id']}")
 
-    parent_id = ig_post(
-        f"{ig_user_id}/media",
-        {
-            "media_type": "CAROUSEL",
-            "children": ",".join(child_ids),
-            "caption": pending["caption"],
-            "access_token": token,
-        },
-    )["id"]
-
-    time.sleep(6)
-
-    published = ig_post(
-        f"{ig_user_id}/media_publish",
-        {"creation_id": parent_id, "access_token": token},
-    )
-    print(f"Published 4-slide Mini Mock! Media ID: {published['id']}")
-
-    pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
+    source_path = ROOT_DIR / pending.get("source_file", "pyqs.json")
+    pyqs = json.loads(source_path.read_text(encoding="utf-8"))
     posted_set = set(pending["question_ids"])
     for q in pyqs:
         if q["id"] in posted_set:
             q["posted"] = True
             q["ig_media_id"] = published["id"]
-    PYQS_PATH.write_text(
+    source_path.write_text(
         json.dumps(pyqs, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     PENDING_PATH.unlink(missing_ok=True)
@@ -257,14 +441,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--render-only", action="store_true")
     parser.add_argument("--publish-only", action="store_true")
+    parser.add_argument("--mode", choices=["auto", "carousel", "reel"], default="auto")
     args = parser.parse_args()
 
     if args.render_only:
-        render_next_mini_mock()
+        render_next(args.mode)
     elif args.publish_only:
         publish_pending()
     else:
-        render_next_mini_mock()
+        render_next(args.mode)
         publish_pending()
 
 

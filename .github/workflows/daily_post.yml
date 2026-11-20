@@ -1,10 +1,20 @@
-name: Daily SSC CGL Carousel Post
+name: Daily SSC CGL Viral Reel & Mini Mock
 
 on:
   schedule:
-    # Off-peak daily schedule: 8:47 AM IST (03:17 UTC) to avoid :00/:30 queue delays
-    - cron: "17 3 * * *"
-  workflow_dispatch: # Manual 1-click trigger anytime
+    # Runs daily at 8:47 AM IST (03:17 UTC — off-peak minute for reliable GitHub cron)
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Post format (auto = 5x/wk Viral Open-Loop Reel, Wed/Sun = 4-Slide Mini Mock)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - reel
+          - carousel
 
 permissions:
   contents: write
@@ -20,40 +30,48 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install Hindi fonts & Python dependencies
+      - name: Install Noto Hindi/Serif fonts & ffmpeg
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq fonts-noto-core ffmpeg
-          pip install -q jinja2 pillow selenium requests
 
-      - name: Render next unposted Carousel or 7s Quiz Reel
-        run: python3 auto_post.py --render-only
-
-      - name: Commit and push rendered media so raw GitHub URLs go live
+      - name: Install Python dependencies
         run: |
-          if [ -f ".pending_post.json" ]; then
-            git config user.name "ssc1-daily-bot"
-            git config user.email "bot@users.noreply.github.com"
-            git add published/
-            git commit -m "Render daily SSC CGL post" || true
+          pip install -q selenium pillow jinja2 requests
+
+      - name: Render Viral Reel or Mini Mock Carousel
+        run: |
+          MODE="${{ github.event.inputs.mode || 'auto' }}"
+          python3 auto_post.py --render-only --mode "$MODE"
+
+      - name: Commit rendered media so Meta API can fetch public URLs
+        run: |
+          git config user.name "SSC1 Daily Bot"
+          git config user.email "bot@ssc1.daily"
+          git add published/
+          if ! git diff --cached --quiet; then
+            git commit -m "Render SSC CGL daily post media"
             git push
           fi
 
-      - name: Wait for GitHub raw CDN propagation
-        run: sleep 12
-
-      - name: Publish to Instagram (@ssc1.daily)
+      - name: Publish to Instagram via Official Meta Graph API
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: python3 auto_post.py --publish-only
-
-      - name: Save updated pyqs.json status
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
         run: |
-          git config user.name "ssc1-daily-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add pyqs.json
-          git commit -m "Mark PYQ as posted" || true
-          git push
+          sleep 10
+          python3 auto_post.py --publish-only
+
+      - name: Save updated posted status in reel_pyqs.json / pyqs.json
+        run: |
+          git config user.name "SSC1 Daily Bot"
+          git config user.email "bot@ssc1.daily"
+          git add pyqs.json reel_pyqs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Mark published SSC CGL PYQ(s) as posted"
+            git push
+          fi

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "viral_polity_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "85% Aspirants Get This Wrong!",
+    "question": "Which one of the following is NOT a Fundamental Right under the Constitution of India?",
+    "question_hi": "निम्नलिखित में से कौन सा भारतीय संविधान के तहत मौलिक अधिकार नहीं है?",
+    "highlight_phrase": "NOT a Fundamental Right",
+    "options": [
+      { "letter": "a", "text": "Right to Property" },
+      { "letter": "b", "text": "Right to Constitutional Remedies" },
+      { "letter": "c", "text": "Right against Exploitation" },
+      { "letter": "d", "text": "Right to Freedom of Religion" }
+    ],
+    "correct_answer": "(a) Right to Property",
+    "verified_source": "SSC CGL Official PYQ • 44th Constitutional Amendment (1978)",
+    "explanation": "Right to Property was removed from Fundamental Rights by the 44th Amendment Act, 1978 and made a Legal Right under Article 300A."
+  },
+  {
+    "id": "viral_economy_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "90% Guess RBI Governor — Trap!",
+    "question": "Who signs the One Rupee (₹1) Currency Note in India?",
+    "question_hi": "भारत में एक रुपये (₹1) के नोट पर किसके हस्ताक्षर होते हैं?",
+    "highlight_phrase": "One Rupee (₹1) Currency Note",
+    "options": [
+      { "letter": "a", "text": "Governor of RBI" },
+      { "letter": "b", "text": "Finance Minister of India" },
+      { "letter": "c", "text": "Finance Secretary of India" },
+      { "letter": "d", "text": "President of India" }
+    ],
+    "correct_answer": "(c) Finance Secretary of India",
+    "verified_source": "SSC CGL Official PYQ • RBI Act, 1934",
+    "explanation": "All currency notes except ₹1 are signed by the RBI Governor. The ₹1 note is issued by the Ministry of Finance and signed by the Finance Secretary."
+  },
+  {
+    "id": "viral_geo_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Most Confused North-East Trap!",
+    "question": "The Tropic of Cancer (23.5° N) does NOT pass through which of the following Indian states?",
+    "question_hi": "कर्क रेखा (23.5° N) निम्नलिखित में से किस भारतीय राज्य से होकर नहीं गुजरती है?",
+    "highlight_phrase": "does NOT pass through",
+    "options": [
+      { "letter": "a", "text": "Tripura" },
+      { "letter": "b", "text": "Mizoram" },
+      { "letter": "c", "text": "Manipur" },
+      { "letter": "d", "text": "Jharkhand" }
+    ],
+    "correct_answer": "(c) Manipur",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "Tropic of Cancer passes through 8 states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram — NOT Manipur."
+  },
+  {
+    "id": "viral_polity_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Topper-Level Article 61 Trap!",
+    "question": "Who among the following does NOT participate in the Impeachment of the President of India?",
+    "question_hi": "निम्नलिखित में से कौन भारत के राष्ट्रपति के महाभियोग में भाग नहीं लेता है?",
+    "highlight_phrase": "does NOT participate",
+    "options": [
+      { "letter": "a", "text": "Elected members of Lok Sabha" },
+      { "letter": "b", "text": "Nominated members of Rajya Sabha" },
+      { "letter": "c", "text": "Elected members of State Assemblies" },
+      { "letter": "d", "text": "Nominated members of Lok Sabha" }
+    ],
+    "correct_answer": "(c) Elected members of State Assemblies",
+    "verified_source": "SSC CGL Official PYQ • Article 61, Constitution of India",
+    "explanation": "State MLAs vote in the President's election, NOT in impeachment. Both elected and nominated members of Parliament participate in impeachment."
+  },
+  {
+    "id": "viral_history_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Repeated 7x+ in SSC Exams!",
+    "question": "Which of the following metals was NOT known to the Indus Valley Civilization people?",
+    "question_hi": "सिंधु घाटी सभ्यता के लोगों को निम्नलिखित में से किस धातु का ज्ञान नहीं था?",
+    "highlight_phrase": "NOT known",
+    "options": [
+      { "letter": "a", "text": "Copper" },
+      { "letter": "b", "text": "Bronze" },
+      { "letter": "c", "text": "Silver" },
+      { "letter": "d", "text": "Iron" }
+    ],
+    "correct_answer": "(d) Iron",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 12 History",
+    "explanation": "Indus Valley was a Bronze Age civilization (copper, bronze, gold, silver were known). Iron came into use later during the Later Vedic period."
+  },
+  {
+    "id": "viral_science_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • SCIENCE",
+    "curiosity_tag": "Don't Confuse Donor vs Recipient!",
+    "question": "Which blood group is known as the Universal Recipient (can receive blood from any group)?",
+    "question_hi": "किस रक्त समूह को 'सर्वग्राही' (Universal Recipient) कहा जाता है?",
+    "highlight_phrase": "Universal Recipient",
+    "options": [
+      { "letter": "a", "text": "O Negative" },
+      { "letter": "b", "text": "O Positive" },
+      { "letter": "c", "text": "AB Positive" },
+      { "letter": "d", "text": "AB Negative" }
+    ],
+    "correct_answer": "(c) AB Positive",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Biology",
+    "explanation": "AB+ has both A & B antigens and Rh factor with no antibodies, making it the Universal Recipient. O- is the Universal Donor."
+  },
+  {
+    "id": "viral_polity_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Classic Article 110 Trap!",
+    "question": "Who has the final authority to decide whether a Bill is a Money Bill or not in India?",
+    "question_hi": "भारत में कोई विधेयक 'धन विधेयक' (Money Bill) है या नहीं, इसका अंतिम निर्णय कौन करता है?",
+    "highlight_phrase": "Money Bill or not",
+    "options": [
+      { "letter": "a", "text": "President of India" },
+      { "letter": "b", "text": "Finance Minister" },
+      { "letter": "c", "text": "Speaker of Lok Sabha" },
+      { "letter": "d", "text": "Chairman of Rajya Sabha" }
+    ],
+    "correct_answer": "(c) Speaker of Lok Sabha",
+    "verified_source": "SSC CGL Official PYQ • Article 110(3), Constitution of India",
+    "explanation": "Under Article 110(3), the Speaker of Lok Sabha has the final authority to certify a Money Bill, and it cannot be questioned in any court."
+  },
+  {
+    "id": "viral_science_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Quick Periodic Table Check!",
+    "question": "Which one of the following gases is NOT a Noble (Inert) Gas?",
+    "question_hi": "निम्नलिखित में से कौन सी गैस अक्रिय (Noble) गैस नहीं है?",
+    "highlight_phrase": "NOT a Noble (Inert) Gas",
+    "options": [
+      { "letter": "a", "text": "Argon" },
+      { "letter": "b", "text": "Krypton" },
+      { "letter": "c", "text": "Radon" },
+      { "letter": "d", "text": "Hydrogen" }
+    ],
+    "correct_answer": "(d) Hydrogen",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Group 18 Noble Gases are Helium, Neon, Argon, Krypton, Xenon, and Radon. Hydrogen (Group 1) is highly reactive, not an inert gas."
+  },
+  {
+    "id": "viral_polity_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Article 19(1) Memory Test!",
+    "question": "Which of the following freedoms is NOT guaranteed under Article 19(1) of the Constitution?",
+    "question_hi": "निम्नलिखित में से कौन सी स्वतंत्रता संविधान के अनुच्छेद 19(1) के अंतर्गत गारंटीकृत नहीं है?",
+    "highlight_phrase": "NOT guaranteed under Article 19(1)",
+    "options": [
+      { "letter": "a", "text": "Freedom of speech and expression" },
+      { "letter": "b", "text": "Right to form associations" },
+      { "letter": "c", "text": "Right to acquire and hold property" },
+      { "letter": "d", "text": "Right to reside anywhere in India" }
+    ],
+    "correct_answer": "(c) Right to acquire and hold property",
+    "verified_source": "SSC CGL Official PYQ • 44th Amendment Act (1978)",
+    "explanation": "Article 19(1)(f) (Right to acquire, hold and dispose of property) was deleted by the 44th Amendment Act, 1978."
+  },
+  {
+    "id": "viral_computer_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Mandatory Tier-2 Computer PYQ!",
+    "question": "Which of the following is a Volatile Memory that loses its data when power is turned off?",
+    "question_hi": "निम्नलिखित में से कौन सी वोलाटाइल मेमोरी है जिसका डेटा बिजली बंद होने पर मिट जाता है?",
+    "highlight_phrase": "Volatile Memory",
+    "options": [
+      { "letter": "a", "text": "ROM (Read-Only Memory)" },
+      { "letter": "b", "text": "EPROM" },
+      { "letter": "c", "text": "RAM (Random Access Memory)" },
+      { "letter": "d", "text": "SSD (Solid State Drive)" }
+    ],
+    "correct_answer": "(c) RAM (Random Access Memory)",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • NCERT Computer Science",
+    "explanation": "RAM is volatile primary memory (temporary working memory), whereas ROM, EPROM, and SSD are non-volatile and retain data without power."
+  }
+]
