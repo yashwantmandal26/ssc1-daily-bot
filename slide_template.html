@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, initial-scale=1.0" />
-<title>SSC CGL Post v2</title>
+<title>SSC CGL 3-Question Mini Mock</title>
 <style>
   * {
     box-sizing: border-box;
@@ -26,7 +26,7 @@
     width: 1080px;
     height: 1350px;
     background-color: #09090b;
-    padding: 48px 68px 46px 68px;
+    padding: 46px 66px 42px 66px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,8 +94,8 @@
     background: rgba(30, 30, 34, 0.88);
     border: 1.5px solid rgba(255, 255, 255, 0.12);
     font-size: 20px;
-    font-weight: 600;
-    color: #a1a1aa;
+    font-weight: 700;
+    color: #fb923c;
     letter-spacing: 1px;
   }
 
@@ -128,7 +128,7 @@
     color: #d4d4d8;
   }
 
-  /* Bilingual Question Block */
+  /* Question Slides (1, 2, 3) */
   .question-block {
     text-align: center;
     padding: 6px 8px;
@@ -157,7 +157,6 @@
     display: inline;
   }
 
-  /* Options */
   .options-list {
     display: flex;
     flex-direction: column;
@@ -199,127 +198,118 @@
     line-height: 1.22;
   }
 
-  /* Reel Countdown Progress Bar */
-  .timer-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .timer-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-    font-weight: 700;
-    color: #fb923c;
-  }
-
-  .timer-track {
-    width: 100%;
-    height: 18px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .timer-fill {
-    height: 100%;
-    border-radius: 999px;
-    background: linear-gradient(90deg, #ea580c 0%, #fb923c 100%);
-    box-shadow: 0 0 18px rgba(249, 115, 22, 0.65);
-  }
-
-  /* Slide 2: Answer & Revision Bento Card */
-  .answer-banner {
+  /* Slide 4: 3-Question Scorecard & Answer Key */
+  .score-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
     width: 100%;
-    padding: 22px 32px;
+    padding: 20px 28px;
     border-radius: 22px;
     background: linear-gradient(135deg, #d94e00 0%, #f97316 45%, #fb923c 100%);
     border: 1.5px solid rgba(255, 200, 140, 0.55);
-    box-shadow: 0 14px 40px rgba(249, 115, 22, 0.36), inset 0 2px 2px rgba(255, 255, 255, 0.35);
-    font-size: 34px;
+    box-shadow: 0 14px 36px rgba(249, 115, 22, 0.36), inset 0 2px 2px rgba(255, 255, 255, 0.35);
+    font-size: 31px;
     font-weight: 800;
     color: #ffffff;
+    letter-spacing: 0.3px;
     text-align: center;
   }
 
-  .bento-card {
-    width: 100%;
-    padding: 26px 30px;
-    border-radius: 26px;
-    background: linear-gradient(180deg, rgba(26, 26, 30, 0.95) 0%, rgba(16, 16, 19, 0.98) 100%);
-    border: 1.5px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+  .answers-stack {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-
-  .bento-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fb923c;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .note-row {
-    display: flex;
-    align-items: flex-start;
     gap: 16px;
-    padding: 16px 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    width: 100%;
   }
 
-  .note-accent {
-    flex-shrink: 0;
-    width: 6px;
-    height: 32px;
-    margin-top: 3px;
+  .ans-card {
+    padding: 20px 24px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(28, 28, 33, 0.95) 0%, rgba(18, 18, 21, 0.98) 100%);
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ans-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .ans-qnum {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 14px;
     border-radius: 999px;
-    background: linear-gradient(180deg, #ff6a00 0%, #ffb347 100%);
-    box-shadow: 0 0 10px rgba(255, 115, 0, 0.65);
+    background: rgba(255, 115, 0, 0.16);
+    border: 1px solid rgba(255, 128, 0, 0.5);
+    font-size: 18px;
+    font-weight: 800;
+    color: #fb923c;
   }
 
-  .note-text {
-    font-size: 24px;
+  .ans-correct {
+    font-size: 25px;
+    font-weight: 800;
+    color: #ffffff;
+    flex: 1;
+  }
+
+  .ans-note {
+    font-size: 21px;
     line-height: 1.35;
-    color: #e4e4e7;
+    color: #d4d4d8;
     font-weight: 500;
   }
 
-  .note-text strong {
-    color: #ffffff;
+  .ans-note strong {
+    color: #ffb366;
     font-weight: 700;
   }
 
-  .verified-source {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 4px;
-    padding-top: 12px;
-    border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    font-size: 19px;
+  .ans-src {
+    font-size: 16px;
+    color: #71717a;
     font-weight: 600;
-    color: #a1a1aa;
   }
 
-  .verified-dot {
-    color: #4ade80;
+  /* Score Scale Bar */
+  .score-scale {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    width: 100%;
+  }
+
+  .score-tier {
+    padding: 14px 12px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .score-tier.top {
+    background: rgba(255, 115, 0, 0.14);
+    border-color: rgba(255, 128, 0, 0.55);
+  }
+
+  .tier-num {
+    font-size: 26px;
     font-weight: 800;
+    color: #fb923c;
+  }
+
+  .tier-label {
+    margin-top: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #e4e4e7;
   }
 
   /* Bottom CTA */
@@ -343,14 +333,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 32px;
+    padding: 20px 30px;
     border-radius: 999px;
     background: rgba(24, 24, 28, 0.92);
-    border: 2px solid rgba(255, 122, 0, 0.72);
-    box-shadow: 0 0 26px rgba(255, 115, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 122, 0, 0.78);
+    box-shadow: 0 0 26px rgba(255, 115, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.1);
     font-size: 23px;
     font-weight: 700;
-    color: #f4f4f5;
+    color: #ffffff;
   }
 
   .brand-handle {
@@ -383,8 +373,8 @@
       {% endif %}
     </div>
 
-    {% if slide_type in ["question", "reel_question"] %}
-      <!-- Question + Hindi Translation -->
+    {% if slide_type == "question" %}
+      <!-- Question Slide (1, 2, or 3) -->
       <div class="question-block layer">
         <div class="question-text">{{ question_html | safe }}</div>
         {% if question_hi %}
@@ -392,7 +382,6 @@
         {% endif %}
       </div>
 
-      <!-- Options -->
       <div class="options-list layer">
         {% for opt in options %}
         <div class="option-card">
@@ -402,46 +391,45 @@
         {% endfor %}
       </div>
 
-      <!-- Footer: Timer for Reels OR Swipe CTA for Carousel -->
       <div class="layer">
-        {% if slide_type == "reel_question" %}
-        <div class="timer-wrap">
-          <div class="timer-label">
-            <span>Comment A / B / C / D fast!</span>
-            <span>⏱ {{ seconds_left }}s</span>
-          </div>
-          <div class="timer-track">
-            <div class="timer-fill" style="width: {{ progress_pct }}%;"></div>
-          </div>
-        </div>
-        {% else %}
         <div class="cta-primary">{{ cta_text }}</div>
-        {% endif %}
         {% if brand_handle %}
         <div class="brand-handle">{{ brand_handle }}</div>
         {% endif %}
       </div>
 
     {% else %}
-      <!-- Answer + Quick Revision Notes + Verified Source -->
+      <!-- Slide 4: 3-Question Mini Mock Scorecard + Answer Key -->
       <div class="layer">
-        <div class="answer-banner">✓ &nbsp;Correct Answer: {{ correct_answer }}</div>
+        <div class="score-banner">✓ &nbsp;MINI MOCK ANSWER KEY • CHECK YOUR SCORE!</div>
       </div>
 
-      <div class="bento-card layer">
-        <div class="bento-title">Quick Revision Notes</div>
-        {% for note in revision_notes %}
-        <div class="note-row">
-          <div class="note-accent"></div>
-          <div class="note-text"><strong>{{ note.label }}:</strong> {{ note.detail }}</div>
+      <div class="answers-stack layer">
+        {% for item in mock_answers %}
+        <div class="ans-card">
+          <div class="ans-top">
+            <span class="ans-qnum">Q{{ loop.index }}</span>
+            <span class="ans-correct">{{ item.correct_answer }}</span>
+          </div>
+          <div class="ans-note"><strong>{{ item.note_label }}:</strong> {{ item.note_detail }}</div>
+          <div class="ans-src">✓ {{ item.verified_source }}</div>
         </div>
         {% endfor %}
-        {% if verified_source %}
-        <div class="verified-source">
-          <span class="verified-dot">✓</span>
-          <span>Verified Source: {{ verified_source }}</span>
+      </div>
+
+      <div class="score-scale layer">
+        <div class="score-tier top">
+          <div class="tier-num">3 / 3 🔥</div>
+          <div class="tier-label">Inspector Ready</div>
         </div>
-        {% endif %}
+        <div class="score-tier">
+          <div class="tier-num">2 / 3 ⚡</div>
+          <div class="tier-label">Almost There</div>
+        </div>
+        <div class="score-tier">
+          <div class="tier-num">0–1 / 3 📖</div>
+          <div class="tier-label">Revise NCERT</div>
+        </div>
       </div>
 
       <div class="layer">
