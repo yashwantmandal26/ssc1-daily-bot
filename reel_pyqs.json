@@ -1,7 +1,7 @@
 [
   {
     "id": "viral_polity_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "85% Aspirants Get This Wrong!",
@@ -9,14 +9,27 @@
     "question_hi": "निम्नलिखित में से कौन सा भारतीय संविधान के तहत मौलिक अधिकार नहीं है?",
     "highlight_phrase": "NOT a Fundamental Right",
     "options": [
-      { "letter": "a", "text": "Right to Property" },
-      { "letter": "b", "text": "Right to Constitutional Remedies" },
-      { "letter": "c", "text": "Right against Exploitation" },
-      { "letter": "d", "text": "Right to Freedom of Religion" }
+      {
+        "letter": "a",
+        "text": "Right to Property"
+      },
+      {
+        "letter": "b",
+        "text": "Right to Constitutional Remedies"
+      },
+      {
+        "letter": "c",
+        "text": "Right against Exploitation"
+      },
+      {
+        "letter": "d",
+        "text": "Right to Freedom of Religion"
+      }
     ],
     "correct_answer": "(a) Right to Property",
     "verified_source": "SSC CGL Official PYQ • 44th Constitutional Amendment (1978)",
-    "explanation": "Right to Property was removed from Fundamental Rights by the 44th Amendment Act, 1978 and made a Legal Right under Article 300A."
+    "explanation": "Right to Property was removed from Fundamental Rights by the 44th Amendment Act, 1978 and made a Legal Right under Article 300A.",
+    "ig_media_id": "18116333905877430"
   },
   {
     "id": "viral_economy_01",
@@ -28,10 +41,22 @@
     "question_hi": "भारत में एक रुपये (₹1) के नोट पर किसके हस्ताक्षर होते हैं?",
     "highlight_phrase": "One Rupee (₹1) Currency Note",
     "options": [
-      { "letter": "a", "text": "Governor of RBI" },
-      { "letter": "b", "text": "Finance Minister of India" },
-      { "letter": "c", "text": "Finance Secretary of India" },
-      { "letter": "d", "text": "President of India" }
+      {
+        "letter": "a",
+        "text": "Governor of RBI"
+      },
+      {
+        "letter": "b",
+        "text": "Finance Minister of India"
+      },
+      {
+        "letter": "c",
+        "text": "Finance Secretary of India"
+      },
+      {
+        "letter": "d",
+        "text": "President of India"
+      }
     ],
     "correct_answer": "(c) Finance Secretary of India",
     "verified_source": "SSC CGL Official PYQ • RBI Act, 1934",
@@ -47,10 +72,22 @@
     "question_hi": "कर्क रेखा (23.5° N) निम्नलिखित में से किस भारतीय राज्य से होकर नहीं गुजरती है?",
     "highlight_phrase": "does NOT pass through",
     "options": [
-      { "letter": "a", "text": "Tripura" },
-      { "letter": "b", "text": "Mizoram" },
-      { "letter": "c", "text": "Manipur" },
-      { "letter": "d", "text": "Jharkhand" }
+      {
+        "letter": "a",
+        "text": "Tripura"
+      },
+      {
+        "letter": "b",
+        "text": "Mizoram"
+      },
+      {
+        "letter": "c",
+        "text": "Manipur"
+      },
+      {
+        "letter": "d",
+        "text": "Jharkhand"
+      }
     ],
     "correct_answer": "(c) Manipur",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
@@ -66,10 +103,22 @@
     "question_hi": "निम्नलिखित में से कौन भारत के राष्ट्रपति के महाभियोग में भाग नहीं लेता है?",
     "highlight_phrase": "does NOT participate",
     "options": [
-      { "letter": "a", "text": "Elected members of Lok Sabha" },
-      { "letter": "b", "text": "Nominated members of Rajya Sabha" },
-      { "letter": "c", "text": "Elected members of State Assemblies" },
-      { "letter": "d", "text": "Nominated members of Lok Sabha" }
+      {
+        "letter": "a",
+        "text": "Elected members of Lok Sabha"
+      },
+      {
+        "letter": "b",
+        "text": "Nominated members of Rajya Sabha"
+      },
+      {
+        "letter": "c",
+        "text": "Elected members of State Assemblies"
+      },
+      {
+        "letter": "d",
+        "text": "Nominated members of Lok Sabha"
+      }
     ],
     "correct_answer": "(c) Elected members of State Assemblies",
     "verified_source": "SSC CGL Official PYQ • Article 61, Constitution of India",
@@ -85,10 +134,22 @@
     "question_hi": "सिंधु घाटी सभ्यता के लोगों को निम्नलिखित में से किस धातु का ज्ञान नहीं था?",
     "highlight_phrase": "NOT known",
     "options": [
-      { "letter": "a", "text": "Copper" },
-      { "letter": "b", "text": "Bronze" },
-      { "letter": "c", "text": "Silver" },
-      { "letter": "d", "text": "Iron" }
+      {
+        "letter": "a",
+        "text": "Copper"
+      },
+      {
+        "letter": "b",
+        "text": "Bronze"
+      },
+      {
+        "letter": "c",
+        "text": "Silver"
+      },
+      {
+        "letter": "d",
+        "text": "Iron"
+      }
     ],
     "correct_answer": "(d) Iron",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 12 History",
@@ -104,10 +165,22 @@
     "question_hi": "किस रक्त समूह को 'सर्वग्राही' (Universal Recipient) कहा जाता है?",
     "highlight_phrase": "Universal Recipient",
     "options": [
-      { "letter": "a", "text": "O Negative" },
-      { "letter": "b", "text": "O Positive" },
-      { "letter": "c", "text": "AB Positive" },
-      { "letter": "d", "text": "AB Negative" }
+      {
+        "letter": "a",
+        "text": "O Negative"
+      },
+      {
+        "letter": "b",
+        "text": "O Positive"
+      },
+      {
+        "letter": "c",
+        "text": "AB Positive"
+      },
+      {
+        "letter": "d",
+        "text": "AB Negative"
+      }
     ],
     "correct_answer": "(c) AB Positive",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Biology",
@@ -123,10 +196,22 @@
     "question_hi": "भारत में कोई विधेयक 'धन विधेयक' (Money Bill) है या नहीं, इसका अंतिम निर्णय कौन करता है?",
     "highlight_phrase": "Money Bill or not",
     "options": [
-      { "letter": "a", "text": "President of India" },
-      { "letter": "b", "text": "Finance Minister" },
-      { "letter": "c", "text": "Speaker of Lok Sabha" },
-      { "letter": "d", "text": "Chairman of Rajya Sabha" }
+      {
+        "letter": "a",
+        "text": "President of India"
+      },
+      {
+        "letter": "b",
+        "text": "Finance Minister"
+      },
+      {
+        "letter": "c",
+        "text": "Speaker of Lok Sabha"
+      },
+      {
+        "letter": "d",
+        "text": "Chairman of Rajya Sabha"
+      }
     ],
     "correct_answer": "(c) Speaker of Lok Sabha",
     "verified_source": "SSC CGL Official PYQ • Article 110(3), Constitution of India",
@@ -142,10 +227,22 @@
     "question_hi": "निम्नलिखित में से कौन सी गैस अक्रिय (Noble) गैस नहीं है?",
     "highlight_phrase": "NOT a Noble (Inert) Gas",
     "options": [
-      { "letter": "a", "text": "Argon" },
-      { "letter": "b", "text": "Krypton" },
-      { "letter": "c", "text": "Radon" },
-      { "letter": "d", "text": "Hydrogen" }
+      {
+        "letter": "a",
+        "text": "Argon"
+      },
+      {
+        "letter": "b",
+        "text": "Krypton"
+      },
+      {
+        "letter": "c",
+        "text": "Radon"
+      },
+      {
+        "letter": "d",
+        "text": "Hydrogen"
+      }
     ],
     "correct_answer": "(d) Hydrogen",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
@@ -161,10 +258,22 @@
     "question_hi": "निम्नलिखित में से कौन सी स्वतंत्रता संविधान के अनुच्छेद 19(1) के अंतर्गत गारंटीकृत नहीं है?",
     "highlight_phrase": "NOT guaranteed under Article 19(1)",
     "options": [
-      { "letter": "a", "text": "Freedom of speech and expression" },
-      { "letter": "b", "text": "Right to form associations" },
-      { "letter": "c", "text": "Right to acquire and hold property" },
-      { "letter": "d", "text": "Right to reside anywhere in India" }
+      {
+        "letter": "a",
+        "text": "Freedom of speech and expression"
+      },
+      {
+        "letter": "b",
+        "text": "Right to form associations"
+      },
+      {
+        "letter": "c",
+        "text": "Right to acquire and hold property"
+      },
+      {
+        "letter": "d",
+        "text": "Right to reside anywhere in India"
+      }
     ],
     "correct_answer": "(c) Right to acquire and hold property",
     "verified_source": "SSC CGL Official PYQ • 44th Amendment Act (1978)",
@@ -180,10 +289,22 @@
     "question_hi": "निम्नलिखित में से कौन सी वोलाटाइल मेमोरी है जिसका डेटा बिजली बंद होने पर मिट जाता है?",
     "highlight_phrase": "Volatile Memory",
     "options": [
-      { "letter": "a", "text": "ROM (Read-Only Memory)" },
-      { "letter": "b", "text": "EPROM" },
-      { "letter": "c", "text": "RAM (Random Access Memory)" },
-      { "letter": "d", "text": "SSD (Solid State Drive)" }
+      {
+        "letter": "a",
+        "text": "ROM (Read-Only Memory)"
+      },
+      {
+        "letter": "b",
+        "text": "EPROM"
+      },
+      {
+        "letter": "c",
+        "text": "RAM (Random Access Memory)"
+      },
+      {
+        "letter": "d",
+        "text": "SSD (Solid State Drive)"
+      }
     ],
     "correct_answer": "(c) RAM (Random Access Memory)",
     "verified_source": "SSC CGL Tier-2 Official PYQ • NCERT Computer Science",
