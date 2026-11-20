@@ -33,7 +33,7 @@
   },
   {
     "id": "viral_economy_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • ECONOMY",
     "curiosity_tag": "90% Guess RBI Governor — Trap!",
@@ -60,7 +60,8 @@
     ],
     "correct_answer": "(c) Finance Secretary of India",
     "verified_source": "SSC CGL Official PYQ • RBI Act, 1934",
-    "explanation": "All currency notes except ₹1 are signed by the RBI Governor. The ₹1 note is issued by the Ministry of Finance and signed by the Finance Secretary."
+    "explanation": "All currency notes except ₹1 are signed by the RBI Governor. The ₹1 note is issued by the Ministry of Finance and signed by the Finance Secretary.",
+    "ig_media_id": "17908130994671997"
   },
   {
     "id": "viral_geo_01",
