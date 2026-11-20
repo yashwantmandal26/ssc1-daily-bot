@@ -2,9 +2,9 @@ name: Daily SSC CGL Carousel Post
 
 on:
   schedule:
-    # Runs every day at 9:00 AM IST (03:30 UTC)
-    - cron: "30 3 * * *"
-  workflow_dispatch: # Lets you trigger a test post manually anytime
+    # Off-peak daily schedule: 8:47 AM IST (03:17 UTC) to avoid :00/:30 queue delays
+    - cron: "17 3 * * *"
+  workflow_dispatch: # Manual 1-click trigger anytime
 
 permissions:
   contents: write
@@ -22,26 +22,29 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Python dependencies
-        run: pip install jinja2 pillow selenium requests
+      - name: Install Hindi fonts & Python dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core ffmpeg
+          pip install -q jinja2 pillow selenium requests
 
-      - name: Render next unposted 2-slide carousel
+      - name: Render next unposted Carousel or 7s Quiz Reel
         run: python3 auto_post.py --render-only
 
-      - name: Commit and push rendered JPEGs so raw GitHub URLs go live
+      - name: Commit and push rendered media so raw GitHub URLs go live
         run: |
           if [ -f ".pending_post.json" ]; then
             git config user.name "ssc1-daily-bot"
             git config user.email "bot@users.noreply.github.com"
             git add published/
-            git commit -m "Render daily SSC CGL carousel slides" || true
+            git commit -m "Render daily SSC CGL post" || true
             git push
           fi
 
       - name: Wait for GitHub raw CDN propagation
-        run: sleep 10
+        run: sleep 12
 
-      - name: Publish 2-slide carousel to Instagram (@ssc1.daily)
+      - name: Publish to Instagram (@ssc1.daily)
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}

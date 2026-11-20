@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
 """
-Automated SSC CGL 2-Slide Instagram Carousel Publisher (@ssc1.daily)
---------------------------------------------------------------------
-Designed to run 100% free in GitHub Actions (zero third-party image hosts).
+Automated SSC CGL Carousel + 7-Second Countdown Reel Publisher (@ssc1.daily)
+----------------------------------------------------------------------------
+Supports BOTH:
+  1. 2-Slide Carousels (Question + Bilingual Hindi + Answer/NCERT Flashcard)
+  2. 7-Second Countdown Quiz Reels (5s countdown timer + 2s Answer reveal MP4)
 
-Workflow inside GitHub Actions:
-  1. `python3 auto_post.py --render-only`
-     -> Picks the next unposted PYQ from `pyqs.json`
-     -> Renders Slide 1 & Slide 2 (1080x1350 JPEGs) into `published/`
-     -> Saves pending job metadata to `.pending_post.json`
-  2. GitHub Actions commits & pushes `published/` so raw GitHub HTTPS URLs are live.
-  3. `python3 auto_post.py --publish-only`
-     -> Publishes the 2-slide carousel via Meta's Instagram Content Publishing API
-     -> Marks the question `"posted": true` in `pyqs.json`
+Designed for ₹0/month GitHub Actions execution (zero external image/video host).
 """
 
 import argparse
@@ -20,6 +14,7 @@ import base64
 import html
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import time
@@ -69,19 +64,18 @@ def create_driver(width: int = 1080, height: int = 1500) -> webdriver.Chrome:
     options.add_argument(f"--window-size={width},{height}")
     options.add_argument("--force-device-scale-factor=1")
     driver = webdriver.Chrome(options=options)
-    driver.set_window_size(width, height)
     return driver
 
 
-def render_html_to_jpeg(
+def render_html_to_image(
     driver: webdriver.Chrome,
     html_content: str,
-    output_jpeg: Path,
+    output_path: Path,
     width: int = 1080,
     height: int = 1350,
     quality: int = 95,
 ) -> None:
-    output_jpeg.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     b64_html = base64.b64encode(html_content.encode("utf-8")).decode("ascii")
     driver.get(f"data:text/html;charset=utf-8;base64,{b64_html}")
 
@@ -93,77 +87,186 @@ def render_html_to_jpeg(
             rgb_img = img.convert("RGB")
             if rgb_img.size != (width, height):
                 rgb_img = rgb_img.resize((width, height), Image.Resampling.LANCZOS)
-            rgb_img.save(output_jpeg, format="JPEG", quality=quality, optimize=True)
+            fmt = "PNG" if output_path.suffix.lower() == ".png" else "JPEG"
+            save_kwargs = {"optimize": True}
+            if fmt == "JPEG":
+                save_kwargs["quality"] = quality
+            rgb_img.save(output_path, format=fmt, **save_kwargs)
 
 
-def build_caption(quiz: dict) -> str:
+def build_seo_caption(quiz: dict) -> str:
+    """2026 Instagram SEO-optimized caption (natural keywords, strong CTA, minimal hashtags)."""
     handle = quiz.get("brand_handle", "@ssc1.daily")
     exam_tag = quiz["exam_tag"]
+    topic = quiz.get("highlight_phrase") or "Static GK"
+    source = quiz.get("verified_source", "Official SSC Answer Key & NCERT")
+    is_reel = quiz.get("post_type", "carousel") == "reel"
+
+    action_line = (
+        "Pause before the 5-second timer ends and comment A, B, C, or D! ⏱️👇"
+        if is_reel
+        else "Comment A, B, C, or D first—then swipe to Slide 2 for the answer & 1-minute NCERT notes! 👇"
+    )
+
     return (
-        f"Can you solve this {exam_tag} question without looking at Slide 2? 👇\n\n"
-        f"Drop A, B, C, or D in the comments first—then swipe to verify your answer "
-        f"and grab the 1-minute NCERT revision flashcard!\n\n"
-        f"Save this post for quick pre-exam revision and follow {handle} for 1 verified PYQ every day. ⚡\n\n"
-        f"#SSCCGL #SSCCGL2026 #SSCStaticGK #SSCPYQ #NCERTNotes #GovtJobsIndia #SSCCHSL #SSCMTS"
+        f"{exam_tag} Official PYQ on {topic} — can you crack it in 5 seconds?\n\n"
+        f"{action_line}\n\n"
+        f"✈️ Send this to your SSC study partner to test their prep!\n"
+        f"🔖 Save for quick exam revision • Verified: {source}\n"
+        f"Follow {handle} for 1 verified SSC CGL Static GK PYQ every morning.\n\n"
+        f"#SSCCGL2026 #SSCPYQ #SSCStaticGK #NCERTNotes"
     )
 
 
-def render_next_unposted() -> None:
+def render_carousel_assets(driver: webdriver.Chrome, template: Template, quiz: dict) -> dict:
+    qid = quiz["id"]
+    handle = quiz.get("brand_handle", "@ssc1.daily")
+
+    slide1_html = template.render(
+        slide_type="question",
+        page_label="1 / 2",
+        badge_text=quiz["exam_tag"],
+        repeat_tag=quiz.get("repeat_tag", ""),
+        difficulty=quiz.get("difficulty", ""),
+        question_html=format_question_html(quiz["question"], quiz.get("highlight_phrase")),
+        question_hi=quiz.get("question_hi", ""),
+        options=quiz["options"],
+        cta_text="Comment A / B / C / D  •  Swipe →",
+        brand_handle=handle,
+    )
+    slide2_html = template.render(
+        slide_type="answer",
+        page_label="2 / 2",
+        badge_text="ANSWER & NCERT FLASHCARD",
+        correct_answer=quiz["correct_answer"],
+        revision_notes=quiz["revision_notes"],
+        verified_source=quiz.get("verified_source", ""),
+        cta_text="Send to your SSC buddy ✈️  •  Save for Revision",
+        brand_handle=handle,
+    )
+
+    s1 = PUBLISHED_DIR / f"{qid}_slide1.jpg"
+    s2 = PUBLISHED_DIR / f"{qid}_slide2.jpg"
+    render_html_to_image(driver, slide1_html, s1)
+    render_html_to_image(driver, slide2_html, s2)
+
+    return {
+        "id": qid,
+        "post_type": "carousel",
+        "slide1_rel": f"published/{s1.name}",
+        "slide2_rel": f"published/{s2.name}",
+        "caption": build_seo_caption(quiz),
+    }
+
+
+def render_reel_assets(driver: webdriver.Chrome, template: Template, quiz: dict) -> dict:
+    """Build a 7-second 1080x1350 H.264 MP4 countdown quiz Reel using ffmpeg."""
+    qid = quiz["id"]
+    handle = quiz.get("brand_handle", "@ssc1.daily")
+    video_path = PUBLISHED_DIR / f"{qid}_reel.mp4"
+    PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory(prefix="ig_reel_") as tmpdir:
+        tmp = Path(tmpdir)
+        concat_lines = []
+
+        # 5 countdown frames (1 second each: 5s -> 1s)
+        for idx, sec in enumerate([5, 4, 3, 2, 1]):
+            pct = int((sec / 5) * 100)
+            frame_html = template.render(
+                slide_type="reel_question",
+                page_label="5s QUIZ",
+                badge_text=quiz["exam_tag"],
+                repeat_tag=quiz.get("repeat_tag", ""),
+                difficulty=quiz.get("difficulty", ""),
+                question_html=format_question_html(
+                    quiz["question"], quiz.get("highlight_phrase")
+                ),
+                question_hi=quiz.get("question_hi", ""),
+                options=quiz["options"],
+                seconds_left=sec,
+                progress_pct=pct,
+                brand_handle=handle,
+            )
+            frame_png = tmp / f"frame_{idx}.png"
+            render_html_to_image(driver, frame_html, frame_png)
+            concat_lines.append(f"file '{frame_png}'\nduration 1\n")
+
+        # 2.5-second answer reveal frame
+        ans_html = template.render(
+            slide_type="answer",
+            page_label="ANSWER",
+            badge_text="ANSWER & NCERT FLASHCARD",
+            correct_answer=quiz["correct_answer"],
+            revision_notes=quiz["revision_notes"],
+            verified_source=quiz.get("verified_source", ""),
+            cta_text="Send to your SSC buddy ✈️  •  Save to Revise",
+            brand_handle=handle,
+        )
+        ans_png = tmp / "frame_answer.png"
+        render_html_to_image(driver, ans_html, ans_png)
+        concat_lines.append(f"file '{ans_png}'\nduration 2.5\n")
+        concat_lines.append(f"file '{ans_png}'\n")  # ffmpeg concat demuxer requirement
+
+        concat_file = tmp / "frames.txt"
+        concat_file.write_text("".join(concat_lines), encoding="utf-8")
+
+        # Encode silent stereo AAC + H.264 yuv420p (100% Instagram Reels compliant)
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-f", "concat",
+            "-safe", "0",
+            "-i", str(concat_file),
+            "-f", "lavfi",
+            "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+            "-c:v", "libx264",
+            "-r", "30",
+            "-pix_fmt", "yuv420p",
+            "-c:a", "aac",
+            "-shortest",
+            "-movflags", "+faststart",
+            str(video_path),
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        if res.returncode != 0 or not video_path.exists():
+            raise RuntimeError(f"ffmpeg failed: {res.stderr}")
+
+    return {
+        "id": qid,
+        "post_type": "reel",
+        "video_rel": f"published/{video_path.name}",
+        "caption": build_seo_caption(quiz),
+    }
+
+
+def render_next_unposted(force_id: str | None = None) -> None:
     pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
-    next_quiz = next((q for q in pyqs if not q.get("posted", False)), None)
+    if force_id:
+        next_quiz = next((q for q in pyqs if q["id"] == force_id), None)
+    else:
+        next_quiz = next((q for q in pyqs if not q.get("posted", False)), None)
+
     if not next_quiz:
         print("All PYQs in pyqs.json have already been posted! Add more questions.")
         sys.exit(0)
 
     template = Template(TEMPLATE_PATH.read_text(encoding="utf-8"))
-    qid = next_quiz["id"]
-    handle = next_quiz.get("brand_handle", "@ssc1.daily")
-
-    slide1_html = template.render(
-        slide_type="question",
-        slide_number="1",
-        badge_text=next_quiz["exam_tag"],
-        question_html=format_question_html(
-            next_quiz["question"], next_quiz.get("highlight_phrase")
-        ),
-        options=next_quiz["options"],
-        cta_text="Comment Your Answer  •  Swipe →",
-        brand_handle=handle,
-    )
-    slide2_html = template.render(
-        slide_type="answer",
-        slide_number="2",
-        badge_text="ANSWER & NCERT FLASHCARD",
-        correct_answer=next_quiz["correct_answer"],
-        revision_notes=next_quiz["revision_notes"],
-        cta_text="Save for Revision  •  Follow for Daily PYQs",
-        brand_handle=handle,
-    )
-
-    slide1_path = PUBLISHED_DIR / f"{qid}_slide1.jpg"
-    slide2_path = PUBLISHED_DIR / f"{qid}_slide2.jpg"
+    post_type = next_quiz.get("post_type", "carousel")
 
     driver = create_driver()
     try:
-        render_html_to_jpeg(driver, slide1_html, slide1_path)
-        render_html_to_jpeg(driver, slide2_html, slide2_path)
+        if post_type == "reel":
+            pending = render_reel_assets(driver, template, next_quiz)
+        else:
+            pending = render_carousel_assets(driver, template, next_quiz)
     finally:
         driver.quit()
 
     PENDING_PATH.write_text(
-        json.dumps(
-            {
-                "id": qid,
-                "slide1_rel": f"published/{slide1_path.name}",
-                "slide2_rel": f"published/{slide2_path.name}",
-                "caption": build_caption(next_quiz),
-            },
-            indent=2,
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
+        json.dumps(pending, indent=2, ensure_ascii=False), encoding="utf-8"
     )
-    print(f"Rendered {slide1_path.name} & {slide2_path.name}")
+    print(f"Rendered {post_type}: {pending['id']}")
 
 
 def ig_post(endpoint: str, payload: dict) -> dict:
@@ -172,6 +275,23 @@ def ig_post(endpoint: str, payload: dict) -> dict:
     if resp.status_code >= 400 or "error" in data:
         raise RuntimeError(f"Instagram API error on {endpoint}: {data}")
     return data
+
+
+def wait_for_container(container_id: str, token: str, timeout_sec: int = 90) -> None:
+    start = time.time()
+    while time.time() - start < timeout_sec:
+        resp = requests.get(
+            f"{IG_API_BASE}/{container_id}",
+            params={"fields": "status_code", "access_token": token},
+            timeout=20,
+        ).json()
+        status = resp.get("status_code")
+        if status == "FINISHED":
+            return
+        if status in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Media container failed: {resp}")
+        time.sleep(5)
+    raise TimeoutError(f"Timed out waiting for media container {container_id}")
 
 
 def publish_pending() -> None:
@@ -185,62 +305,59 @@ def publish_pending() -> None:
     branch = os.environ.get("GITHUB_REF_NAME", "main").strip() or "main"
 
     if not token or not repo:
-        raise RuntimeError(
-            "Missing IG_ACCESS_TOKEN or GITHUB_REPOSITORY environment variables."
-        )
+        raise RuntimeError("Missing IG_ACCESS_TOKEN or GITHUB_REPOSITORY.")
 
     pending = json.loads(PENDING_PATH.read_text(encoding="utf-8"))
     raw_base = f"https://raw.githubusercontent.com/{repo}/{branch}"
-    img1_url = f"{raw_base}/{pending['slide1_rel']}"
-    img2_url = f"{raw_base}/{pending['slide2_rel']}"
 
-    print(f"Publishing carousel from:\n  1) {img1_url}\n  2) {img2_url}")
+    if pending.get("post_type") == "reel":
+        video_url = f"{raw_base}/{pending['video_rel']}"
+        print(f"Publishing 7s Quiz Reel from: {video_url}")
+        container_id = ig_post(
+            f"{ig_user_id}/media",
+            {
+                "media_type": "REELS",
+                "video_url": video_url,
+                "caption": pending["caption"],
+                "share_to_feed": "true",
+                "access_token": token,
+            },
+        )["id"]
+        wait_for_container(container_id, token)
+        published = ig_post(
+            f"{ig_user_id}/media_publish",
+            {"creation_id": container_id, "access_token": token},
+        )
+    else:
+        img1_url = f"{raw_base}/{pending['slide1_rel']}"
+        img2_url = f"{raw_base}/{pending['slide2_rel']}"
+        print(f"Publishing 2-slide carousel from:\n  1) {img1_url}\n  2) {img2_url}")
+        c1 = ig_post(
+            f"{ig_user_id}/media",
+            {"image_url": img1_url, "is_carousel_item": "true", "access_token": token},
+        )["id"]
+        c2 = ig_post(
+            f"{ig_user_id}/media",
+            {"image_url": img2_url, "is_carousel_item": "true", "access_token": token},
+        )["id"]
+        time.sleep(5)
+        parent_id = ig_post(
+            f"{ig_user_id}/media",
+            {
+                "media_type": "CAROUSEL",
+                "children": f"{c1},{c2}",
+                "caption": pending["caption"],
+                "access_token": token,
+            },
+        )["id"]
+        time.sleep(5)
+        published = ig_post(
+            f"{ig_user_id}/media_publish",
+            {"creation_id": parent_id, "access_token": token},
+        )
 
-    # Step 1: Create child media containers for Slide 1 & Slide 2
-    c1 = ig_post(
-        f"{ig_user_id}/media",
-        {
-            "image_url": img1_url,
-            "is_carousel_item": "true",
-            "access_token": token,
-        },
-    )["id"]
-
-    c2 = ig_post(
-        f"{ig_user_id}/media",
-        {
-            "image_url": img2_url,
-            "is_carousel_item": "true",
-            "access_token": token,
-        },
-    )["id"]
-
-    time.sleep(5)
-
-    # Step 2: Create parent CAROUSEL container
-    parent_id = ig_post(
-        f"{ig_user_id}/media",
-        {
-            "media_type": "CAROUSEL",
-            "children": f"{c1},{c2}",
-            "caption": pending["caption"],
-            "access_token": token,
-        },
-    )["id"]
-
-    time.sleep(5)
-
-    # Step 3: Publish carousel
-    published = ig_post(
-        f"{ig_user_id}/media_publish",
-        {
-            "creation_id": parent_id,
-            "access_token": token,
-        },
-    )
     print(f"Published successfully! Media ID: {published['id']}")
 
-    # Step 4: Mark as posted in pyqs.json & remove .pending_post.json
     pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
     for q in pyqs:
         if q["id"] == pending["id"]:
@@ -257,14 +374,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--render-only", action="store_true")
     parser.add_argument("--publish-only", action="store_true")
+    parser.add_argument("--force-id", type=str, default=None)
     args = parser.parse_args()
 
     if args.render_only:
-        render_next_unposted()
+        render_next_unposted(force_id=args.force_id)
     elif args.publish_only:
         publish_pending()
     else:
-        render_next_unposted()
+        render_next_unposted(force_id=args.force_id)
         publish_pending()
 
 

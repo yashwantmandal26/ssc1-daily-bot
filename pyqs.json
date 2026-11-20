@@ -2,452 +2,391 @@
   {
     "id": "ssc_polity_01",
     "posted": true,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
-    "exam_tag": "SSC CGL 2024 • POLITY",
+    "exam_tag": "SSC CGL 2024 • 10 SEPT (SHIFT 2)",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
     "question": "Which of the following Articles of the Indian Constitution contains Fundamental Duties?",
+    "question_hi": "भारतीय संविधान के किस अनुच्छेद में मौलिक कर्तव्यों का उल्लेख है?",
     "highlight_phrase": "Fundamental Duties",
     "options": [
-      {
-        "letter": "A",
-        "text": "Article 45A"
-      },
-      {
-        "letter": "B",
-        "text": "Article 32A"
-      },
-      {
-        "letter": "C",
-        "text": "Article 51A"
-      },
-      {
-        "letter": "D",
-        "text": "Article 62B"
-      }
+      { "letter": "A", "text": "Article 45A" },
+      { "letter": "B", "text": "Article 32A" },
+      { "letter": "C", "text": "Article 51A" },
+      { "letter": "D", "text": "Article 62B" }
     ],
     "correct_answer": "(C) Article 51A",
+    "verified_source": "SSC CGL 2024 Official Key • NCERT Class 11 Polity",
     "revision_notes": [
-      {
-        "label": "Part IV-A",
-        "detail": "Article 51A is the only Article in Part IV-A."
-      },
-      {
-        "label": "42nd Amendment (1976)",
-        "detail": "Added 10 duties via Swaran Singh Committee (USSR)."
-      },
-      {
-        "label": "86th Amendment (2002)",
-        "detail": "Added 11th duty — Art. 51A(k) (education, ages 6–14)."
-      },
-      {
-        "label": "Exam Trap",
-        "detail": "Art. 51 is DPSP (International Peace), NOT Fundamental Duties!"
-      }
-    ],
-    "ig_media_id": "18112267397186887"
+      { "label": "Part IV-A", "detail": "Article 51A is the only Article in Part IV-A." },
+      { "label": "42nd Amendment (1976)", "detail": "Added 10 duties via Swaran Singh Committee (USSR)." },
+      { "label": "86th Amendment (2002)", "detail": "Added 11th duty — Art. 51A(k) (education, ages 6–14)." },
+      { "label": "Exam Trap", "detail": "Art. 51 is DPSP (International Peace), NOT Fundamental Duties!" }
+    ]
   },
   {
     "id": "ssc_polity_02",
     "posted": false,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
-    "exam_tag": "SSC CGL PYQ • POLITY",
+    "exam_tag": "SSC CGL 2024 • 9 SEPT (SHIFT 1)",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
     "question": "Which Article of the Indian Constitution empowers High Courts to issue writs similar to Article 32?",
+    "question_hi": "संविधान का कौन सा अनुच्छेद उच्च न्यायालयों को अनुच्छेद 32 के समान रिट जारी करने की शक्ति देता है?",
     "highlight_phrase": "issue writs",
     "options": [
-      {
-        "letter": "A",
-        "text": "Article 214"
-      },
-      {
-        "letter": "B",
-        "text": "Article 226"
-      },
-      {
-        "letter": "C",
-        "text": "Article 124"
-      },
-      {
-        "letter": "D",
-        "text": "Article 131"
-      }
+      { "letter": "A", "text": "Article 214" },
+      { "letter": "B", "text": "Article 226" },
+      { "letter": "C", "text": "Article 124" },
+      { "letter": "D", "text": "Article 131" }
     ],
     "correct_answer": "(B) Article 226",
+    "verified_source": "SSC CGL 2024 Official Key • NCERT Class 11 Polity",
     "revision_notes": [
-      {
-        "label": "High Court Writs",
-        "detail": "Article 226 empowers High Courts to issue 5 types of writs."
-      },
-      {
-        "label": "Supreme Court Writs",
-        "detail": "Article 32 grants writ jurisdiction to the Supreme Court."
-      },
-      {
-        "label": "Wider Scope",
-        "detail": "Art. 226 covers both Fundamental Rights and other legal rights."
-      },
-      {
-        "label": "5 Writs",
-        "detail": "Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto."
-      }
+      { "label": "High Court Writs", "detail": "Article 226 empowers High Courts to issue 5 types of writs." },
+      { "label": "Supreme Court Writs", "detail": "Article 32 grants writ jurisdiction to the Supreme Court." },
+      { "label": "Wider Scope", "detail": "Art. 226 covers both Fundamental Rights and other legal rights." },
+      { "label": "5 Writs", "detail": "Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto." }
     ]
   },
   {
-    "id": "ssc_polity_03",
+    "id": "ssc_static_03",
     "posted": false,
-    "brand_handle": "@ssc1.daily",
-    "exam_tag": "SSC CGL PYQ • POLITY",
-    "question": "Which Article of the Indian Constitution directs the State to organize Village Panchayats?",
-    "highlight_phrase": "Village Panchayats",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Article 38"
-      },
-      {
-        "letter": "B",
-        "text": "Article 40"
-      },
-      {
-        "letter": "C",
-        "text": "Article 44"
-      },
-      {
-        "letter": "D",
-        "text": "Article 48"
-      }
-    ],
-    "correct_answer": "(B) Article 40",
-    "revision_notes": [
-      {
-        "label": "Gandhian DPSP",
-        "detail": "Article 40 (Part IV) promotes Gram Panchayats as self-government units."
-      },
-      {
-        "label": "73rd Amendment (1992)",
-        "detail": "Gave constitutional status to Panchayati Raj (Part IX, 11th Schedule)."
-      },
-      {
-        "label": "Art. 44 Trap",
-        "detail": "Article 44 deals with Uniform Civil Code (UCC), frequently asked in SSC."
-      },
-      {
-        "label": "First State",
-        "detail": "Rajasthan (Nagaur, 1959) was the first state to adopt Panchayati Raj."
-      }
-    ]
-  },
-  {
-    "id": "ssc_static_04",
-    "posted": false,
+    "post_type": "reel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "repeat_tag": "Asked 7x+ in SSC",
+    "difficulty": "Easy",
     "question": "Sattriya, one of India's classical dance forms, originated in which Indian state?",
+    "question_hi": "भारत का शास्त्रीय नृत्य 'सत्त्रिया' किस राज्य से संबंधित है?",
     "highlight_phrase": "Sattriya",
     "options": [
-      {
-        "letter": "A",
-        "text": "Manipur"
-      },
-      {
-        "letter": "B",
-        "text": "Odisha"
-      },
-      {
-        "letter": "C",
-        "text": "Assam"
-      },
-      {
-        "letter": "D",
-        "text": "Kerala"
-      }
+      { "letter": "A", "text": "Manipur" },
+      { "letter": "B", "text": "Odisha" },
+      { "letter": "C", "text": "Assam" },
+      { "letter": "D", "text": "Kerala" }
     ],
     "correct_answer": "(C) Assam",
+    "verified_source": "SSC CGL Official PYQ • Sangeet Natak Akademi",
     "revision_notes": [
-      {
-        "label": "Founder",
-        "detail": "Introduced in the 15th century by Vaishnava saint Srimanta Sankardev."
-      },
-      {
-        "label": "Recognition",
-        "detail": "Recognized as a classical dance by Sangeet Natak Akademi in 2000."
-      },
-      {
-        "label": "Origin",
-        "detail": "Evolved inside Assamese monasteries known as 'Sattras'."
-      },
-      {
-        "label": "8 Classical Dances",
-        "detail": "Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam, Sattriya."
-      }
+      { "label": "Founder", "detail": "Introduced in the 15th century by Vaishnava saint Srimanta Sankardev." },
+      { "label": "Recognition", "detail": "Recognized as a classical dance by Sangeet Natak Akademi in 2000." },
+      { "label": "Origin", "detail": "Evolved inside Assamese monasteries known as 'Sattras'." },
+      { "label": "8 Classical Dances", "detail": "Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam, Sattriya." }
+    ]
+  },
+  {
+    "id": "ssc_polity_04",
+    "posted": false,
+    "post_type": "carousel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which Article of the Indian Constitution directs the State to organize Village Panchayats?",
+    "question_hi": "संविधान का कौन सा अनुच्छेद राज्य को ग्राम पंचायतों का गठन करने का निर्देश देता है?",
+    "highlight_phrase": "Village Panchayats",
+    "options": [
+      { "letter": "A", "text": "Article 38" },
+      { "letter": "B", "text": "Article 40" },
+      { "letter": "C", "text": "Article 44" },
+      { "letter": "D", "text": "Article 48" }
+    ],
+    "correct_answer": "(B) Article 40",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "revision_notes": [
+      { "label": "Gandhian DPSP", "detail": "Article 40 (Part IV) promotes Gram Panchayats as self-government units." },
+      { "label": "73rd Amendment (1992)", "detail": "Gave constitutional status to Panchayati Raj (Part IX, 11th Schedule)." },
+      { "label": "Art. 44 Trap", "detail": "Article 44 deals with Uniform Civil Code (UCC), frequently asked in SSC." },
+      { "label": "First State", "detail": "Rajasthan (Nagaur, 1959) was the first state to adopt Panchayati Raj." }
     ]
   },
   {
     "id": "ssc_polity_05",
     "posted": false,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
     "question": "Under which Article of the Indian Constitution is the Finance Commission constituted?",
+    "question_hi": "भारतीय संविधान के किस अनुच्छेद के तहत वित्त आयोग का गठन किया जाता है?",
     "highlight_phrase": "Finance Commission",
     "options": [
-      {
-        "letter": "A",
-        "text": "Article 263"
-      },
-      {
-        "letter": "B",
-        "text": "Article 280"
-      },
-      {
-        "letter": "C",
-        "text": "Article 315"
-      },
-      {
-        "letter": "D",
-        "text": "Article 324"
-      }
+      { "letter": "A", "text": "Article 263" },
+      { "letter": "B", "text": "Article 280" },
+      { "letter": "C", "text": "Article 315" },
+      { "letter": "D", "text": "Article 324" }
     ],
     "correct_answer": "(B) Article 280",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
     "revision_notes": [
-      {
-        "label": "Appointed By",
-        "detail": "President of India constitutes it every 5 years (or earlier)."
-      },
-      {
-        "label": "Composition",
-        "detail": "1 Chairman + 4 other members; quasi-judicial constitutional body."
-      },
-      {
-        "label": "Main Role",
-        "detail": "Recommends distribution of net tax proceeds between Centre and States."
-      },
-      {
-        "label": "Other Options",
-        "detail": "Art. 263: Inter-State Council | Art. 315: UPSC | Art. 324: Election Commission."
-      }
+      { "label": "Appointed By", "detail": "President of India constitutes it every 5 years (or earlier)." },
+      { "label": "Composition", "detail": "1 Chairman + 4 other members; quasi-judicial constitutional body." },
+      { "label": "Main Role", "detail": "Recommends distribution of net tax proceeds between Centre and States." },
+      { "label": "Other Options", "detail": "Art. 263: Inter-State Council | Art. 315: UPSC | Art. 324: Election Commission." }
     ]
   },
   {
     "id": "ssc_history_06",
     "posted": false,
+    "post_type": "reel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 8x+ in SSC",
+    "difficulty": "Easy",
     "question": "In which year was the historic Battle of Plassey fought between Siraj-ud-Daulah and the British?",
+    "question_hi": "सिराजुद्दौला और अंग्रेजों के बीच ऐतिहासिक प्लासी का युद्ध किस वर्ष लड़ा गया था?",
     "highlight_phrase": "Battle of Plassey",
     "options": [
-      {
-        "letter": "A",
-        "text": "1757"
-      },
-      {
-        "letter": "B",
-        "text": "1761"
-      },
-      {
-        "letter": "C",
-        "text": "1764"
-      },
-      {
-        "letter": "D",
-        "text": "1773"
-      }
+      { "letter": "A", "text": "1757" },
+      { "letter": "B", "text": "1761" },
+      { "letter": "C", "text": "1764" },
+      { "letter": "D", "text": "1773" }
     ],
     "correct_answer": "(A) 1757",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
     "revision_notes": [
-      {
-        "label": "Date & Place",
-        "detail": "23 June 1757, on the banks of the Bhagirathi River in Bengal."
-      },
-      {
-        "label": "Key Leaders",
-        "detail": "Robert Clive (East India Company) defeated Nawab Siraj-ud-Daulah."
-      },
-      {
-        "label": "Betrayal",
-        "detail": "Mir Jafar (commander of Nawab's army) sided with the British."
-      },
-      {
-        "label": "Exam Trap",
-        "detail": "1761: 3rd Battle of Panipat | 1764: Battle of Buxar."
-      }
+      { "label": "Date & Place", "detail": "23 June 1757, on the banks of the Bhagirathi River in Bengal." },
+      { "label": "Key Leaders", "detail": "Robert Clive (East India Company) defeated Nawab Siraj-ud-Daulah." },
+      { "label": "Betrayal", "detail": "Mir Jafar (commander of Nawab's army) sided with the British." },
+      { "label": "Exam Trap", "detail": "1761: 3rd Battle of Panipat | 1764: Battle of Buxar." }
     ]
   },
   {
     "id": "ssc_science_07",
     "posted": false,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • SCIENCE",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
     "question": "Deficiency of which vitamin causes Scurvy, characterized by bleeding gums?",
+    "question_hi": "किस विटामिन की कमी से स्कर्वी रोग होता है (मसूड़ों से खून आना)?",
     "highlight_phrase": "Scurvy",
     "options": [
-      {
-        "letter": "A",
-        "text": "Vitamin A"
-      },
-      {
-        "letter": "B",
-        "text": "Vitamin B1"
-      },
-      {
-        "letter": "C",
-        "text": "Vitamin C"
-      },
-      {
-        "letter": "D",
-        "text": "Vitamin D"
-      }
+      { "letter": "A", "text": "Vitamin A" },
+      { "letter": "B", "text": "Vitamin B1" },
+      { "letter": "C", "text": "Vitamin C" },
+      { "letter": "D", "text": "Vitamin D" }
     ],
     "correct_answer": "(C) Vitamin C",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 Science",
     "revision_notes": [
-      {
-        "label": "Chemical Name",
-        "detail": "Vitamin C is scientifically known as Ascorbic Acid."
-      },
-      {
-        "label": "Solubility",
-        "detail": "Water-soluble vitamin (along with Vitamin B-complex)."
-      },
-      {
-        "label": "Rich Sources",
-        "detail": "Amla (Indian gooseberry), lemon, orange, and guava."
-      },
-      {
-        "label": "Quick Match",
-        "detail": "Vit A: Night Blindness | Vit B1: Beriberi | Vit D: Rickets."
-      }
+      { "label": "Chemical Name", "detail": "Vitamin C is scientifically known as Ascorbic Acid." },
+      { "label": "Solubility", "detail": "Water-soluble vitamin (along with Vitamin B-complex)." },
+      { "label": "Rich Sources", "detail": "Amla (Indian gooseberry), lemon, orange, and guava." },
+      { "label": "Quick Match", "detail": "Vit A: Night Blindness | Vit B1: Beriberi | Vit D: Rickets." }
     ]
   },
   {
     "id": "ssc_geo_08",
     "posted": false,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
     "question": "Kaziranga National Park, famous for the one-horned rhinoceros, is located in which state?",
+    "question_hi": "एक सींग वाले गैंडे के लिए प्रसिद्ध काजीरंगा राष्ट्रीय उद्यान किस राज्य में स्थित है?",
     "highlight_phrase": "Kaziranga National Park",
     "options": [
-      {
-        "letter": "A",
-        "text": "West Bengal"
-      },
-      {
-        "letter": "B",
-        "text": "Assam"
-      },
-      {
-        "letter": "C",
-        "text": "Arunachal Pradesh"
-      },
-      {
-        "letter": "D",
-        "text": "Meghalaya"
-      }
+      { "letter": "A", "text": "West Bengal" },
+      { "letter": "B", "text": "Assam" },
+      { "letter": "C", "text": "Arunachal Pradesh" },
+      { "letter": "D", "text": "Meghalaya" }
     ],
     "correct_answer": "(B) Assam",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
     "revision_notes": [
-      {
-        "label": "UNESCO Status",
-        "detail": "Declared a UNESCO World Heritage Site in 1985."
-      },
-      {
-        "label": "River Basin",
-        "detail": "Lies in the floodplains of the Brahmaputra River."
-      },
-      {
-        "label": "Biodiversity",
-        "detail": "Hosts the world's largest population of Great Indian One-Horned Rhinos."
-      },
-      {
-        "label": "Assam Parks",
-        "detail": "Manas, Nameri, Orang, Dibru-Saikhowa, Raimona, Dehing Patkai."
-      }
+      { "label": "UNESCO Status", "detail": "Declared a UNESCO World Heritage Site in 1985." },
+      { "label": "River Basin", "detail": "Lies in the floodplains of the Brahmaputra River." },
+      { "label": "Biodiversity", "detail": "Hosts the world's largest population of Great Indian One-Horned Rhinos." },
+      { "label": "Assam Parks", "detail": "Manas, Nameri, Orang, Dibru-Saikhowa, Raimona, Dehing Patkai." }
     ]
   },
   {
     "id": "ssc_econ_09",
     "posted": false,
+    "post_type": "reel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
     "question": "The Reserve Bank of India (RBI) was established in 1935 on the recommendation of which Commission?",
+    "question_hi": "भारतीय रिज़र्व बैंक (RBI) की स्थापना 1935 में किस आयोग की सिफारिश पर हुई थी?",
     "highlight_phrase": "Reserve Bank of India",
     "options": [
-      {
-        "letter": "A",
-        "text": "Simon Commission"
-      },
-      {
-        "letter": "B",
-        "text": "Hilton Young Commission"
-      },
-      {
-        "letter": "C",
-        "text": "Hunter Commission"
-      },
-      {
-        "letter": "D",
-        "text": "Sarkaria Commission"
-      }
+      { "letter": "A", "text": "Simon Commission" },
+      { "letter": "B", "text": "Hilton Young Commission" },
+      { "letter": "C", "text": "Hunter Commission" },
+      { "letter": "D", "text": "Sarkaria Commission" }
     ],
     "correct_answer": "(B) Hilton Young Commission",
+    "verified_source": "SSC CGL Official PYQ • RBI Official History",
     "revision_notes": [
-      {
-        "label": "Established",
-        "detail": "1 April 1935 under the Reserve Bank of India Act, 1934."
-      },
-      {
-        "label": "Nationalization",
-        "detail": "Nationalized on 1 January 1949; HQ moved from Kolkata to Mumbai in 1937."
-      },
-      {
-        "label": "First Governor",
-        "detail": "Sir Osborne Smith (first Indian Governor: C. D. Deshmukh)."
-      },
-      {
-        "label": "Exam Trap",
-        "detail": "Sarkaria Commission (1983) was for Centre–State relations."
-      }
+      { "label": "Established", "detail": "1 April 1935 under the Reserve Bank of India Act, 1934." },
+      { "label": "Nationalization", "detail": "Nationalized on 1 January 1949; HQ moved from Kolkata to Mumbai in 1937." },
+      { "label": "First Governor", "detail": "Sir Osborne Smith (first Indian Governor: C. D. Deshmukh)." },
+      { "label": "Exam Trap", "detail": "Sarkaria Commission (1983) was for Centre–State relations." }
     ]
   },
   {
     "id": "ssc_polity_10",
     "posted": false,
+    "post_type": "carousel",
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Medium",
     "question": "Which landmark Supreme Court judgment established the 'Basic Structure Doctrine' of the Indian Constitution?",
+    "question_hi": "सुप्रीम कोर्ट के किस ऐतिहासिक फैसले ने संविधान के 'मूल संरचना सिद्धांत' को स्थापित किया?",
     "highlight_phrase": "Basic Structure Doctrine",
     "options": [
-      {
-        "letter": "A",
-        "text": "Golaknath Case (1967)"
-      },
-      {
-        "letter": "B",
-        "text": "Kesavananda Bharati Case (1973)"
-      },
-      {
-        "letter": "C",
-        "text": "Minerva Mills Case (1980)"
-      },
-      {
-        "letter": "D",
-        "text": "Maneka Gandhi Case (1978)"
-      }
+      { "letter": "A", "text": "Golaknath Case (1967)" },
+      { "letter": "B", "text": "Kesavananda Bharati Case (1973)" },
+      { "letter": "C", "text": "Minerva Mills Case (1980)" },
+      { "letter": "D", "text": "Maneka Gandhi Case (1978)" }
     ],
     "correct_answer": "(B) Kesavananda Bharati Case (1973)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
     "revision_notes": [
-      {
-        "label": "Largest Bench",
-        "detail": "Decided by a historic 13-judge Supreme Court bench (7–6 majority)."
-      },
-      {
-        "label": "Core Ruling",
-        "detail": "Parliament can amend the Constitution under Art. 368, but cannot alter its Basic Structure."
-      },
-      {
-        "label": "Minerva Mills (1980)",
-        "detail": "Reinforced balance between Fundamental Rights and DPSP."
-      },
-      {
-        "label": "Maneka Gandhi (1978)",
-        "detail": "Expanded Article 21 (Right to Life & Personal Liberty)."
-      }
+      { "label": "Largest Bench", "detail": "Decided by a historic 13-judge Supreme Court bench (7–6 majority)." },
+      { "label": "Core Ruling", "detail": "Parliament can amend the Constitution under Art. 368, but cannot alter its Basic Structure." },
+      { "label": "Minerva Mills (1980)", "detail": "Reinforced balance between Fundamental Rights and DPSP." },
+      { "label": "Maneka Gandhi (1978)", "detail": "Expanded Article 21 (Right to Life & Personal Liberty)." }
+    ]
+  },
+  {
+    "id": "ssc_polity_11",
+    "posted": false,
+    "post_type": "carousel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which Article of the Indian Constitution gives the President the power to grant pardons?",
+    "question_hi": "संविधान का कौन सा अनुच्छेद राष्ट्रपति को क्षमादान की शक्ति प्रदान करता है?",
+    "highlight_phrase": "grant pardons",
+    "options": [
+      { "letter": "A", "text": "Article 61" },
+      { "letter": "B", "text": "Article 72" },
+      { "letter": "C", "text": "Article 123" },
+      { "letter": "D", "text": "Article 161" }
+    ],
+    "correct_answer": "(B) Article 72",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "revision_notes": [
+      { "label": "President's Power", "detail": "Article 72 covers pardon, reprieve, respite, remission, and commutation." },
+      { "label": "Governor Trap", "detail": "Article 161 gives pardoning power to the Governor (cannot pardon death sentence)." },
+      { "label": "Art. 61", "detail": "Procedure for impeachment of the President of India." },
+      { "label": "Art. 123", "detail": "Power of the President to promulgate Ordinances." }
+    ]
+  },
+  {
+    "id": "ssc_history_12",
+    "posted": false,
+    "post_type": "reel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Who founded the 'Brahmo Samaj' in 1828 to reform Hindu society and abolish Sati?",
+    "question_hi": "1828 में हिंदू समाज में सुधार और सती प्रथा के अंत के लिए 'ब्रह्म समाज' की स्थापना किसने की?",
+    "highlight_phrase": "Brahmo Samaj",
+    "options": [
+      { "letter": "A", "text": "Swami Dayanand Saraswati" },
+      { "letter": "B", "text": "Raja Ram Mohan Roy" },
+      { "letter": "C", "text": "Swami Vivekananda" },
+      { "letter": "D", "text": "Jyotiba Phule" }
+    ],
+    "correct_answer": "(B) Raja Ram Mohan Roy",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "revision_notes": [
+      { "label": "Founded", "detail": "20 August 1828 in Calcutta (earlier Atmiya Sabha in 1815)." },
+      { "label": "Abolition of Sati", "detail": "Passed in 1829 under Governor-General Lord William Bentinck." },
+      { "label": "Arya Samaj Trap", "detail": "Swami Dayanand Saraswati founded Arya Samaj in 1875 (Bombay)." },
+      { "label": "Satyashodhak Samaj", "detail": "Founded by Jyotiba Phule in 1873 in Pune." }
+    ]
+  },
+  {
+    "id": "ssc_science_13",
+    "posted": false,
+    "post_type": "carousel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • SCIENCE",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "What is the SI unit of electrical resistance?",
+    "question_hi": "विद्युत प्रतिरोध (Electrical Resistance) का SI मात्रक क्या है?",
+    "highlight_phrase": "electrical resistance",
+    "options": [
+      { "letter": "A", "text": "Ampere" },
+      { "letter": "B", "text": "Volt" },
+      { "letter": "C", "text": "Ohm" },
+      { "letter": "D", "text": "Watt" }
+    ],
+    "correct_answer": "(C) Ohm",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "revision_notes": [
+      { "label": "Ohm's Law", "detail": "V = I × R, where R is resistance measured in Ohms (Ω)." },
+      { "label": "Resistivity Trap", "detail": "SI unit of Resistivity is Ohm-metre (Ω·m), NOT just Ohm." },
+      { "label": "Ampere & Volt", "detail": "Ampere (A) = Electric Current | Volt (V) = Potential Difference." },
+      { "label": "Watt (W)", "detail": "SI unit of Electric Power (P = V × I)." }
+    ]
+  },
+  {
+    "id": "ssc_geo_14",
+    "posted": false,
+    "post_type": "carousel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 4x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which river is known as 'Dakshin Ganga' (Ganga of the South) in India?",
+    "question_hi": "भारत में किस नदी को 'दक्षिण गंगा' के नाम से जाना जाता है?",
+    "highlight_phrase": "Dakshin Ganga",
+    "options": [
+      { "letter": "A", "text": "Krishna" },
+      { "letter": "B", "text": "Godavari" },
+      { "letter": "C", "text": "Kaveri" },
+      { "letter": "D", "text": "Narmada" }
+    ],
+    "correct_answer": "(B) Godavari",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "revision_notes": [
+      { "label": "Origin", "detail": "Rises from Trimbakeshwar in Nashik district, Maharashtra." },
+      { "label": "Length", "detail": "Largest Peninsular river (~1,465 km), draining into the Bay of Bengal." },
+      { "label": "Major Tributaries", "detail": "Purna, Wardha, Pranhita, Manjra, Wainganga, and Penganga." },
+      { "label": "Exam Trap", "detail": "Godavari = 'Dakshin Ganga' (NCERT) | Kaveri = 'Ganga of the South' in some state exams." }
+    ]
+  },
+  {
+    "id": "ssc_polity_15",
+    "posted": false,
+    "post_type": "reel",
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which Schedule of the Indian Constitution contains the Anti-Defection Law?",
+    "question_hi": "भारतीय संविधान की किस अनुसूची में दल-बदल विरोधी कानून का प्रावधान है?",
+    "highlight_phrase": "Anti-Defection Law",
+    "options": [
+      { "letter": "A", "text": "8th Schedule" },
+      { "letter": "B", "text": "9th Schedule" },
+      { "letter": "C", "text": "10th Schedule" },
+      { "letter": "D", "text": "11th Schedule" }
+    ],
+    "correct_answer": "(C) 10th Schedule",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "revision_notes": [
+      { "label": "Added By", "detail": "52nd Constitutional Amendment Act, 1985 (Rajiv Gandhi govt)." },
+      { "label": "Deciding Authority", "detail": "Speaker (Lok Sabha / Assembly) or Chairman (Rajya Sabha)." },
+      { "label": "8th & 9th Schedules", "detail": "8th = 22 Official Languages | 9th = Land Reforms (1st Amendment, 1951)." },
+      { "label": "11th & 12th", "detail": "11th = Panchayats (73rd) | 12th = Municipalities (74th)." }
     ]
   }
 ]

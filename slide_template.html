@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, initial-scale=1.0" />
-<title>SSC CGL Carousel Slide</title>
+<title>SSC CGL Post v2</title>
 <style>
   * {
     box-sizing: border-box;
@@ -11,44 +11,39 @@
     padding: 0;
   }
 
-
   html, body {
     width: 1080px;
     height: 1350px;
     overflow: hidden;
     background-color: #09090b;
     color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", "Noto Sans", "Noto Sans Devanagari", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-
 
   .canvas {
     position: relative;
     width: 1080px;
     height: 1350px;
     background-color: #09090b;
-    padding: 56px 72px 56px 72px;
+    padding: 48px 68px 46px 68px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
   }
 
-
-  /* Subtle top sunset-orange ambient glow */
   .ambient-glow {
     position: absolute;
     top: -220px;
     left: 50%;
     transform: translateX(-50%);
     width: 960px;
-    height: 520px;
-    background: radial-gradient(ellipse at center, rgba(255, 115, 0, 0.24) 0%, rgba(255, 115, 0, 0.08) 45%, rgba(9, 9, 11, 0) 75%);
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(255, 115, 0, 0.24) 0%, rgba(255, 115, 0, 0.07) 45%, rgba(9, 9, 11, 0) 75%);
     pointer-events: none;
     z-index: 0;
   }
-
 
   .ambient-glow-bottom {
     position: absolute;
@@ -56,20 +51,18 @@
     left: 50%;
     transform: translateX(-50%);
     width: 820px;
-    height: 400px;
+    height: 380px;
     background: radial-gradient(ellipse at center, rgba(255, 102, 0, 0.14) 0%, rgba(9, 9, 11, 0) 70%);
     pointer-events: none;
     z-index: 0;
   }
-
 
   .layer {
     position: relative;
     z-index: 1;
   }
 
-
-  /* Header Bar */
+  /* Header */
   .header {
     display: flex;
     align-items: center;
@@ -77,55 +70,85 @@
     width: 100%;
   }
 
-
   .badge-pill {
-    position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 13px 26px;
+    padding: 12px 24px;
     border-radius: 999px;
-    background: rgba(24, 24, 27, 0.88);
+    background: rgba(24, 24, 27, 0.9);
     border: 2px solid rgba(255, 122, 0, 0.78);
-    box-shadow: 0 0 24px rgba(255, 115, 0, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.12);
-    font-size: 21px;
+    box-shadow: 0 0 22px rgba(255, 115, 0, 0.26), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #ffffff;
   }
-
 
   .page-pill {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 24px;
+    padding: 12px 22px;
     border-radius: 999px;
     background: rgba(30, 30, 34, 0.88);
     border: 1.5px solid rgba(255, 255, 255, 0.12);
-    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 600;
     color: #a1a1aa;
     letter-spacing: 1px;
   }
 
-
-  /* Slide 1: Question & Options */
-  .question-block {
-    text-align: center;
-    padding: 8px 12px;
+  /* Trust & Difficulty Meta Row */
+  .meta-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
   }
 
+  .meta-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(255, 115, 0, 0.12);
+    border: 1px solid rgba(255, 128, 0, 0.42);
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffb366;
+    letter-spacing: 0.4px;
+  }
+
+  .meta-chip.neutral {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #d4d4d8;
+  }
+
+  /* Bilingual Question Block */
+  .question-block {
+    text-align: center;
+    padding: 6px 8px;
+  }
 
   .question-text {
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 800;
     line-height: 1.24;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.5px;
     color: #fafafa;
   }
 
+  .question-hi {
+    margin-top: 14px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.38;
+    color: #a1a1aa;
+  }
 
   .highlight-orange {
     background: linear-gradient(90deg, #ff6a00 0%, #ff9e2c 50%, #ffb347 100%);
@@ -134,172 +157,205 @@
     display: inline;
   }
 
-
+  /* Options */
   .options-list {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 15px;
     width: 100%;
   }
-
 
   .option-card {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 20px 28px;
+    gap: 22px;
+    padding: 18px 26px;
     border-radius: 999px;
     background: linear-gradient(180deg, rgba(32, 32, 37, 0.92) 0%, rgba(20, 20, 23, 0.96) 100%);
     border: 1.5px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.09);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.09);
   }
-
 
   .option-letter {
     flex-shrink: 0;
-    width: 58px;
-    height: 58px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(255, 115, 0, 0.12);
     border: 2px solid #ff7b00;
-    box-shadow: 0 0 16px rgba(255, 115, 0, 0.35), inset 0 0 10px rgba(255, 115, 0, 0.18);
-    font-size: 27px;
+    box-shadow: 0 0 14px rgba(255, 115, 0, 0.35), inset 0 0 8px rgba(255, 115, 0, 0.18);
+    font-size: 25px;
     font-weight: 800;
     color: #ff9436;
   }
 
-
   .option-text {
-    font-size: 33px;
+    font-size: 31px;
     font-weight: 600;
     color: #f4f4f5;
-    line-height: 1.25;
+    line-height: 1.22;
   }
 
+  /* Reel Countdown Progress Bar */
+  .timer-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timer-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fb923c;
+  }
+
+  .timer-track {
+    width: 100%;
+    height: 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .timer-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ea580c 0%, #fb923c 100%);
+    box-shadow: 0 0 18px rgba(249, 115, 22, 0.65);
+  }
 
   /* Slide 2: Answer & Revision Bento Card */
   .answer-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 14px;
     width: 100%;
-    padding: 24px 36px;
+    padding: 22px 32px;
     border-radius: 22px;
     background: linear-gradient(135deg, #d94e00 0%, #f97316 45%, #fb923c 100%);
     border: 1.5px solid rgba(255, 200, 140, 0.55);
     box-shadow: 0 14px 40px rgba(249, 115, 22, 0.36), inset 0 2px 2px rgba(255, 255, 255, 0.35);
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 800;
     color: #ffffff;
-    letter-spacing: -0.3px;
     text-align: center;
   }
 
-
   .bento-card {
     width: 100%;
-    padding: 30px 32px;
-    border-radius: 28px;
+    padding: 26px 30px;
+    border-radius: 26px;
     background: linear-gradient(180deg, rgba(26, 26, 30, 0.95) 0%, rgba(16, 16, 19, 0.98) 100%);
     border: 1.5px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 15px;
   }
-
 
   .bento-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fb923c;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
-
 
   .note-row {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    padding: 19px 22px;
-    border-radius: 16px;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.035);
     border: 1px solid rgba(255, 255, 255, 0.07);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   }
-
 
   .note-accent {
     flex-shrink: 0;
-    width: 7px;
-    height: 34px;
+    width: 6px;
+    height: 32px;
     margin-top: 3px;
     border-radius: 999px;
     background: linear-gradient(180deg, #ff6a00 0%, #ffb347 100%);
-    box-shadow: 0 0 12px rgba(255, 115, 0, 0.65);
+    box-shadow: 0 0 10px rgba(255, 115, 0, 0.65);
   }
 
-
   .note-text {
-    font-size: 25px;
-    line-height: 1.36;
+    font-size: 24px;
+    line-height: 1.35;
     color: #e4e4e7;
     font-weight: 500;
   }
-
 
   .note-text strong {
     color: #ffffff;
     font-weight: 700;
   }
 
+  .verified-source {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-size: 19px;
+    font-weight: 600;
+    color: #a1a1aa;
+  }
 
-  /* Bottom CTA Buttons */
+  .verified-dot {
+    color: #4ade80;
+    font-weight: 800;
+  }
+
+  /* Bottom CTA */
   .cta-primary {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 24px 36px;
+    padding: 22px 34px;
     border-radius: 999px;
     background: linear-gradient(135deg, #d94e00 0%, #f97316 50%, #fb923c 100%);
     border: 1.5px solid rgba(255, 210, 160, 0.5);
     box-shadow: 0 14px 36px rgba(249, 115, 22, 0.38), inset 0 2px 2px rgba(255, 255, 255, 0.35);
-    font-size: 27px;
+    font-size: 26px;
     font-weight: 800;
     color: #ffffff;
-    letter-spacing: 0.2px;
   }
-
 
   .cta-secondary {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 20px 42px;
+    width: 100%;
+    padding: 20px 32px;
     border-radius: 999px;
-    background: rgba(24, 24, 28, 0.9);
+    background: rgba(24, 24, 28, 0.92);
     border: 2px solid rgba(255, 122, 0, 0.72);
-    box-shadow: 0 0 28px rgba(255, 115, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.1);
-    font-size: 24px;
-    font-weight: 600;
+    box-shadow: 0 0 26px rgba(255, 115, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    font-size: 23px;
+    font-weight: 700;
     color: #f4f4f5;
   }
 
-
   .brand-handle {
     text-align: center;
-    margin-top: 14px;
+    margin-top: 12px;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.6px;
@@ -313,21 +369,30 @@
     <div class="ambient-glow"></div>
     <div class="ambient-glow-bottom"></div>
 
-
     <!-- Header -->
-    <div class="header layer">
-      <div class="badge-pill">{{ badge_text }}</div>
-      <div class="page-pill">{{ slide_number }} / 2</div>
+    <div class="layer">
+      <div class="header">
+        <div class="badge-pill">{{ badge_text }}</div>
+        <div class="page-pill">{{ page_label }}</div>
+      </div>
+      {% if repeat_tag or difficulty %}
+      <div class="meta-strip">
+        {% if repeat_tag %}<div class="meta-chip">🔥 {{ repeat_tag }}</div>{% endif %}
+        {% if difficulty %}<div class="meta-chip neutral">Difficulty: {{ difficulty }}</div>{% endif %}
+      </div>
+      {% endif %}
     </div>
 
-
-    {% if slide_type == "question" %}
-      <!-- Slide 1: Question + Options -->
+    {% if slide_type in ["question", "reel_question"] %}
+      <!-- Question + Hindi Translation -->
       <div class="question-block layer">
         <div class="question-text">{{ question_html | safe }}</div>
+        {% if question_hi %}
+        <div class="question-hi">{{ question_hi }}</div>
+        {% endif %}
       </div>
 
-
+      <!-- Options -->
       <div class="options-list layer">
         {% for opt in options %}
         <div class="option-card">
@@ -337,21 +402,31 @@
         {% endfor %}
       </div>
 
-
+      <!-- Footer: Timer for Reels OR Swipe CTA for Carousel -->
       <div class="layer">
+        {% if slide_type == "reel_question" %}
+        <div class="timer-wrap">
+          <div class="timer-label">
+            <span>Comment A / B / C / D fast!</span>
+            <span>⏱ {{ seconds_left }}s</span>
+          </div>
+          <div class="timer-track">
+            <div class="timer-fill" style="width: {{ progress_pct }}%;"></div>
+          </div>
+        </div>
+        {% else %}
         <div class="cta-primary">{{ cta_text }}</div>
+        {% endif %}
         {% if brand_handle %}
         <div class="brand-handle">{{ brand_handle }}</div>
         {% endif %}
       </div>
 
-
     {% else %}
-      <!-- Slide 2: Answer + Quick Revision Notes -->
+      <!-- Answer + Quick Revision Notes + Verified Source -->
       <div class="layer">
         <div class="answer-banner">✓ &nbsp;Correct Answer: {{ correct_answer }}</div>
       </div>
-
 
       <div class="bento-card layer">
         <div class="bento-title">Quick Revision Notes</div>
@@ -361,8 +436,13 @@
           <div class="note-text"><strong>{{ note.label }}:</strong> {{ note.detail }}</div>
         </div>
         {% endfor %}
+        {% if verified_source %}
+        <div class="verified-source">
+          <span class="verified-dot">✓</span>
+          <span>Verified Source: {{ verified_source }}</span>
+        </div>
+        {% endif %}
       </div>
-
 
       <div class="layer">
         <div class="cta-secondary">{{ cta_text }}</div>
