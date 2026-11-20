@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Viral Hybrid SSC CGL Auto-Publisher (@ssc1.daily) — v5
-------------------------------------------------------
+Viral Hybrid SSC CGL Auto-Publisher (@ssc1.daily) — v5.1
+--------------------------------------------------------
 Engineered for maximum 2026 Instagram discovery reach, comments & saves:
-  - Mon / Tue / Thu / Fri / Sat -> 6-second Open-Loop Exam-Paper Quiz Reel (MP4)
+  - Mon / Tue / Thu / Fri / Sat -> 6-second 9:16 (1080x1920) Open-Loop Exam-Paper Quiz Reel
       * Pattern-interrupt cream exam-paper UI + bold yellow trap highlighter
       * NO answer shown on screen -> drives 150%+ looping watch time & comments
       * Verified answer hidden below caption fold (`...more`)
-      * Pulls from `reel_pyqs.json` (high-curiosity trap PYQs), falls back to `pyqs.json`
+      * Direct Meta Resumable Upload (`rupload.facebook.com`) with `video_url` fallback
   - Wed / Sun -> 4-Slide 3-Question Mini Mock Carousel (Dark Obsidian + Orange)
       * Drives high Saves & DM Sends for revision
 
@@ -230,7 +230,6 @@ def render_viral_open_loop_reel(
     preview_path = PUBLISHED_DIR / f"reel_{qid}_preview.jpg"
     PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Normalize option letters to lowercase exam-paper style (a), (b), (c), (d)
     paper_options = [
         {"letter": opt["letter"].lower(), "text": opt["text"]}
         for opt in quiz["options"]
@@ -249,20 +248,31 @@ def render_viral_open_loop_reel(
     )
     render_html_to_image(driver, reel_html, preview_path, quality=96)
 
-    # 6-second crisp static-image-to-Reel MP4 (loops 2-3x while viewer reads & opens comments)
+    # Strict Meta Reels-compliant 9:16 (1080x1920) MP4:
+    # - Pads 1080x1350 card cleanly inside 1080x1920 safe zones with matching #fbf7ee cream
+    # - Standard H.264 Main Profile, closed GOP (30fps, keyframe every 1s), 48kHz stereo AAC, faststart
     cmd = [
         "ffmpeg",
         "-y",
         "-loop", "1",
+        "-framerate", "30",
         "-i", str(preview_path),
         "-f", "lavfi",
-        "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+        "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
         "-t", "6",
+        "-vf", "pad=1080:1920:0:285:color=#fbf7ee,format=yuv420p,fps=30",
         "-c:v", "libx264",
-        "-tune", "stillimage",
-        "-r", "30",
-        "-pix_fmt", "yuv420p",
+        "-profile:v", "main",
+        "-level", "4.0",
+        "-g", "30",
+        "-keyint_min", "30",
+        "-sc_threshold", "0",
+        "-b:v", "2500k",
+        "-maxrate", "4000k",
+        "-bufsize", "5000k",
         "-c:a", "aac",
+        "-ar", "48000",
+        "-ac", "2",
         "-b:a", "128k",
         "-shortest",
         "-movflags", "+faststart",
@@ -345,21 +355,59 @@ def ig_post(endpoint: str, payload: dict) -> dict:
     return data
 
 
-def wait_for_container(container_id: str, token: str, timeout_sec: int = 90) -> None:
+def wait_for_container(container_id: str, token: str, timeout_sec: int = 120) -> None:
     start = time.time()
     while time.time() - start < timeout_sec:
         resp = requests.get(
             f"{IG_API_BASE}/{container_id}",
-            params={"fields": "status_code", "access_token": token},
+            params={"fields": "status_code,status", "access_token": token},
             timeout=20,
         ).json()
         status = resp.get("status_code")
+        print(f"Container {container_id} status: {resp}")
         if status == "FINISHED":
             return
         if status in ("ERROR", "EXPIRED"):
             raise RuntimeError(f"Media container failed: {resp}")
         time.sleep(5)
     raise TimeoutError(f"Timed out waiting for container {container_id}")
+
+
+def upload_reel_resumable(
+    ig_user_id: str, video_file: Path, caption: str, token: str
+) -> str:
+    """Upload local MP4 directly to Meta rupload.facebook.com (bypasses GitHub raw MIME issues)."""
+    init_resp = ig_post(
+        f"{ig_user_id}/media",
+        {
+            "media_type": "REELS",
+            "upload_type": "resumable",
+            "caption": caption,
+            "share_to_feed": "true",
+            "access_token": token,
+        },
+    )
+    container_id = init_resp["id"]
+    upload_uri = init_resp.get(
+        "uri", f"https://rupload.facebook.com/ig-api-upload/v21.0/{container_id}"
+    )
+    video_bytes = video_file.read_bytes()
+    print(f"Uploading {len(video_bytes)} bytes directly to {upload_uri} ...")
+    up_resp = requests.post(
+        upload_uri,
+        headers={
+            "Authorization": f"OAuth {token}",
+            "offset": "0",
+            "file_size": str(len(video_bytes)),
+            "Content-Type": "application/octet-stream",
+        },
+        data=video_bytes,
+        timeout=90,
+    )
+    if up_resp.status_code >= 400:
+        raise RuntimeError(f"Resumable upload failed ({up_resp.status_code}): {up_resp.text}")
+    print(f"Resumable upload response: {up_resp.text}")
+    return container_id
 
 
 def publish_pending() -> None:
@@ -379,18 +427,32 @@ def publish_pending() -> None:
     raw_base = f"https://raw.githubusercontent.com/{repo}/{branch}"
 
     if pending.get("post_type") == "reel":
-        video_url = f"{raw_base}/{pending['video_rel']}"
-        print(f"Publishing 6s Viral Open-Loop Quiz Reel from: {video_url}")
-        container_id = ig_post(
-            f"{ig_user_id}/media",
-            {
-                "media_type": "REELS",
-                "video_url": video_url,
-                "caption": pending["caption"],
-                "share_to_feed": "true",
-                "access_token": token,
-            },
-        )["id"]
+        local_video = ROOT_DIR / pending["video_rel"]
+        container_id = None
+
+        # Prefer direct binary resumable upload on Facebook Login / Unified Login (EAA... tokens)
+        if not token.startswith("IG") and local_video.exists():
+            try:
+                container_id = upload_reel_resumable(
+                    ig_user_id, local_video, pending["caption"], token
+                )
+            except Exception as exc:
+                print(f"Resumable upload fallback triggered: {exc}")
+
+        if not container_id:
+            video_url = f"{raw_base}/{pending['video_rel']}"
+            print(f"Publishing 6s 9:16 Viral Quiz Reel via URL: {video_url}")
+            container_id = ig_post(
+                f"{ig_user_id}/media",
+                {
+                    "media_type": "REELS",
+                    "video_url": video_url,
+                    "caption": pending["caption"],
+                    "share_to_feed": "true",
+                    "access_token": token,
+                },
+            )["id"]
+
         wait_for_container(container_id, token)
         published = ig_post(
             f"{ig_user_id}/media_publish",
