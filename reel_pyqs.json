@@ -309,5 +309,3105 @@
     "correct_answer": "(c) RAM (Random Access Memory)",
     "verified_source": "SSC CGL Tier-2 Official PYQ • NCERT Computer Science",
     "explanation": "RAM is volatile primary memory (temporary working memory), whereas ROM, EPROM, and SSD are non-volatile and retain data without power."
+  },
+  {
+    "id": "viral_polity_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "85% Confuse President vs Governor!",
+    "question": "Who administers the Oath of Office to the Governor of an Indian State?",
+    "question_hi": "भारत में किसी राज्य के राज्यपाल को पद की शपथ कौन दिलाता है?",
+    "highlight_phrase": "Oath of Office to the Governor",
+    "options": [
+      {
+        "letter": "a",
+        "text": "President of India"
+      },
+      {
+        "letter": "b",
+        "text": "Chief Justice of India"
+      },
+      {
+        "letter": "c",
+        "text": "Chief Justice of the State High Court"
+      },
+      {
+        "letter": "d",
+        "text": "Chief Minister of the State"
+      }
+    ],
+    "correct_answer": "(c) Chief Justice of the State High Court",
+    "verified_source": "SSC CGL Official PYQ • Article 159, Constitution of India",
+    "explanation": "The Governor is appointed by the President (Art. 155), but the Oath of Office is administered by the Chief Justice of the concerned State High Court (Art. 159)."
+  },
+  {
+    "id": "viral_geo_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Classic West-Flowing River Trap!",
+    "question": "Which of the following rivers does NOT flow into the Bay of Bengal?",
+    "question_hi": "निम्नलिखित में से कौन सी नदी बंगाल की खाड़ी में नहीं गिरती है?",
+    "highlight_phrase": "NOT flow into the Bay of Bengal",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Mahanadi"
+      },
+      {
+        "letter": "b",
+        "text": "Godavari"
+      },
+      {
+        "letter": "c",
+        "text": "Narmada"
+      },
+      {
+        "letter": "d",
+        "text": "Krishna"
+      }
+    ],
+    "correct_answer": "(c) Narmada",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "Narmada and Tapi are major west-flowing peninsular rivers that flow through rift valleys into the Arabian Sea, not the Bay of Bengal."
+  },
+  {
+    "id": "viral_history_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Repeated 8x+ in SSC Exams!",
+    "question": "Who among the following was the first Governor-General of Independent India?",
+    "question_hi": "स्वतंत्र भारत के पहले गवर्नर-जनरल निम्नलिखित में से कौन थे?",
+    "highlight_phrase": "first Governor-General of Independent India",
+    "options": [
+      {
+        "letter": "a",
+        "text": "C. Rajagopalachari"
+      },
+      {
+        "letter": "b",
+        "text": "Lord Mountbatten"
+      },
+      {
+        "letter": "c",
+        "text": "Lord Wavell"
+      },
+      {
+        "letter": "d",
+        "text": "Dr. Rajendra Prasad"
+      }
+    ],
+    "correct_answer": "(b) Lord Mountbatten",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "explanation": "Lord Mountbatten was the first Governor-General of Independent India (1947–48). C. Rajagopalachari was the first INDIAN Governor-General."
+  },
+  {
+    "id": "viral_science_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "90% Mix Up Vitamin B & C!",
+    "question": "Which of the following vitamins is NOT a Fat-Soluble Vitamin?",
+    "question_hi": "निम्नलिखित में से कौन सा विटामिन वसा में घुलनशील (Fat-Soluble) नहीं है?",
+    "highlight_phrase": "NOT a Fat-Soluble Vitamin",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "b",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "c",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "d",
+        "text": "Vitamin K"
+      }
+    ],
+    "correct_answer": "(c) Vitamin C",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 12 Biology",
+    "explanation": "Vitamins A, D, E, and K are fat-soluble (memory trick: KEDA). Vitamins B-complex and C are water-soluble."
+  },
+  {
+    "id": "viral_polity_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Most Confused Constitutional Body!",
+    "question": "Which of the following is NOT a Constitutional Body in India?",
+    "question_hi": "निम्नलिखित में से कौन भारत में एक संवैधानिक निकाय (Constitutional Body) नहीं है?",
+    "highlight_phrase": "NOT a Constitutional Body",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Finance Commission"
+      },
+      {
+        "letter": "b",
+        "text": "Election Commission"
+      },
+      {
+        "letter": "c",
+        "text": "NITI Aayog"
+      },
+      {
+        "letter": "d",
+        "text": "UPSC"
+      }
+    ],
+    "correct_answer": "(c) NITI Aayog",
+    "verified_source": "SSC CGL Official PYQ • Indian Polity (NCERT)",
+    "explanation": "NITI Aayog is a non-constitutional, non-statutory executive body formed on 1 Jan 2015. Finance Commission (Art. 280), EC (Art. 324), and UPSC (Art. 315) are constitutional."
+  },
+  {
+    "id": "viral_science_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "Sound Wave Speed Trap!",
+    "question": "In which of the following mediums does Sound travel the FASTEST?",
+    "question_hi": "निम्नलिखित में से किस माध्यम में ध्वनि (Sound) सबसे तेज़ गति से चलती है?",
+    "highlight_phrase": "Sound travel the FASTEST",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Vacuum"
+      },
+      {
+        "letter": "b",
+        "text": "Air"
+      },
+      {
+        "letter": "c",
+        "text": "Water"
+      },
+      {
+        "letter": "d",
+        "text": "Steel"
+      }
+    ],
+    "correct_answer": "(d) Steel",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
+    "explanation": "Sound is a mechanical wave: it cannot travel in vacuum at all and travels fastest in solids (like Steel ~5960 m/s) > liquids > gases."
+  },
+  {
+    "id": "viral_polity_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Article 108 Joint Sitting Trap!",
+    "question": "Who presides over a Joint Sitting of both Houses of the Indian Parliament?",
+    "question_hi": "भारतीय संसद के दोनों सदनों की संयुक्त बैठक (Joint Sitting) की अध्यक्षता कौन करता है?",
+    "highlight_phrase": "presides over a Joint Sitting",
+    "options": [
+      {
+        "letter": "a",
+        "text": "President of India"
+      },
+      {
+        "letter": "b",
+        "text": "Vice-President of India"
+      },
+      {
+        "letter": "c",
+        "text": "Speaker of Lok Sabha"
+      },
+      {
+        "letter": "d",
+        "text": "Prime Minister of India"
+      }
+    ],
+    "correct_answer": "(c) Speaker of Lok Sabha",
+    "verified_source": "SSC CGL Official PYQ • Article 108 & 118(4)",
+    "explanation": "The President SUMMONS a joint sitting (Art. 108), but the Speaker of Lok Sabha PRESIDES over it (Art. 118(4))."
+  },
+  {
+    "id": "viral_history_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Battle of Plassey vs Buxar Trap!",
+    "question": "In which year was the decisive Battle of Buxar fought in India?",
+    "question_hi": "भारत में निर्णायक बक्सर का युद्ध (Battle of Buxar) किस वर्ष लड़ा गया था?",
+    "highlight_phrase": "Battle of Buxar",
+    "options": [
+      {
+        "letter": "a",
+        "text": "1757"
+      },
+      {
+        "letter": "b",
+        "text": "1761"
+      },
+      {
+        "letter": "c",
+        "text": "1764"
+      },
+      {
+        "letter": "d",
+        "text": "1765"
+      }
+    ],
+    "correct_answer": "(c) 1764",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "explanation": "Battle of Buxar was fought in 1764 (Hector Munro vs Mir Qasim, Shuja-ud-Daula & Shah Alam II). 1757 was Plassey; 1761 was 3rd Battle of Panipat."
+  },
+  {
+    "id": "viral_economy_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "RBI Monetary Policy Classic!",
+    "question": "The rate at which the RBI lends short-term funds to commercial banks is called?",
+    "question_hi": "जिस दर पर RBI वाणिज्यिक बैंकों को अल्पकालिक ऋण देता है, उसे क्या कहते हैं?",
+    "highlight_phrase": "RBI lends short-term funds",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Reverse Repo Rate"
+      },
+      {
+        "letter": "b",
+        "text": "Repo Rate"
+      },
+      {
+        "letter": "c",
+        "text": "Cash Reserve Ratio (CRR)"
+      },
+      {
+        "letter": "d",
+        "text": "Statutory Liquidity Ratio (SLR)"
+      }
+    ],
+    "correct_answer": "(b) Repo Rate",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 12 Macroeconomics",
+    "explanation": "Repo Rate = RBI lends to banks. Reverse Repo Rate = RBI borrows/absorbs liquidity from banks."
+  },
+  {
+    "id": "viral_geo_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "80% Pick Rajasthan or UP!",
+    "question": "Which Indian state shares the LONGEST international border with Bangladesh?",
+    "question_hi": "कौन सा भारतीय राज्य बांग्लादेश के साथ सबसे लंबी अंतर्राष्ट्रीय सीमा साझा करता है?",
+    "highlight_phrase": "LONGEST international border with Bangladesh",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Assam"
+      },
+      {
+        "letter": "b",
+        "text": "Tripura"
+      },
+      {
+        "letter": "c",
+        "text": "West Bengal"
+      },
+      {
+        "letter": "d",
+        "text": "Meghalaya"
+      }
+    ],
+    "correct_answer": "(c) West Bengal",
+    "verified_source": "SSC CGL Official PYQ • Ministry of Home Affairs / NCERT",
+    "explanation": "West Bengal shares ~2,216 km with Bangladesh-the longest among all 5 Indian states bordering Bangladesh (WB, TR, ML, MZ, AS)."
+  },
+  {
+    "id": "viral_science_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Everyday Kitchen Chemistry Trap!",
+    "question": "What is the chemical name of Baking Soda commonly used in cooking?",
+    "question_hi": "खाना पकाने में उपयोग होने वाले 'बेकिंग सोडा' (Baking Soda) का रासायनिक नाम क्या है?",
+    "highlight_phrase": "Baking Soda",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Sodium Carbonate"
+      },
+      {
+        "letter": "b",
+        "text": "Sodium Bicarbonate"
+      },
+      {
+        "letter": "c",
+        "text": "Sodium Hydroxide"
+      },
+      {
+        "letter": "d",
+        "text": "Calcium Carbonate"
+      }
+    ],
+    "correct_answer": "(b) Sodium Bicarbonate",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Baking Soda = Sodium Bicarbonate / Sodium Hydrogen Carbonate (NaHCO₃). Washing Soda = Sodium Carbonate (Na₂CO₃·10H₂O)."
+  },
+  {
+    "id": "viral_polity_08",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Minimum Age Trap - 25 vs 30 vs 35!",
+    "question": "What is the minimum age required to become a member of the Rajya Sabha?",
+    "question_hi": "राज्यसभा का सदस्य बनने के लिए न्यूनतम आयु कितनी होनी चाहिए?",
+    "highlight_phrase": "member of the Rajya Sabha",
+    "options": [
+      {
+        "letter": "a",
+        "text": "21 years"
+      },
+      {
+        "letter": "b",
+        "text": "25 years"
+      },
+      {
+        "letter": "c",
+        "text": "30 years"
+      },
+      {
+        "letter": "d",
+        "text": "35 years"
+      }
+    ],
+    "correct_answer": "(c) 30 years",
+    "verified_source": "SSC CGL Official PYQ • Article 84, Constitution of India",
+    "explanation": "Panchayat = 21 yrs | Lok Sabha / Vidhan Sabha = 25 yrs | Rajya Sabha / Vidhan Parishad = 30 yrs | President / Governor = 35 yrs."
+  },
+  {
+    "id": "viral_computer_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Tier-2 Qualifying Trap!",
+    "question": "Which protocol is used for sending emails across the Internet?",
+    "question_hi": "इंटरनेट पर ईमेल भेजने (Send) के लिए किस प्रोटोकॉल का उपयोग किया जाता है?",
+    "highlight_phrase": "sending emails",
+    "options": [
+      {
+        "letter": "a",
+        "text": "HTTP"
+      },
+      {
+        "letter": "b",
+        "text": "FTP"
+      },
+      {
+        "letter": "c",
+        "text": "SMTP"
+      },
+      {
+        "letter": "d",
+        "text": "POP3"
+      }
+    ],
+    "correct_answer": "(c) SMTP",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • NCERT Computer Networks",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) is used to SEND emails; POP3 and IMAP are used to RECEIVE/retrieve emails."
+  },
+  {
+    "id": "viral_static_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "Classical Dance Favorite PYQ!",
+    "question": "Sattriya is a recognized classical dance form belonging to which Indian state?",
+    "question_hi": "'सत्त्रिया' (Sattriya) किस भारतीय राज्य का शास्त्रीय नृत्य है?",
+    "highlight_phrase": "Sattriya",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Manipur"
+      },
+      {
+        "letter": "b",
+        "text": "Assam"
+      },
+      {
+        "letter": "c",
+        "text": "Odisha"
+      },
+      {
+        "letter": "d",
+        "text": "Kerala"
+      }
+    ],
+    "correct_answer": "(b) Assam",
+    "verified_source": "SSC CGL Official PYQ • Sangeet Natak Akademi",
+    "explanation": "Sattriya was introduced in the 15th century by Mahapurusha Srimanta Sankardev in Assam and recognized as a classical dance in 2000."
+  },
+  {
+    "id": "viral_science_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "Human Body Longest vs Largest Trap!",
+    "question": "Which is the LARGEST gland in the human body?",
+    "question_hi": "मानव शरीर की सबसे बड़ी ग्रंथि (Largest Gland) कौन सी है?",
+    "highlight_phrase": "LARGEST gland",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Pituitary Gland"
+      },
+      {
+        "letter": "b",
+        "text": "Thyroid Gland"
+      },
+      {
+        "letter": "c",
+        "text": "Liver"
+      },
+      {
+        "letter": "d",
+        "text": "Pancreas"
+      }
+    ],
+    "correct_answer": "(c) Liver",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Biology",
+    "explanation": "Liver is the largest gland in the human body (~1.2–1.5 kg). Thyroid is the largest ENDOCRINE gland; Pituitary is the Master Gland."
+  },
+  {
+    "id": "viral_polity_09",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Borrowed Constitution Feature Trap!",
+    "question": "The concept of 'Directive Principles of State Policy' (DPSP) was borrowed from which country?",
+    "question_hi": "भारतीय संविधान में 'राज्य के नीति निदेशक तत्व' (DPSP) किस देश से लिए गए हैं?",
+    "highlight_phrase": "Directive Principles of State Policy",
+    "options": [
+      {
+        "letter": "a",
+        "text": "USA"
+      },
+      {
+        "letter": "b",
+        "text": "United Kingdom"
+      },
+      {
+        "letter": "c",
+        "text": "Ireland"
+      },
+      {
+        "letter": "d",
+        "text": "Canada"
+      }
+    ],
+    "correct_answer": "(c) Ireland",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "explanation": "DPSP (Part IV, Art. 36–51) was borrowed from the Irish Constitution. Fundamental Rights came from the USA; Fundamental Duties from USSR."
+  },
+  {
+    "id": "viral_history_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "1905 vs 1906 vs 1907 Trap!",
+    "question": "In which session of the Indian National Congress did the famous 'Surat Split' happen?",
+    "question_hi": "भारतीय राष्ट्रीय कांग्रेस के किस अधिवेशन में प्रसिद्ध 'सूरत विभाजन' (Surat Split) हुआ था?",
+    "highlight_phrase": "Surat Split",
+    "options": [
+      {
+        "letter": "a",
+        "text": "1905 (Benaras)"
+      },
+      {
+        "letter": "b",
+        "text": "1906 (Calcutta)"
+      },
+      {
+        "letter": "c",
+        "text": "1907 (Surat)"
+      },
+      {
+        "letter": "d",
+        "text": "1916 (Lucknow)"
+      }
+    ],
+    "correct_answer": "(c) 1907 (Surat)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "explanation": "Moderates and Extremists split in 1907 at the Surat Session (presided by Rash Behari Ghosh) and reunited in 1916 (Lucknow Pact)."
+  },
+  {
+    "id": "viral_geo_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "85% Confuse Zoji La & Nathu La!",
+    "question": "Nathu La Pass connects Sikkim with which neighboring region/country?",
+    "question_hi": "'नाथू ला दर्रा' (Nathu La Pass) सिक्किम को किस पड़ोसी क्षेत्र/देश से जोड़ता है?",
+    "highlight_phrase": "Nathu La Pass",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Nepal"
+      },
+      {
+        "letter": "b",
+        "text": "Bhutan"
+      },
+      {
+        "letter": "c",
+        "text": "Tibet (China)"
+      },
+      {
+        "letter": "d",
+        "text": "Myanmar"
+      }
+    ],
+    "correct_answer": "(c) Tibet (China)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Geography",
+    "explanation": "Nathu La and Jelep La are strategic mountain passes in Sikkim connecting India with China's Tibet Autonomous Region."
+  },
+  {
+    "id": "viral_science_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "SI Unit Classic Trap!",
+    "question": "What is the SI Unit of Electrical Resistance?",
+    "question_hi": "विद्युत प्रतिरोध (Electrical Resistance) की SI इकाई क्या है?",
+    "highlight_phrase": "Electrical Resistance",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Ampere"
+      },
+      {
+        "letter": "b",
+        "text": "Volt"
+      },
+      {
+        "letter": "c",
+        "text": "Ohm"
+      },
+      {
+        "letter": "d",
+        "text": "Watt"
+      }
+    ],
+    "correct_answer": "(c) Ohm",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Resistance = Ohm (Ω) | Current = Ampere (A) | Potential Difference = Volt (V) | Power = Watt (W)."
+  },
+  {
+    "id": "viral_computer_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "1000 vs 1024 Binary Trap!",
+    "question": "How many Megabytes (MB) make 1 Gigabyte (GB) in standard binary memory?",
+    "question_hi": "मानक बाइनरी मेमोरी में 1 गीगाबाइट (GB) में कितने मेगाबाइट (MB) होते हैं?",
+    "highlight_phrase": "1 Gigabyte (GB)",
+    "options": [
+      {
+        "letter": "a",
+        "text": "1000 MB"
+      },
+      {
+        "letter": "b",
+        "text": "1024 MB"
+      },
+      {
+        "letter": "c",
+        "text": "512 MB"
+      },
+      {
+        "letter": "d",
+        "text": "2048 MB"
+      }
+    ],
+    "correct_answer": "(b) 1024 MB",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Fundamentals",
+    "explanation": "In binary computing, 1 KB = 1024 Bytes, 1 MB = 1024 KB, and 1 GB = 1024 MB (2¹⁰)."
+  },
+  {
+    "id": "viral_polity_10",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "85% Mix Up Art. 352 & 356!",
+    "question": "Which Article of the Indian Constitution deals with Financial Emergency?",
+    "question_hi": "भारतीय संविधान का कौन सा अनुच्छेद वित्तीय आपातकाल (Financial Emergency) से संबंधित है?",
+    "highlight_phrase": "Financial Emergency",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Article 352"
+      },
+      {
+        "letter": "b",
+        "text": "Article 356"
+      },
+      {
+        "letter": "c",
+        "text": "Article 360"
+      },
+      {
+        "letter": "d",
+        "text": "Article 368"
+      }
+    ],
+    "correct_answer": "(c) Article 360",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "explanation": "Art. 352 = National Emergency, Art. 356 = President's Rule, Art. 360 = Financial Emergency (never imposed in India so far)."
+  },
+  {
+    "id": "viral_polity_11",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Classic Constitutional Amendment Trap!",
+    "question": "Which Constitutional Amendment is known as the 'Mini Constitution' of India?",
+    "question_hi": "किस संविधान संशोधन को भारत का 'मिनी संविधान' (Mini Constitution) कहा जाता है?",
+    "highlight_phrase": "Mini Constitution",
+    "options": [
+      {
+        "letter": "a",
+        "text": "42nd Amendment (1976)"
+      },
+      {
+        "letter": "b",
+        "text": "44th Amendment (1978)"
+      },
+      {
+        "letter": "c",
+        "text": "73rd Amendment (1992)"
+      },
+      {
+        "letter": "d",
+        "text": "86th Amendment (2002)"
+      }
+    ],
+    "correct_answer": "(a) 42nd Amendment (1976)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "explanation": "The 42nd Amendment Act (1976) added Socialist, Secular, Integrity to the Preamble and Fundamental Duties (Part IV-A)."
+  },
+  {
+    "id": "viral_polity_12",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "90% Guess Chief Justice of India!",
+    "question": "To whom does the President of India submit his resignation letter?",
+    "question_hi": "भारत के राष्ट्रपति अपना त्यागपत्र (Resignation) किसे सौंपते हैं?",
+    "highlight_phrase": "submit his resignation",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Prime Minister of India"
+      },
+      {
+        "letter": "b",
+        "text": "Chief Justice of India"
+      },
+      {
+        "letter": "c",
+        "text": "Vice-President of India"
+      },
+      {
+        "letter": "d",
+        "text": "Speaker of Lok Sabha"
+      }
+    ],
+    "correct_answer": "(c) Vice-President of India",
+    "verified_source": "SSC CGL Official PYQ • Article 56(1)(a)",
+    "explanation": "The President submits his resignation to the Vice-President, who must immediately inform the Speaker of Lok Sabha."
+  },
+  {
+    "id": "viral_polity_13",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Tricky Voting Age Amendment!",
+    "question": "Which Amendment reduced the voting age in India from 21 years to 18 years?",
+    "question_hi": "किस संशोधन द्वारा भारत में मतदान की आयु 21 वर्ष से घटाकर 18 वर्ष कर दी गई?",
+    "highlight_phrase": "21 years to 18 years",
+    "options": [
+      {
+        "letter": "a",
+        "text": "42nd Amendment"
+      },
+      {
+        "letter": "b",
+        "text": "52nd Amendment"
+      },
+      {
+        "letter": "c",
+        "text": "61st Amendment"
+      },
+      {
+        "letter": "d",
+        "text": "73rd Amendment"
+      }
+    ],
+    "correct_answer": "(c) 61st Amendment",
+    "verified_source": "SSC CGL Official PYQ • 61st Amendment Act (1988)",
+    "explanation": "The 61st Constitutional Amendment Act (1988, effective 1989) amended Article 326 to lower the voting age from 21 to 18."
+  },
+  {
+    "id": "viral_polity_14",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "NOT Suspended Even in Emergency!",
+    "question": "Which Fundamental Rights can NEVER be suspended even during a National Emergency?",
+    "question_hi": "राष्ट्रीय आपातकाल के दौरान भी कौन से मौलिक अधिकार कभी निलंबित नहीं किए जा सकते?",
+    "highlight_phrase": "NEVER be suspended",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Articles 14 and 15"
+      },
+      {
+        "letter": "b",
+        "text": "Articles 19 and 20"
+      },
+      {
+        "letter": "c",
+        "text": "Articles 20 and 21"
+      },
+      {
+        "letter": "d",
+        "text": "Articles 21 and 22"
+      }
+    ],
+    "correct_answer": "(c) Articles 20 and 21",
+    "verified_source": "SSC CGL Official PYQ • Article 359 (44th Amendment)",
+    "explanation": "By the 44th Amendment (1978), Articles 20 (protection in conviction) and 21 (right to life) cannot be suspended during Emergency."
+  },
+  {
+    "id": "viral_polity_15",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Supreme Court Judge Age Trap!",
+    "question": "What is the retirement age of a Judge of the Supreme Court of India?",
+    "question_hi": "भारत के सर्वोच्च न्यायालय के न्यायाधीश की सेवानिवृत्ति आयु कितनी होती है?",
+    "highlight_phrase": "Judge of the Supreme Court",
+    "options": [
+      {
+        "letter": "a",
+        "text": "60 years"
+      },
+      {
+        "letter": "b",
+        "text": "62 years"
+      },
+      {
+        "letter": "c",
+        "text": "65 years"
+      },
+      {
+        "letter": "d",
+        "text": "70 years"
+      }
+    ],
+    "correct_answer": "(c) 65 years",
+    "verified_source": "SSC CGL Official PYQ • Article 124(2)",
+    "explanation": "Supreme Court Judges retire at 65 years, while High Court Judges retire at 62 years."
+  },
+  {
+    "id": "viral_polity_16",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Zero Hour Origin Trap!",
+    "question": "The parliamentary device 'Zero Hour' in India was borrowed from which country?",
+    "question_hi": "भारतीय संसद में 'शून्य काल' (Zero Hour) किस देश से लिया गया है?",
+    "highlight_phrase": "Zero Hour",
+    "options": [
+      {
+        "letter": "a",
+        "text": "United Kingdom"
+      },
+      {
+        "letter": "b",
+        "text": "USA"
+      },
+      {
+        "letter": "c",
+        "text": "Australia"
+      },
+      {
+        "letter": "d",
+        "text": "Indian Innovation (Not Borrowed)"
+      }
+    ],
+    "correct_answer": "(d) Indian Innovation (Not Borrowed)",
+    "verified_source": "SSC CGL Official PYQ • Indian Polity",
+    "explanation": "Zero Hour (immediately after Question Hour at 12 noon) is an Indian parliamentary innovation in existence since 1962."
+  },
+  {
+    "id": "viral_polity_17",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "85% Pick President!",
+    "question": "Who is the ex-officio Chairman of the Rajya Sabha?",
+    "question_hi": "राज्यसभा का पदेन सभापति (Ex-officio Chairman) कौन होता है?",
+    "highlight_phrase": "ex-officio Chairman of the Rajya Sabha",
+    "options": [
+      {
+        "letter": "a",
+        "text": "President of India"
+      },
+      {
+        "letter": "b",
+        "text": "Vice-President of India"
+      },
+      {
+        "letter": "c",
+        "text": "Prime Minister of India"
+      },
+      {
+        "letter": "d",
+        "text": "Speaker of Lok Sabha"
+      }
+    ],
+    "correct_answer": "(b) Vice-President of India",
+    "verified_source": "SSC CGL Official PYQ • Article 64",
+    "explanation": "Under Article 64, the Vice-President of India is the ex-officio Chairman of the Council of States (Rajya Sabha)."
+  },
+  {
+    "id": "viral_polity_18",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Article 17 vs 18 Confusion!",
+    "question": "Which Article of the Indian Constitution abolishes 'Untouchability'?",
+    "question_hi": "भारतीय संविधान का कौन सा अनुच्छेद 'अस्पृश्यता' (Untouchability) का अंत करता है?",
+    "highlight_phrase": "abolishes 'Untouchability'",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Article 15"
+      },
+      {
+        "letter": "b",
+        "text": "Article 16"
+      },
+      {
+        "letter": "c",
+        "text": "Article 17"
+      },
+      {
+        "letter": "d",
+        "text": "Article 18"
+      }
+    ],
+    "correct_answer": "(c) Article 17",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "explanation": "Article 17 abolishes Untouchability in any form. Article 18 abolishes Titles (except military and academic distinctions)."
+  },
+  {
+    "id": "viral_polity_19",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Finance Commission Article Trap!",
+    "question": "Under which Article does the President constitute the Finance Commission every 5 years?",
+    "question_hi": "किस अनुच्छेद के तहत राष्ट्रपति प्रत्येक 5 वर्ष में वित्त आयोग (Finance Commission) का गठन करते हैं?",
+    "highlight_phrase": "Finance Commission",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Article 263"
+      },
+      {
+        "letter": "b",
+        "text": "Article 280"
+      },
+      {
+        "letter": "c",
+        "text": "Article 315"
+      },
+      {
+        "letter": "d",
+        "text": "Article 324"
+      }
+    ],
+    "correct_answer": "(b) Article 280",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "explanation": "Article 280 provides for a Finance Commission as a quasi-judicial body to recommend tax distribution between Centre and States."
+  },
+  {
+    "id": "viral_polity_20",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Preamble Word Count Trap!",
+    "question": "Which of the following words was NOT added to the Preamble by the 42nd Amendment (1976)?",
+    "question_hi": "निम्नलिखित में से कौन सा शब्द 42वें संशोधन (1976) द्वारा प्रस्तावना में नहीं जोड़ा गया था?",
+    "highlight_phrase": "NOT added to the Preamble",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Socialist"
+      },
+      {
+        "letter": "b",
+        "text": "Secular"
+      },
+      {
+        "letter": "c",
+        "text": "Integrity"
+      },
+      {
+        "letter": "d",
+        "text": "Republic"
+      }
+    ],
+    "correct_answer": "(d) Republic",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "explanation": "'Republic' was in the original Preamble of 1950. The 42nd Amendment (1976) added only Socialist, Secular, and Integrity."
+  },
+  {
+    "id": "viral_polity_21",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Attorney General Article Check!",
+    "question": "Who is the highest law officer of the Government of India?",
+    "question_hi": "भारत सरकार का सर्वोच्च विधि अधिकारी (Highest Law Officer) कौन होता है?",
+    "highlight_phrase": "highest law officer",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Chief Justice of India"
+      },
+      {
+        "letter": "b",
+        "text": "Solicitor General of India"
+      },
+      {
+        "letter": "c",
+        "text": "Attorney General of India"
+      },
+      {
+        "letter": "d",
+        "text": "Law Minister of India"
+      }
+    ],
+    "correct_answer": "(c) Attorney General of India",
+    "verified_source": "SSC CGL Official PYQ • Article 76",
+    "explanation": "Under Article 76, the Attorney General of India is the chief legal advisor and highest law officer of the Government of India."
+  },
+  {
+    "id": "viral_polity_22",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "8th Schedule Languages Trap!",
+    "question": "How many official languages are currently listed in the 8th Schedule of the Constitution?",
+    "question_hi": "संविधान की 8वीं अनुसूची में वर्तमान में कितनी आधिकारिक भाषाएं शामिल हैं?",
+    "highlight_phrase": "8th Schedule",
+    "options": [
+      {
+        "letter": "a",
+        "text": "14 languages"
+      },
+      {
+        "letter": "b",
+        "text": "18 languages"
+      },
+      {
+        "letter": "c",
+        "text": "22 languages"
+      },
+      {
+        "letter": "d",
+        "text": "24 languages"
+      }
+    ],
+    "correct_answer": "(c) 22 languages",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "explanation": "Originally there were 14 languages in the 8th Schedule; today there are 22 (English is NOT in the 8th Schedule!)."
+  },
+  {
+    "id": "viral_polity_23",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Right to Education Article Trap!",
+    "question": "Which Article guarantees Free and Compulsory Education to children aged 6 to 14 years?",
+    "question_hi": "कौन सा अनुच्छेद 6 से 14 वर्ष के बच्चों को मुफ्त और अनिवार्य शिक्षा की गारंटी देता है?",
+    "highlight_phrase": "children aged 6 to 14 years",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Article 21"
+      },
+      {
+        "letter": "b",
+        "text": "Article 21A"
+      },
+      {
+        "letter": "c",
+        "text": "Article 45"
+      },
+      {
+        "letter": "d",
+        "text": "Article 51A"
+      }
+    ],
+    "correct_answer": "(b) Article 21A",
+    "verified_source": "SSC CGL Official PYQ • 86th Amendment Act (2002)",
+    "explanation": "Article 21A was inserted by the 86th Constitutional Amendment Act, 2002 making elementary education a Fundamental Right."
+  },
+  {
+    "id": "viral_polity_24",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "curiosity_tag": "Max Gap Between Sessions Trap!",
+    "question": "What is the MAXIMUM permissible gap between two sessions of the Indian Parliament?",
+    "question_hi": "भारतीय संसद के दो सत्रों के बीच अधिकतम अंतराल कितना हो सकता है?",
+    "highlight_phrase": "MAXIMUM permissible gap",
+    "options": [
+      {
+        "letter": "a",
+        "text": "3 months"
+      },
+      {
+        "letter": "b",
+        "text": "4 months"
+      },
+      {
+        "letter": "c",
+        "text": "6 months"
+      },
+      {
+        "letter": "d",
+        "text": "12 months"
+      }
+    ],
+    "correct_answer": "(c) 6 months",
+    "verified_source": "SSC CGL Official PYQ • Article 85(1)",
+    "explanation": "Under Article 85(1), Parliament must meet at least twice a year with no more than a 6-month gap between two sessions."
+  },
+  {
+    "id": "viral_history_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "85% Mix Up 1857 Centers!",
+    "question": "Who led the Revolt of 1857 from Lucknow (Awadh)?",
+    "question_hi": "लखनऊ (अवध) से 1857 के विद्रोह का नेतृत्व किसने किया था?",
+    "highlight_phrase": "Revolt of 1857 from Lucknow",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Rani Lakshmibai"
+      },
+      {
+        "letter": "b",
+        "text": "Begum Hazrat Mahal"
+      },
+      {
+        "letter": "c",
+        "text": "Nana Saheb"
+      },
+      {
+        "letter": "d",
+        "text": "Kunwar Singh"
+      }
+    ],
+    "correct_answer": "(b) Begum Hazrat Mahal",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "explanation": "Begum Hazrat Mahal led at Lucknow; Nana Saheb at Kanpur; Kunwar Singh at Jagdishpur (Bihar); Rani Lakshmibai at Jhansi."
+  },
+  {
+    "id": "viral_history_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Buddhist Council Location Trap!",
+    "question": "Where was the First Buddhist Council held immediately after Buddha's Mahaparinirvana?",
+    "question_hi": "बुद्ध के महापरिनिर्वाण के तुरंत बाद प्रथम बौद्ध संगीति कहाँ आयोजित की गई थी?",
+    "highlight_phrase": "First Buddhist Council",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Vaishali"
+      },
+      {
+        "letter": "b",
+        "text": "Pataliputra"
+      },
+      {
+        "letter": "c",
+        "text": "Rajagriha"
+      },
+      {
+        "letter": "d",
+        "text": "Kashmir"
+      }
+    ],
+    "correct_answer": "(c) Rajagriha",
+    "verified_source": "SSC CGL Official PYQ • NCERT Ancient History",
+    "explanation": "1st = Rajagriha (Ajatashatru) | 2nd = Vaishali (Kalasoka) | 3rd = Pataliputra (Ashoka) | 4th = Kashmir (Kanishka)."
+  },
+  {
+    "id": "viral_history_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Permanent Settlement Governor Trap!",
+    "question": "Who introduced the Permanent Settlement (Zamindari System) in Bengal in 1793?",
+    "question_hi": "1793 में बंगाल में स्थायी बंदोबस्त (Permanent Settlement) किसने लागू किया था?",
+    "highlight_phrase": "Permanent Settlement",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Warren Hastings"
+      },
+      {
+        "letter": "b",
+        "text": "Lord Cornwallis"
+      },
+      {
+        "letter": "c",
+        "text": "Lord Wellesley"
+      },
+      {
+        "letter": "d",
+        "text": "Lord Dalhousie"
+      }
+    ],
+    "correct_answer": "(b) Lord Cornwallis",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "explanation": "Lord Cornwallis introduced Permanent Settlement in 1793 in Bengal, Bihar, and Odisha. Lord Dalhousie introduced Doctrine of Lapse."
+  },
+  {
+    "id": "viral_history_08",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Repeated 7x+ in SSC CGL!",
+    "question": "Who was the founder of the 'Brahmo Samaj' in 1828?",
+    "question_hi": "1828 में 'ब्रह्म समाज' (Brahmo Samaj) की स्थापना किसने की थी?",
+    "highlight_phrase": "Brahmo Samaj",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Swami Dayananda Saraswati"
+      },
+      {
+        "letter": "b",
+        "text": "Raja Ram Mohan Roy"
+      },
+      {
+        "letter": "c",
+        "text": "Swami Vivekananda"
+      },
+      {
+        "letter": "d",
+        "text": "Ishwar Chandra Vidyasagar"
+      }
+    ],
+    "correct_answer": "(b) Raja Ram Mohan Roy",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "explanation": "Raja Ram Mohan Roy founded Brahmo Samaj (1828). Swami Dayananda Saraswati founded Arya Samaj (1875)."
+  },
+  {
+    "id": "viral_history_09",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Delhi Sultanate Chronology Trap!",
+    "question": "Which dynasty ruled Delhi IMMEDIATELY AFTER the Khilji Dynasty?",
+    "question_hi": "खिलजी वंश के ठीक बाद दिल्ली पर किस वंश ने शासन किया?",
+    "highlight_phrase": "IMMEDIATELY AFTER the Khilji Dynasty",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Slave Dynasty"
+      },
+      {
+        "letter": "b",
+        "text": "Tughlaq Dynasty"
+      },
+      {
+        "letter": "c",
+        "text": "Sayyid Dynasty"
+      },
+      {
+        "letter": "d",
+        "text": "Lodi Dynasty"
+      }
+    ],
+    "correct_answer": "(b) Tughlaq Dynasty",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 7 History",
+    "explanation": "Delhi Sultanate order: Slave -> Khilji -> Tughlaq -> Sayyid -> Lodi (1206 to 1526)."
+  },
+  {
+    "id": "viral_history_10",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Harappan Dockyard Classic!",
+    "question": "Which Indus Valley Civilization site is famous for having the world's earliest tidal dockyard?",
+    "question_hi": "कौन सा सिंधु घाटी सभ्यता स्थल अपने प्राचीन बंदरगाह (Dockyard) के लिए प्रसिद्ध है?",
+    "highlight_phrase": "earliest tidal dockyard",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Harappa"
+      },
+      {
+        "letter": "b",
+        "text": "Mohenjo-daro"
+      },
+      {
+        "letter": "c",
+        "text": "Lothal"
+      },
+      {
+        "letter": "d",
+        "text": "Kalibangan"
+      }
+    ],
+    "correct_answer": "(c) Lothal",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 12 History",
+    "explanation": "Lothal (in Gujarat, on Bhogava river) had a brick-built tidal dockyard. Kalibangan is famous for ploughed field evidence."
+  },
+  {
+    "id": "viral_history_11",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "INC First Woman President Trap!",
+    "question": "Who was the FIRST WOMAN President of the Indian National Congress?",
+    "question_hi": "भारतीय राष्ट्रीय कांग्रेस की पहली महिला अध्यक्ष कौन थीं?",
+    "highlight_phrase": "FIRST WOMAN President",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Sarojini Naidu"
+      },
+      {
+        "letter": "b",
+        "text": "Annie Besant"
+      },
+      {
+        "letter": "c",
+        "text": "Sucheta Kripalani"
+      },
+      {
+        "letter": "d",
+        "text": "Nellie Sengupta"
+      }
+    ],
+    "correct_answer": "(b) Annie Besant",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "explanation": "Annie Besant was the first woman INC President (Calcutta, 1917). Sarojini Naidu was the first INDIAN woman President (Kanpur, 1925)."
+  },
+  {
+    "id": "viral_history_12",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Ashoka's Kalinga War Year Trap!",
+    "question": "In which year was the Kalinga War fought by Emperor Ashoka?",
+    "question_hi": "सम्राट अशोक द्वारा कलिंग युद्ध किस वर्ष लड़ा गया था?",
+    "highlight_phrase": "Kalinga War",
+    "options": [
+      {
+        "letter": "a",
+        "text": "273 BCE"
+      },
+      {
+        "letter": "b",
+        "text": "261 BCE"
+      },
+      {
+        "letter": "c",
+        "text": "250 BCE"
+      },
+      {
+        "letter": "d",
+        "text": "232 BCE"
+      }
+    ],
+    "correct_answer": "(b) 261 BCE",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 History",
+    "explanation": "Ashoka fought the Kalinga War in 261 BCE (8th year of his reign), described in his 13th Major Rock Edict."
+  },
+  {
+    "id": "viral_history_13",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Partition of Bengal Viceroy Trap!",
+    "question": "Who was the Viceroy of India during the Partition of Bengal in 1905?",
+    "question_hi": "1905 में बंगाल विभाजन के समय भारत का वायसराय कौन था?",
+    "highlight_phrase": "Partition of Bengal in 1905",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Lord Ripon"
+      },
+      {
+        "letter": "b",
+        "text": "Lord Curzon"
+      },
+      {
+        "letter": "c",
+        "text": "Lord Minto"
+      },
+      {
+        "letter": "d",
+        "text": "Lord Hardinge"
+      }
+    ],
+    "correct_answer": "(b) Lord Curzon",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "explanation": "Lord Curzon announced the Partition of Bengal (effective 16 Oct 1905). Lord Hardinge II annulled it in 1911."
+  },
+  {
+    "id": "viral_history_14",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Chauri Chaura Movement Trap!",
+    "question": "Which movement was abruptly called off by Mahatma Gandhi after the Chauri Chaura incident (1922)?",
+    "question_hi": "चौरी-चौरा कांड (1922) के बाद महात्मा गांधी ने कौन सा आंदोलन वापस ले लिया था?",
+    "highlight_phrase": "Chauri Chaura incident",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Civil Disobedience Movement"
+      },
+      {
+        "letter": "b",
+        "text": "Non-Cooperation Movement"
+      },
+      {
+        "letter": "c",
+        "text": "Quit India Movement"
+      },
+      {
+        "letter": "d",
+        "text": "Khilafat Movement"
+      }
+    ],
+    "correct_answer": "(b) Non-Cooperation Movement",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 History",
+    "explanation": "After a violent mob set fire to a police station at Chauri Chaura (Gorakhpur, Feb 1922), Gandhi withdrew the Non-Cooperation Movement."
+  },
+  {
+    "id": "viral_history_15",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Mughal Architecture Trap!",
+    "question": "Who built the famous Buland Darwaza at Fatehpur Sikri?",
+    "question_hi": "फतेहपुर सीकरी में प्रसिद्ध 'बुलंद दरवाजा' किसने बनवाया था?",
+    "highlight_phrase": "Buland Darwaza",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Humayun"
+      },
+      {
+        "letter": "b",
+        "text": "Akbar"
+      },
+      {
+        "letter": "c",
+        "text": "Jahangir"
+      },
+      {
+        "letter": "d",
+        "text": "Shah Jahan"
+      }
+    ],
+    "correct_answer": "(b) Akbar",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 7 History",
+    "explanation": "Emperor Akbar built the Buland Darwaza (Gate of Victory) to commemorate his victory over Gujarat."
+  },
+  {
+    "id": "viral_history_16",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Book & Author Classic PYQ!",
+    "question": "Who wrote the ancient treatise 'Arthashastra' on statecraft and economics?",
+    "question_hi": "राजनीति और अर्थशास्त्र पर प्रसिद्ध प्राचीन ग्रंथ 'अर्थशास्त्र' किसने लिखा था?",
+    "highlight_phrase": "Arthashastra",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Megasthenes"
+      },
+      {
+        "letter": "b",
+        "text": "Kautilya (Chanakya)"
+      },
+      {
+        "letter": "c",
+        "text": "Kalidasa"
+      },
+      {
+        "letter": "d",
+        "text": "Banabhatta"
+      }
+    ],
+    "correct_answer": "(b) Kautilya (Chanakya)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Ancient History",
+    "explanation": "Kautilya (also known as Chanakya / Vishnugupta) wrote Arthashastra. Megasthenes wrote 'Indica'."
+  },
+  {
+    "id": "viral_history_17",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "curiosity_tag": "Dandi March Start Date Trap!",
+    "question": "From which place did Mahatma Gandhi begin the historic Dandi March (Salt Satyagraha) in 1930?",
+    "question_hi": "1930 में महात्मा गांधी ने ऐतिहासिक दांडी मार्च (नमक सत्याग्रह) किस स्थान से शुरू किया था?",
+    "highlight_phrase": "begin the historic Dandi March",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Champaran"
+      },
+      {
+        "letter": "b",
+        "text": "Sabarmati Ashram"
+      },
+      {
+        "letter": "c",
+        "text": "Wardha"
+      },
+      {
+        "letter": "d",
+        "text": "Porbandar"
+      }
+    ],
+    "correct_answer": "(b) Sabarmati Ashram",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 History",
+    "explanation": "Gandhi began the 240-mile march from Sabarmati Ashram (Ahmedabad) on 12 March 1930 and reached Dandi on 6 April 1930."
+  },
+  {
+    "id": "viral_geo_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "85% Confuse K2 & Kanchenjunga!",
+    "question": "Which is the highest mountain peak located WHOLLY inside India?",
+    "question_hi": "पूर्ण रूप से भारत के अंदर स्थित सबसे ऊँची पर्वत चोटी कौन सी है?",
+    "highlight_phrase": "WHOLLY inside India",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Mount Everest"
+      },
+      {
+        "letter": "b",
+        "text": "K2 (Godwin-Austen)"
+      },
+      {
+        "letter": "c",
+        "text": "Nanda Devi"
+      },
+      {
+        "letter": "d",
+        "text": "Kanchenjunga"
+      }
+    ],
+    "correct_answer": "(c) Nanda Devi",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "Kanchenjunga lies on the India-Nepal border and K2 is in PoK. Nanda Devi (7,816 m, Uttarakhand) is the highest peak wholly inside India."
+  },
+  {
+    "id": "viral_geo_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Longest River vs Largest Basin!",
+    "question": "Which is the longest Peninsular (South Indian) river of India?",
+    "question_hi": "भारत की सबसे लंबी प्रायद्वीपीय (दक्षिण भारतीय) नदी कौन सी है?",
+    "highlight_phrase": "longest Peninsular",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Krishna"
+      },
+      {
+        "letter": "b",
+        "text": "Godavari"
+      },
+      {
+        "letter": "c",
+        "text": "Kaveri"
+      },
+      {
+        "letter": "d",
+        "text": "Narmada"
+      }
+    ],
+    "correct_answer": "(b) Godavari",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "Godavari (~1,465 km, rising at Trimbakeshwar, Maharashtra) is the longest peninsular river and is called 'Dakshin Ganga'."
+  },
+  {
+    "id": "viral_geo_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "IST Meridian Longitude Trap!",
+    "question": "Which longitude is taken as the Standard Meridian of India (IST)?",
+    "question_hi": "किस देशांतर रेखा को भारत का मानक समय याम्योत्तर (IST) माना जाता है?",
+    "highlight_phrase": "Standard Meridian of India",
+    "options": [
+      {
+        "letter": "a",
+        "text": "80°30' E"
+      },
+      {
+        "letter": "b",
+        "text": "82°30' E"
+      },
+      {
+        "letter": "c",
+        "text": "85°30' E"
+      },
+      {
+        "letter": "d",
+        "text": "78°30' E"
+      }
+    ],
+    "correct_answer": "(b) 82°30' E",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "82°30' E passes through Mirzapur (UP) and crosses 5 states: UP, MP, Chhattisgarh, Odisha, and Andhra Pradesh."
+  },
+  {
+    "id": "viral_geo_08",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Atmosphere Layer Ozone Trap!",
+    "question": "In which layer of Earth's atmosphere is the Ozone Layer primarily located?",
+    "question_hi": "पृथ्वी के वायुमंडल की किस परत में ओजोन परत (Ozone Layer) मुख्य रूप से स्थित है?",
+    "highlight_phrase": "Ozone Layer",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Troposphere"
+      },
+      {
+        "letter": "b",
+        "text": "Stratosphere"
+      },
+      {
+        "letter": "c",
+        "text": "Mesosphere"
+      },
+      {
+        "letter": "d",
+        "text": "Thermosphere"
+      }
+    ],
+    "correct_answer": "(b) Stratosphere",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Geography",
+    "explanation": "About 90% of atmospheric ozone lies in the Stratosphere (~15-35 km altitude), absorbing harmful UV radiation."
+  },
+  {
+    "id": "viral_geo_09",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Largest Freshwater Lake Trap!",
+    "question": "Which is the LARGEST freshwater lake in India?",
+    "question_hi": "भारत की सबसे बड़ी मीठे पानी की झील (Freshwater Lake) कौन सी है?",
+    "highlight_phrase": "LARGEST freshwater lake",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Chilika Lake"
+      },
+      {
+        "letter": "b",
+        "text": "Dal Lake"
+      },
+      {
+        "letter": "c",
+        "text": "Wular Lake"
+      },
+      {
+        "letter": "d",
+        "text": "Loktak Lake"
+      }
+    ],
+    "correct_answer": "(c) Wular Lake",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "explanation": "Wular Lake (Jammu & Kashmir, tectonic origin) is India's largest freshwater lake. Chilika Lake (Odisha) is the largest brackish/saltwater lagoon."
+  },
+  {
+    "id": "viral_geo_10",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Only Active Volcano in India!",
+    "question": "Where is India's ONLY active volcano located?",
+    "question_hi": "भारत का एकमात्र सक्रिय ज्वालामुखी (Active Volcano) कहाँ स्थित है?",
+    "highlight_phrase": "ONLY active volcano",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Lakshadweep Islands"
+      },
+      {
+        "letter": "b",
+        "text": "Barren Island (Andaman)"
+      },
+      {
+        "letter": "c",
+        "text": "Narcondam Island"
+      },
+      {
+        "letter": "d",
+        "text": "Minicoy Island"
+      }
+    ],
+    "correct_answer": "(b) Barren Island (Andaman)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Geography",
+    "explanation": "Barren Island in the Andaman Sea is the only confirmed active volcano in South Asia. Narcondam is dormant."
+  },
+  {
+    "id": "viral_geo_11",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Black Soil Cotton Trap!",
+    "question": "Which type of soil is also known as 'Regur Soil' and is ideal for growing cotton?",
+    "question_hi": "किस मिट्टी को 'रेगुर मिट्टी' (Regur Soil) भी कहा जाता है और जो कपास की खेती के लिए सर्वोत्तम है?",
+    "highlight_phrase": "Regur Soil",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Alluvial Soil"
+      },
+      {
+        "letter": "b",
+        "text": "Red Soil"
+      },
+      {
+        "letter": "c",
+        "text": "Black Soil"
+      },
+      {
+        "letter": "d",
+        "text": "Laterite Soil"
+      }
+    ],
+    "correct_answer": "(c) Black Soil",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Geography",
+    "explanation": "Black Soil (Regur / Black Cotton Soil) is formed from Deccan Trap lava rocks and retains moisture exceptionally well."
+  },
+  {
+    "id": "viral_geo_12",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Planet Rotation Direction Trap!",
+    "question": "Which planet in our Solar System rotates from EAST to WEST (clockwise)?",
+    "question_hi": "सौरमंडल का कौन सा ग्रह पूर्व से पश्चिम (East to West) दिशा में घूमता है?",
+    "highlight_phrase": "rotates from EAST to WEST",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Mars"
+      },
+      {
+        "letter": "b",
+        "text": "Jupiter"
+      },
+      {
+        "letter": "c",
+        "text": "Venus"
+      },
+      {
+        "letter": "d",
+        "text": "Saturn"
+      }
+    ],
+    "correct_answer": "(c) Venus",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 Geography",
+    "explanation": "Venus and Uranus are the only two planets that rotate clockwise (East to West); all other planets rotate West to East."
+  },
+  {
+    "id": "viral_geo_13",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "National Park State Trap!",
+    "question": "Keibul Lamjao, the world's ONLY floating National Park, is located in which state?",
+    "question_hi": "विश्व का एकमात्र तैरता हुआ राष्ट्रीय उद्यान 'केबुल लामजाओ' किस राज्य में स्थित है?",
+    "highlight_phrase": "ONLY floating National Park",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Assam"
+      },
+      {
+        "letter": "b",
+        "text": "Manipur"
+      },
+      {
+        "letter": "c",
+        "text": "Mizoram"
+      },
+      {
+        "letter": "d",
+        "text": "Meghalaya"
+      }
+    ],
+    "correct_answer": "(b) Manipur",
+    "verified_source": "SSC CGL Official PYQ • NCERT Geography / Static GK",
+    "explanation": "Keibul Lamjao National Park is on Loktak Lake in Manipur and is the last natural habitat of the Sangai (dancing deer)."
+  },
+  {
+    "id": "viral_geo_14",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Sorrow of Bihar vs Bengal!",
+    "question": "Which river is famously known as the 'Sorrow of Bihar' due to frequent course shifts?",
+    "question_hi": "बार-बार मार्ग बदलने के कारण किस नदी को 'बिहार का शोक' (Sorrow of Bihar) कहा जाता है?",
+    "highlight_phrase": "Sorrow of Bihar",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Damodar"
+      },
+      {
+        "letter": "b",
+        "text": "Kosi"
+      },
+      {
+        "letter": "c",
+        "text": "Son"
+      },
+      {
+        "letter": "d",
+        "text": "Gandak"
+      }
+    ],
+    "correct_answer": "(b) Kosi",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Geography",
+    "explanation": "Kosi is the 'Sorrow of Bihar'. Damodar was historically called the 'Sorrow of Bengal'."
+  },
+  {
+    "id": "viral_geo_15",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Ten Degree Channel Trap!",
+    "question": "The 'Ten Degree Channel' separates which two island groups?",
+    "question_hi": "'टेन डिग्री चैनल' (Ten Degree Channel) किन दो द्वीप समूहों को अलग करता है?",
+    "highlight_phrase": "Ten Degree Channel",
+    "options": [
+      {
+        "letter": "a",
+        "text": "India and Sri Lanka"
+      },
+      {
+        "letter": "b",
+        "text": "Andaman and Nicobar Islands"
+      },
+      {
+        "letter": "c",
+        "text": "Minicoy and Maldives"
+      },
+      {
+        "letter": "d",
+        "text": "Lakshadweep and Minicoy"
+      }
+    ],
+    "correct_answer": "(b) Andaman and Nicobar Islands",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Geography",
+    "explanation": "10° Channel separates Little Andaman from Car Nicobar. 8° Channel separates Minicoy from Maldives; 9° separates Minicoy from Lakshadweep."
+  },
+  {
+    "id": "viral_geo_16",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "curiosity_tag": "Coastline Length Trap!",
+    "question": "Which Indian state has the LONGEST coastline?",
+    "question_hi": "भारत के किस राज्य की तटरेखा (Coastline) सबसे लंबी है?",
+    "highlight_phrase": "LONGEST coastline",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Maharashtra"
+      },
+      {
+        "letter": "b",
+        "text": "Tamil Nadu"
+      },
+      {
+        "letter": "c",
+        "text": "Gujarat"
+      },
+      {
+        "letter": "d",
+        "text": "Andhra Pradesh"
+      }
+    ],
+    "correct_answer": "(c) Gujarat",
+    "verified_source": "SSC CGL Official PYQ • NCERT Geography",
+    "explanation": "Gujarat has the longest coastline among Indian states (~1,214 km), followed by Andhra Pradesh and Tamil Nadu."
+  },
+  {
+    "id": "viral_science_08",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "Powerhouse vs Suicidal Bag Trap!",
+    "question": "Which cell organelle is called the 'Suicidal Bag' of the cell?",
+    "question_hi": "किस कोशिकांग (Cell Organelle) को कोशिका की 'आत्मघाती थैली' (Suicidal Bag) कहा जाता है?",
+    "highlight_phrase": "Suicidal Bag",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Mitochondria"
+      },
+      {
+        "letter": "b",
+        "text": "Ribosome"
+      },
+      {
+        "letter": "c",
+        "text": "Lysosome"
+      },
+      {
+        "letter": "d",
+        "text": "Golgi Apparatus"
+      }
+    ],
+    "correct_answer": "(c) Lysosome",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
+    "explanation": "Lysosomes contain digestive enzymes that can digest damaged cells. Mitochondria = Powerhouse; Ribosome = Protein factory."
+  },
+  {
+    "id": "viral_science_09",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Liquid Metal vs Non-Metal Trap!",
+    "question": "Which of the following NON-METALS is liquid at room temperature?",
+    "question_hi": "निम्नलिखित में से कौन सी अधातु (Non-Metal) कमरे के तापमान पर द्रव (Liquid) अवस्था में रहती है?",
+    "highlight_phrase": "NON-METALS is liquid",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Mercury"
+      },
+      {
+        "letter": "b",
+        "text": "Bromine"
+      },
+      {
+        "letter": "c",
+        "text": "Gallium"
+      },
+      {
+        "letter": "d",
+        "text": "Iodine"
+      }
+    ],
+    "correct_answer": "(b) Bromine",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Bromine is the only NON-METAL liquid at room temperature. Mercury is the only METAL liquid at room temperature!"
+  },
+  {
+    "id": "viral_science_10",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "Mirror Used in Car Headlights!",
+    "question": "Which type of mirror is used as a REAR-VIEW mirror in vehicles?",
+    "question_hi": "वाहनों में पीछे का दृश्य देखने (Rear-View Mirror) के लिए किस दर्पण का उपयोग किया जाता है?",
+    "highlight_phrase": "REAR-VIEW mirror",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Concave Mirror"
+      },
+      {
+        "letter": "b",
+        "text": "Convex Mirror"
+      },
+      {
+        "letter": "c",
+        "text": "Plane Mirror"
+      },
+      {
+        "letter": "d",
+        "text": "Cylindrical Mirror"
+      }
+    ],
+    "correct_answer": "(b) Convex Mirror",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Convex mirrors always form erect, diminished images with a wider field of view. Concave mirrors are used in headlights and dentist mirrors."
+  },
+  {
+    "id": "viral_science_11",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "85% Mix Up Rickets & Scurvy!",
+    "question": "Deficiency of Vitamin D in children causes which disease?",
+    "question_hi": "बच्चों में विटामिन D की कमी से कौन सा रोग होता है?",
+    "highlight_phrase": "Deficiency of Vitamin D",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Scurvy"
+      },
+      {
+        "letter": "b",
+        "text": "Beriberi"
+      },
+      {
+        "letter": "c",
+        "text": "Rickets"
+      },
+      {
+        "letter": "d",
+        "text": "Night Blindness"
+      }
+    ],
+    "correct_answer": "(c) Rickets",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 Science",
+    "explanation": "Vit A = Night Blindness | Vit B1 = Beriberi | Vit C = Scurvy | Vit D = Rickets (soft/bent bones)."
+  },
+  {
+    "id": "viral_science_12",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "pH Value of Human Blood Trap!",
+    "question": "What is the normal pH value of human blood?",
+    "question_hi": "मानव रक्त (Human Blood) का सामान्य pH मान कितना होता है?",
+    "highlight_phrase": "pH value of human blood",
+    "options": [
+      {
+        "letter": "a",
+        "text": "6.4 (Slightly Acidic)"
+      },
+      {
+        "letter": "b",
+        "text": "7.0 (Neutral)"
+      },
+      {
+        "letter": "c",
+        "text": "7.4 (Slightly Basic)"
+      },
+      {
+        "letter": "d",
+        "text": "8.4 (Basic)"
+      }
+    ],
+    "correct_answer": "(c) 7.4 (Slightly Basic)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Human blood is slightly alkaline/basic with a tightly regulated pH between 7.35 and 7.45."
+  },
+  {
+    "id": "viral_science_13",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "Light Year Unit Trap!",
+    "question": "A 'Light Year' is a unit used to measure which physical quantity?",
+    "question_hi": "'प्रकाश वर्ष' (Light Year) किस भौतिक राशि को मापने की इकाई है?",
+    "highlight_phrase": "Light Year",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Time"
+      },
+      {
+        "letter": "b",
+        "text": "Speed of Light"
+      },
+      {
+        "letter": "c",
+        "text": "Astronomical Distance"
+      },
+      {
+        "letter": "d",
+        "text": "Intensity of Light"
+      }
+    ],
+    "correct_answer": "(c) Astronomical Distance",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Physics",
+    "explanation": "Despite having 'year' in its name, a Light Year measures DISTANCE (distance light travels in vacuum in 1 year ~ 9.46 x 10^12 km)."
+  },
+  {
+    "id": "viral_science_14",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Hardest Natural Substance Trap!",
+    "question": "Which allotrope of Carbon is a GOOD conductor of electricity?",
+    "question_hi": "कार्बन का कौन सा अपरूप (Allotrope) विद्युत का सुचालक (Good Conductor) है?",
+    "highlight_phrase": "GOOD conductor of electricity",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Diamond"
+      },
+      {
+        "letter": "b",
+        "text": "Graphite"
+      },
+      {
+        "letter": "c",
+        "text": "Fullerene"
+      },
+      {
+        "letter": "d",
+        "text": "Coal"
+      }
+    ],
+    "correct_answer": "(b) Graphite",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Graphite has free delocalized electrons between its hexagonal layers, making it a good conductor. Diamond is an insulator."
+  },
+  {
+    "id": "viral_science_15",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "Xylem vs Phloem Trap!",
+    "question": "Which plant tissue is responsible for transporting WATER from roots to leaves?",
+    "question_hi": "पौधों में जड़ों से पत्तियों तक जल (Water) ले जाने के लिए कौन सा ऊतक जिम्मेदार है?",
+    "highlight_phrase": "transporting WATER",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Phloem"
+      },
+      {
+        "letter": "b",
+        "text": "Xylem"
+      },
+      {
+        "letter": "c",
+        "text": "Parenchyma"
+      },
+      {
+        "letter": "d",
+        "text": "Collenchyma"
+      }
+    ],
+    "correct_answer": "(b) Xylem",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
+    "explanation": "Xylem transports Water & minerals upward (memory trick: Xylem = Jal). Phloem transports Food (Phloem = Food)."
+  },
+  {
+    "id": "viral_science_16",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Laughing Gas Formula Trap!",
+    "question": "Which gas is commonly known as 'Laughing Gas'?",
+    "question_hi": "किस गैस को सामान्यतः 'हँसाने वाली गैस' (Laughing Gas) कहा जाता है?",
+    "highlight_phrase": "Laughing Gas",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Nitric Oxide (NO)"
+      },
+      {
+        "letter": "b",
+        "text": "Nitrous Oxide (N2O)"
+      },
+      {
+        "letter": "c",
+        "text": "Nitrogen Dioxide (NO2)"
+      },
+      {
+        "letter": "d",
+        "text": "Ammonia (NH3)"
+      }
+    ],
+    "correct_answer": "(b) Nitrous Oxide (N2O)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Chemistry",
+    "explanation": "Nitrous Oxide (N2O) is Laughing Gas, used in dentistry/anesthesia."
+  },
+  {
+    "id": "viral_science_17",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "Myopia Lens Correction Trap!",
+    "question": "Which type of lens is used to correct Myopia (Near-Sightedness)?",
+    "question_hi": "निकट दृष्टि दोष (Myopia) को ठीक करने के लिए किस लेंस का उपयोग किया जाता है?",
+    "highlight_phrase": "correct Myopia",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Convex Lens"
+      },
+      {
+        "letter": "b",
+        "text": "Concave Lens"
+      },
+      {
+        "letter": "c",
+        "text": "Bifocal Lens"
+      },
+      {
+        "letter": "d",
+        "text": "Cylindrical Lens"
+      }
+    ],
+    "correct_answer": "(b) Concave Lens",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Myopia (cannot see far objects) -> Concave lens. Hypermetropia (cannot see near objects) -> Convex lens."
+  },
+  {
+    "id": "viral_science_18",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "Insulin Hormone Organ Trap!",
+    "question": "Which organ in the human body secretes the hormone Insulin?",
+    "question_hi": "मानव शरीर का कौन सा अंग 'इंसुलिन' (Insulin) हार्मोन का स्राव करता है?",
+    "highlight_phrase": "secretes the hormone Insulin",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Liver"
+      },
+      {
+        "letter": "b",
+        "text": "Kidney"
+      },
+      {
+        "letter": "c",
+        "text": "Pancreas"
+      },
+      {
+        "letter": "d",
+        "text": "Thyroid"
+      }
+    ],
+    "correct_answer": "(c) Pancreas",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Beta cells of the Islets of Langerhans in the Pancreas secrete Insulin, which regulates blood sugar levels."
+  },
+  {
+    "id": "viral_science_19",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Acid Found in Ant Sting Trap!",
+    "question": "Which acid is injected into the skin by an Ant Sting?",
+    "question_hi": "चींटी के डंक (Ant Sting) में कौन सा अम्ल पाया जाता है?",
+    "highlight_phrase": "Ant Sting",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Acetic Acid"
+      },
+      {
+        "letter": "b",
+        "text": "Citric Acid"
+      },
+      {
+        "letter": "c",
+        "text": "Formic Acid (Methanoic Acid)"
+      },
+      {
+        "letter": "d",
+        "text": "Oxalic Acid"
+      }
+    ],
+    "correct_answer": "(c) Formic Acid (Methanoic Acid)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "Ant sting and nettle leaves contain Formic / Methanoic Acid (HCOOH). Vinegar = Acetic Acid; Tomato = Oxalic Acid."
+  },
+  {
+    "id": "viral_science_20",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "curiosity_tag": "Fuse Wire Property Trap!",
+    "question": "An electric fuse wire must have which of the following properties?",
+    "question_hi": "विद्युत फ्यूज के तार (Electric Fuse Wire) में निम्नलिखित में से कौन सा गुण होना चाहिए?",
+    "highlight_phrase": "electric fuse wire",
+    "options": [
+      {
+        "letter": "a",
+        "text": "High resistance and High melting point"
+      },
+      {
+        "letter": "b",
+        "text": "Low resistance and High melting point"
+      },
+      {
+        "letter": "c",
+        "text": "High resistance and Low melting point"
+      },
+      {
+        "letter": "d",
+        "text": "Low resistance and Low melting point"
+      }
+    ],
+    "correct_answer": "(c) High resistance and Low melting point",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "explanation": "A fuse wire (tin-lead alloy) has high resistance and low melting point so it melts quickly during overload/short-circuit."
+  },
+  {
+    "id": "viral_science_21",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "curiosity_tag": "Blood Clotting Vitamin Trap!",
+    "question": "Which vitamin is essential for normal Blood Clotting in humans?",
+    "question_hi": "मनुष्यों में रक्त का थक्का (Blood Clotting) जमने के लिए कौन सा विटामिन आवश्यक है?",
+    "highlight_phrase": "Blood Clotting",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "b",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "c",
+        "text": "Vitamin E"
+      },
+      {
+        "letter": "d",
+        "text": "Vitamin K"
+      }
+    ],
+    "correct_answer": "(d) Vitamin K",
+    "verified_source": "SSC CGL Official PYQ • NCERT Biology",
+    "explanation": "Vitamin K (Phylloquinone) helps synthesize prothrombin needed for blood clotting."
+  },
+  {
+    "id": "viral_science_22",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "curiosity_tag": "Dry Ice Chemical Name Trap!",
+    "question": "What is 'Dry Ice' chemically composed of?",
+    "question_hi": "'शुष्क बर्फ' (Dry Ice) रासायनिक रूप से क्या होती है?",
+    "highlight_phrase": "Dry Ice",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Frozen Water"
+      },
+      {
+        "letter": "b",
+        "text": "Solid Carbon Dioxide"
+      },
+      {
+        "letter": "c",
+        "text": "Solid Nitrogen"
+      },
+      {
+        "letter": "d",
+        "text": "Solid Ammonia"
+      }
+    ],
+    "correct_answer": "(b) Solid Carbon Dioxide",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
+    "explanation": "Dry Ice is Solid Carbon Dioxide (CO2), which directly sublimates from solid to gas without becoming liquid."
+  },
+  {
+    "id": "viral_economy_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "Five-Year Plan Model Trap!",
+    "question": "The Second Five-Year Plan (1956-61) of India was based on which economic model?",
+    "question_hi": "भारत की दूसरी पंचवर्षीय योजना (1956-61) किस मॉडल पर आधारित थी?",
+    "highlight_phrase": "Second Five-Year Plan",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Harrod-Domar Model"
+      },
+      {
+        "letter": "b",
+        "text": "P.C. Mahalanobis Model"
+      },
+      {
+        "letter": "c",
+        "text": "Gadgil Yojana"
+      },
+      {
+        "letter": "d",
+        "text": "Gandhian Model"
+      }
+    ],
+    "correct_answer": "(b) P.C. Mahalanobis Model",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Economics",
+    "explanation": "1st Five-Year Plan = Harrod-Domar (Agriculture). 2nd Five-Year Plan = P.C. Mahalanobis Model (Rapid Industrialization)."
+  },
+  {
+    "id": "viral_economy_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "GST Constitutional Amendment Trap!",
+    "question": "Which Constitutional Amendment Act introduced Goods and Services Tax (GST) in India?",
+    "question_hi": "किस संविधान संशोधन अधिनियम ने भारत में जीएसटी (GST) लागू किया?",
+    "highlight_phrase": "Goods and Services Tax (GST)",
+    "options": [
+      {
+        "letter": "a",
+        "text": "99th Amendment"
+      },
+      {
+        "letter": "b",
+        "text": "100th Amendment"
+      },
+      {
+        "letter": "c",
+        "text": "101st Amendment"
+      },
+      {
+        "letter": "d",
+        "text": "102nd Amendment"
+      }
+    ],
+    "correct_answer": "(c) 101st Amendment",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "explanation": "The 101st Constitutional Amendment Act (2016) introduced GST (implemented on 1 July 2017) and established the GST Council (Art. 279A)."
+  },
+  {
+    "id": "viral_economy_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "RBI Nationalization Year Trap!",
+    "question": "In which year was the Reserve Bank of India (RBI) nationalized?",
+    "question_hi": "भारतीय रिज़र्व बैंक (RBI) का राष्ट्रीयकरण (Nationalization) किस वर्ष किया गया था?",
+    "highlight_phrase": "RBI nationalized",
+    "options": [
+      {
+        "letter": "a",
+        "text": "1935"
+      },
+      {
+        "letter": "b",
+        "text": "1947"
+      },
+      {
+        "letter": "c",
+        "text": "1949"
+      },
+      {
+        "letter": "d",
+        "text": "1955"
+      }
+    ],
+    "correct_answer": "(c) 1949",
+    "verified_source": "SSC CGL Official PYQ • NCERT Economics",
+    "explanation": "RBI was ESTABLISHED on 1 April 1935 (Hilton Young Commission) and NATIONALIZED on 1 January 1949!"
+  },
+  {
+    "id": "viral_economy_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "curiosity_tag": "Direct vs Indirect Tax Trap!",
+    "question": "Which of the following is NOT a Direct Tax in India?",
+    "question_hi": "निम्नलिखित में से कौन भारत में प्रत्यक्ष कर (Direct Tax) नहीं है?",
+    "highlight_phrase": "NOT a Direct Tax",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Income Tax"
+      },
+      {
+        "letter": "b",
+        "text": "Corporate Tax"
+      },
+      {
+        "letter": "c",
+        "text": "Goods and Services Tax (GST)"
+      },
+      {
+        "letter": "d",
+        "text": "Capital Gains Tax"
+      }
+    ],
+    "correct_answer": "(c) Goods and Services Tax (GST)",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 12 Macroeconomics",
+    "explanation": "GST is a destination-based INDIRECT tax. Income Tax, Corporate Tax, and Capital Gains Tax are Direct Taxes."
+  },
+  {
+    "id": "viral_static_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "Musical Instrument Maestro Trap!",
+    "question": "Pandit Hariprasad Chaurasia is a world-renowned exponent of which musical instrument?",
+    "question_hi": "पंडित हरिप्रसाद चौरसिया किस वाद्ययंत्र के विश्व-प्रसिद्ध वादक हैं?",
+    "highlight_phrase": "Pandit Hariprasad Chaurasia",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Sitar"
+      },
+      {
+        "letter": "b",
+        "text": "Tabla"
+      },
+      {
+        "letter": "c",
+        "text": "Flute (Bansuri)"
+      },
+      {
+        "letter": "d",
+        "text": "Santoor"
+      }
+    ],
+    "correct_answer": "(c) Flute (Bansuri)",
+    "verified_source": "SSC CGL Official PYQ • Static GK (Art & Culture)",
+    "explanation": "Pt. Hariprasad Chaurasia = Flute | Pt. Shivkumar Sharma = Santoor | Pt. Ravi Shankar = Sitar | Ustad Zakir Hussain = Tabla."
+  },
+  {
+    "id": "viral_static_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "Bharat Ratna First Foreigner Trap!",
+    "question": "Who was the FIRST non-Indian (foreigner) to be awarded the Bharat Ratna?",
+    "question_hi": "भारत रत्न से सम्मानित होने वाले पहले गैर-भारतीय (विदेशी) कौन थे?",
+    "highlight_phrase": "FIRST non-Indian",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Nelson Mandela"
+      },
+      {
+        "letter": "b",
+        "text": "Khan Abdul Ghaffar Khan"
+      },
+      {
+        "letter": "c",
+        "text": "Mother Teresa"
+      },
+      {
+        "letter": "d",
+        "text": "Dalai Lama"
+      }
+    ],
+    "correct_answer": "(b) Khan Abdul Ghaffar Khan",
+    "verified_source": "SSC CGL Official PYQ • Static GK",
+    "explanation": "Khan Abdul Ghaffar Khan ('Frontier Gandhi') received Bharat Ratna in 1987; Nelson Mandela received it in 1990."
+  },
+  {
+    "id": "viral_static_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "UN Headquarters City Trap!",
+    "question": "Where is the headquarters of the International Court of Justice (ICJ) located?",
+    "question_hi": "अंतर्राष्ट्रीय न्यायालय (ICJ) का मुख्यालय कहाँ स्थित है?",
+    "highlight_phrase": "International Court of Justice",
+    "options": [
+      {
+        "letter": "a",
+        "text": "New York"
+      },
+      {
+        "letter": "b",
+        "text": "Geneva"
+      },
+      {
+        "letter": "c",
+        "text": "The Hague (Netherlands)"
+      },
+      {
+        "letter": "d",
+        "text": "Vienna"
+      }
+    ],
+    "correct_answer": "(c) The Hague (Netherlands)",
+    "verified_source": "SSC CGL Official PYQ • Static GK",
+    "explanation": "ICJ is the only principal organ of the UN located outside New York - it is at the Peace Palace in The Hague, Netherlands."
+  },
+  {
+    "id": "viral_static_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "Folk Dance State Trap!",
+    "question": "Lavani is a famous traditional folk dance of which Indian state?",
+    "question_hi": "'लावणी' (Lavani) किस भारतीय राज्य का प्रसिद्ध लोक नृत्य है?",
+    "highlight_phrase": "Lavani",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Gujarat"
+      },
+      {
+        "letter": "b",
+        "text": "Maharashtra"
+      },
+      {
+        "letter": "c",
+        "text": "Rajasthan"
+      },
+      {
+        "letter": "d",
+        "text": "Madhya Pradesh"
+      }
+    ],
+    "correct_answer": "(b) Maharashtra",
+    "verified_source": "SSC CGL Official PYQ • Static GK (Art & Culture)",
+    "explanation": "Lavani and Tamasha are famous folk art forms of Maharashtra. Garba = Gujarat; Ghoomar = Rajasthan."
+  },
+  {
+    "id": "viral_static_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "UNESCO Heritage Site Trap!",
+    "question": "The famous Sun Temple of Konark was built by which ruler of the Eastern Ganga dynasty?",
+    "question_hi": "कोणार्क का प्रसिद्ध सूर्य मंदिर पूर्वी गंग वंश के किस शासक ने बनवाया था?",
+    "highlight_phrase": "Sun Temple of Konark",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Rajaraja Chola I"
+      },
+      {
+        "letter": "b",
+        "text": "Narasimhadeva I"
+      },
+      {
+        "letter": "c",
+        "text": "Krishnadevaraya"
+      },
+      {
+        "letter": "d",
+        "text": "Pulakeshin II"
+      }
+    ],
+    "correct_answer": "(b) Narasimhadeva I",
+    "verified_source": "SSC CGL Official PYQ • NCERT Art & Culture",
+    "explanation": "King Narasimhadeva I built the Konark Sun Temple (Odisha, also called Black Pagoda) in the 13th century CE."
+  },
+  {
+    "id": "viral_static_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "curiosity_tag": "Nobel Prize India First Trap!",
+    "question": "Who was the first Indian scientist to win the Nobel Prize in Physics (1930)?",
+    "question_hi": "भौतिकी (Physics) में नोबेल पुरस्कार जीतने वाले पहले भारतीय वैज्ञानिक कौन थे?",
+    "highlight_phrase": "Nobel Prize in Physics",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Homi J. Bhabha"
+      },
+      {
+        "letter": "b",
+        "text": "C. V. Raman"
+      },
+      {
+        "letter": "c",
+        "text": "S. Chandrasekhar"
+      },
+      {
+        "letter": "d",
+        "text": "Jagadish Chandra Bose"
+      }
+    ],
+    "correct_answer": "(b) C. V. Raman",
+    "verified_source": "SSC CGL Official PYQ • Static GK",
+    "explanation": "Sir C. V. Raman won the 1930 Physics Nobel for the Raman Effect (scattering of light); National Science Day is celebrated on 28 Feb."
+  },
+  {
+    "id": "viral_computer_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Tier-2 Shortcut Key Trap!",
+    "question": "In MS Word, which keyboard shortcut is used to open the 'Find and Replace' dialog box?",
+    "question_hi": "MS Word में 'Find and Replace' डायलॉग बॉक्स खोलने के लिए किस शॉर्टकट कुंजी का उपयोग किया जाता है?",
+    "highlight_phrase": "Find and Replace",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Ctrl + F"
+      },
+      {
+        "letter": "b",
+        "text": "Ctrl + H"
+      },
+      {
+        "letter": "c",
+        "text": "Ctrl + R"
+      },
+      {
+        "letter": "d",
+        "text": "Ctrl + G"
+      }
+    ],
+    "correct_answer": "(b) Ctrl + H",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • MS Office",
+    "explanation": "Ctrl + H opens Find and Replace. Ctrl + F opens Find only; Ctrl + R aligns text right; Ctrl + G opens Go To."
+  },
+  {
+    "id": "viral_computer_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "HTTPS Port Number Trap!",
+    "question": "What is the default port number used by HTTPS (secure web traffic)?",
+    "question_hi": "HTTPS (सुरक्षित वेब ट्रैफिक) द्वारा उपयोग किया जाने वाला डिफ़ॉल्ट पोर्ट नंबर क्या है?",
+    "highlight_phrase": "default port number used by HTTPS",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Port 21"
+      },
+      {
+        "letter": "b",
+        "text": "Port 25"
+      },
+      {
+        "letter": "c",
+        "text": "Port 80"
+      },
+      {
+        "letter": "d",
+        "text": "Port 443"
+      }
+    ],
+    "correct_answer": "(d) Port 443",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Networks",
+    "explanation": "HTTPS = 443 | HTTP = 80 | SMTP = 25 | FTP = 21."
+  },
+  {
+    "id": "viral_computer_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Fastest Memory Hierarchy Trap!",
+    "question": "Which of the following is the FASTEST memory located directly inside the CPU?",
+    "question_hi": "निम्नलिखित में से कौन सी सबसे तेज़ मेमोरी है जो सीधे CPU के अंदर स्थित होती है?",
+    "highlight_phrase": "FASTEST memory",
+    "options": [
+      {
+        "letter": "a",
+        "text": "RAM"
+      },
+      {
+        "letter": "b",
+        "text": "SSD"
+      },
+      {
+        "letter": "c",
+        "text": "CPU Registers"
+      },
+      {
+        "letter": "d",
+        "text": "Hard Disk"
+      }
+    ],
+    "correct_answer": "(c) CPU Registers",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Architecture",
+    "explanation": "Speed order (fastest to slowest): CPU Registers > Cache (L1/L2/L3) > RAM > SSD > HDD."
+  },
+  {
+    "id": "viral_computer_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Excel Formula Error Trap!",
+    "question": "In MS Excel, every formula MUST begin with which symbol?",
+    "question_hi": "MS Excel में प्रत्येक फ़ॉर्मूला किस चिह्न (Symbol) से शुरू होना चाहिए?",
+    "highlight_phrase": "every formula MUST begin",
+    "options": [
+      {
+        "letter": "a",
+        "text": "#"
+      },
+      {
+        "letter": "b",
+        "text": "@"
+      },
+      {
+        "letter": "c",
+        "text": "="
+      },
+      {
+        "letter": "d",
+        "text": "$"
+      }
+    ],
+    "correct_answer": "(c) =",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • MS Excel",
+    "explanation": "Every Excel formula begins with '=' (e.g., =SUM(A1:A5)). '$' is used for absolute cell references like $A$1."
+  },
+  {
+    "id": "viral_computer_08",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "IPv4 Address Size Trap!",
+    "question": "What is the total bit length of an IPv4 address?",
+    "question_hi": "एक IPv4 एड्रेस की कुल बिट लंबाई (Bit Length) कितनी होती है?",
+    "highlight_phrase": "IPv4 address",
+    "options": [
+      {
+        "letter": "a",
+        "text": "16 bits"
+      },
+      {
+        "letter": "b",
+        "text": "32 bits"
+      },
+      {
+        "letter": "c",
+        "text": "64 bits"
+      },
+      {
+        "letter": "d",
+        "text": "128 bits"
+      }
+    ],
+    "correct_answer": "(b) 32 bits",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Networks",
+    "explanation": "IPv4 is 32 bits (4 octets, e.g., 192.168.1.1). IPv6 is 128 bits (hexadecimal)."
+  },
+  {
+    "id": "viral_computer_09",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Phishing vs Malware Trap!",
+    "question": "Tricking users into revealing passwords via fake emails or websites is called?",
+    "question_hi": "नकली ईमेल या वेबसाइट के जरिए उपयोगकर्ताओं से पासवर्ड चुराने को क्या कहा जाता है?",
+    "highlight_phrase": "fake emails or websites",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Firewall"
+      },
+      {
+        "letter": "b",
+        "text": "Phishing"
+      },
+      {
+        "letter": "c",
+        "text": "Encryption"
+      },
+      {
+        "letter": "d",
+        "text": "Debugging"
+      }
+    ],
+    "correct_answer": "(b) Phishing",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Cyber Security",
+    "explanation": "Phishing is a social engineering attack using spoofed emails/websites to steal credentials or banking details."
+  },
+  {
+    "id": "viral_computer_10",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "OSI Model Layers Trap!",
+    "question": "How many layers are there in the standard OSI networking reference model?",
+    "question_hi": "मानक OSI नेटवर्किंग मॉडल में कुल कितनी परतें (Layers) होती हैं?",
+    "highlight_phrase": "OSI networking",
+    "options": [
+      {
+        "letter": "a",
+        "text": "4 layers"
+      },
+      {
+        "letter": "b",
+        "text": "5 layers"
+      },
+      {
+        "letter": "c",
+        "text": "7 layers"
+      },
+      {
+        "letter": "d",
+        "text": "8 layers"
+      }
+    ],
+    "correct_answer": "(c) 7 layers",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Networks",
+    "explanation": "OSI has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+  },
+  {
+    "id": "viral_computer_11",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "curiosity_tag": "Input vs Output Device Trap!",
+    "question": "Which of the following is NOT an Output Device?",
+    "question_hi": "निम्नलिखित में से कौन सा एक आउटपुट डिवाइस (Output Device) नहीं है?",
+    "highlight_phrase": "NOT an Output Device",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Plotter"
+      },
+      {
+        "letter": "b",
+        "text": "Monitor"
+      },
+      {
+        "letter": "c",
+        "text": "Scanner"
+      },
+      {
+        "letter": "d",
+        "text": "Speaker"
+      }
+    ],
+    "correct_answer": "(c) Scanner",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Fundamentals",
+    "explanation": "A Scanner converts physical documents into digital input (Input Device). Monitor, Plotter, and Speaker are Output Devices."
+  },
+  {
+    "id": "viral_eng_01",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ENGLISH IDIOM",
+    "curiosity_tag": "90% Guess Literally - Trap!",
+    "question": "Select the correct meaning of the idiom: 'Break a leg'",
+    "question_hi": "मुहावरे 'Break a leg' का सही अर्थ क्या है?",
+    "highlight_phrase": "Break a leg",
+    "options": [
+      {
+        "letter": "a",
+        "text": "To get injured badly"
+      },
+      {
+        "letter": "b",
+        "text": "Good luck (especially before a performance)"
+      },
+      {
+        "letter": "c",
+        "text": "To run away quickly"
+      },
+      {
+        "letter": "d",
+        "text": "To start a fight"
+      }
+    ],
+    "correct_answer": "(b) Good luck (especially before a performance)",
+    "verified_source": "SSC CGL Official PYQ • Blackbook Idioms",
+    "explanation": "'Break a leg' is a theatrical idiom meaning 'Good luck!' - never take it literally!"
+  },
+  {
+    "id": "viral_eng_02",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ONE WORD",
+    "curiosity_tag": "High-Frequency One-Word PYQ!",
+    "question": "One-Word Substitution: A person who is indifferent to pleasure or pain.",
+    "question_hi": "जो व्यक्ति सुख और दुःख दोनों के प्रति उदासीन हो, उसे क्या कहते हैं?",
+    "highlight_phrase": "indifferent to pleasure or pain",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Cynic"
+      },
+      {
+        "letter": "b",
+        "text": "Stoic"
+      },
+      {
+        "letter": "c",
+        "text": "Optimist"
+      },
+      {
+        "letter": "d",
+        "text": "Altruist"
+      }
+    ],
+    "correct_answer": "(b) Stoic",
+    "verified_source": "SSC CGL Official PYQ • Blackbook High-Freq",
+    "explanation": "Stoic = endures pain/hardship without showing feelings. Altruist = selfless helper; Cynic = distrusts human sincerity."
+  },
+  {
+    "id": "viral_eng_03",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GRAMMAR TRAP",
+    "curiosity_tag": "90% Make This Preposition Error!",
+    "question": "Fill in the blank: 'He is senior ___ me by three years.'",
+    "question_hi": "सही Preposition चुनें: 'He is senior ___ me by three years.'",
+    "highlight_phrase": "senior ___ me",
+    "options": [
+      {
+        "letter": "a",
+        "text": "than"
+      },
+      {
+        "letter": "b",
+        "text": "from"
+      },
+      {
+        "letter": "c",
+        "text": "to"
+      },
+      {
+        "letter": "d",
+        "text": "with"
+      }
+    ],
+    "correct_answer": "(c) to",
+    "verified_source": "SSC CGL Official PYQ • Grammar Golden Rule",
+    "explanation": "Latin comparative adjectives ending in -ior (senior, junior, superior, inferior, prior, prefer) ALWAYS take 'to', never 'than'!"
+  },
+  {
+    "id": "viral_eng_04",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GRAMMAR TRAP",
+    "curiosity_tag": "Classic Subject-Verb Trap!",
+    "question": "Choose the correct verb: 'Neither the teacher nor the students ___ present today.'",
+    "question_hi": "सही क्रिया (Verb) चुनें: 'Neither the teacher nor the students ___ present today.'",
+    "highlight_phrase": "Neither... nor",
+    "options": [
+      {
+        "letter": "a",
+        "text": "is"
+      },
+      {
+        "letter": "b",
+        "text": "was"
+      },
+      {
+        "letter": "c",
+        "text": "were"
+      },
+      {
+        "letter": "d",
+        "text": "has been"
+      }
+    ],
+    "correct_answer": "(c) were",
+    "verified_source": "SSC CGL Official PYQ • Grammar Golden Rule",
+    "explanation": "With 'Neither...nor' / 'Either...or', the verb agrees with the NEARER subject ('students' = plural -> 'were')."
+  },
+  {
+    "id": "viral_eng_05",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ENGLISH IDIOM",
+    "curiosity_tag": "Repeated 6x+ in SSC Tier-1!",
+    "question": "What does the idiom 'Once in a blue moon' mean?",
+    "question_hi": "मुहावरे 'Once in a blue moon' का सही अर्थ क्या है?",
+    "highlight_phrase": "Once in a blue moon",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Every single month"
+      },
+      {
+        "letter": "b",
+        "text": "Very rarely"
+      },
+      {
+        "letter": "c",
+        "text": "During a lunar eclipse"
+      },
+      {
+        "letter": "d",
+        "text": "Suddenly without warning"
+      }
+    ],
+    "correct_answer": "(b) Very rarely",
+    "verified_source": "SSC CGL Official PYQ • Blackbook Idioms",
+    "explanation": "'Once in a blue moon' means something that happens very rarely."
+  },
+  {
+    "id": "viral_eng_06",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ONE WORD",
+    "curiosity_tag": "Killer Phobia / Mania Trap!",
+    "question": "One-Word Substitution: Fear of enclosed or small spaces.",
+    "question_hi": "बंद या छोटी जगहों से लगने वाले डर को एक शब्द में क्या कहते हैं?",
+    "highlight_phrase": "Fear of enclosed or small spaces",
+    "options": [
+      {
+        "letter": "a",
+        "text": "Acrophobia"
+      },
+      {
+        "letter": "b",
+        "text": "Hydrophobia"
+      },
+      {
+        "letter": "c",
+        "text": "Claustrophobia"
+      },
+      {
+        "letter": "d",
+        "text": "Agoraphobia"
+      }
+    ],
+    "correct_answer": "(c) Claustrophobia",
+    "verified_source": "SSC CGL Official PYQ • Blackbook One-Word",
+    "explanation": "Claustrophobia = enclosed spaces | Acrophobia = heights | Hydrophobia = water | Agoraphobia = open/crowded spaces."
+  },
+  {
+    "id": "viral_eng_07",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GRAMMAR TRAP",
+    "curiosity_tag": "Scarcely / Hardly Pair Trap!",
+    "question": "Fill in the blank: 'Hardly had I reached the station ___ the train left.'",
+    "question_hi": "सही Conjunction चुनें: 'Hardly had I reached the station ___ the train left.'",
+    "highlight_phrase": "Hardly had I reached",
+    "options": [
+      {
+        "letter": "a",
+        "text": "than"
+      },
+      {
+        "letter": "b",
+        "text": "then"
+      },
+      {
+        "letter": "c",
+        "text": "when"
+      },
+      {
+        "letter": "d",
+        "text": "after"
+      }
+    ],
+    "correct_answer": "(c) when",
+    "verified_source": "SSC CGL Official PYQ • Grammar Golden Rule",
+    "explanation": "'Hardly / Scarcely' is ALWAYS paired with 'when' (or 'before'). 'No sooner' is paired with 'than'!"
   }
 ]

@@ -799,5 +799,1373 @@
         "detail": "President constitutes it every 5 years (1 Chairman + 4 members) for Centre–State tax sharing."
       }
     ]
+  },
+  {
+    "id": "mock2_pol_01",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which Article of the Constitution provides for a Uniform Civil Code for the citizens?",
+    "question_hi": "संविधान का कौन सा अनुच्छेद नागरिकों के लिए समान नागरिक संहिता (UCC) का प्रावधान करता है?",
+    "highlight_phrase": "Uniform Civil Code",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 40"
+      },
+      {
+        "letter": "B",
+        "text": "Article 44"
+      },
+      {
+        "letter": "C",
+        "text": "Article 45"
+      },
+      {
+        "letter": "D",
+        "text": "Article 48"
+      }
+    ],
+    "correct_answer": "(B) Article 44",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "revision_notes": [
+      {
+        "label": "Article 44 (DPSP)",
+        "detail": "Part IV directs the State to endeavor to secure a Uniform Civil Code throughout India."
+      }
+    ]
+  },
+  {
+    "id": "mock2_pol_02",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Who appoints the Comptroller and Auditor General (CAG) of India?",
+    "question_hi": "भारत के नियंत्रक एवं महालेखा परीक्षक (CAG) की नियुक्ति कौन करता है?",
+    "highlight_phrase": "CAG of India",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prime Minister"
+      },
+      {
+        "letter": "B",
+        "text": "President of India"
+      },
+      {
+        "letter": "C",
+        "text": "Finance Minister"
+      },
+      {
+        "letter": "D",
+        "text": "Parliament"
+      }
+    ],
+    "correct_answer": "(B) President of India",
+    "verified_source": "SSC CGL Official PYQ • Article 148",
+    "revision_notes": [
+      {
+        "label": "Article 148",
+        "detail": "Appointed by the President for 6 years or up to age 65, whichever is earlier."
+      }
+    ]
+  },
+  {
+    "id": "mock2_pol_03",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which Schedule of the Indian Constitution deals with the allocation of seats in the Rajya Sabha?",
+    "question_hi": "भारतीय संविधान की कौन सी अनुसूची राज्यसभा में सीटों के आवंटन से संबंधित है?",
+    "highlight_phrase": "seats in the Rajya Sabha",
+    "options": [
+      {
+        "letter": "A",
+        "text": "3rd Schedule"
+      },
+      {
+        "letter": "B",
+        "text": "4th Schedule"
+      },
+      {
+        "letter": "C",
+        "text": "5th Schedule"
+      },
+      {
+        "letter": "D",
+        "text": "7th Schedule"
+      }
+    ],
+    "correct_answer": "(B) 4th Schedule",
+    "verified_source": "SSC CGL Official PYQ • Constitution of India",
+    "revision_notes": [
+      {
+        "label": "4th Schedule",
+        "detail": "Allocates Rajya Sabha seats to States and Union Territories based on population."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_01",
+    "day_theme": "Indian History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Who founded the 'Maurya Dynasty' in 322 BCE after defeating the Nandas?",
+    "question_hi": "322 ईसा पूर्व में नंद वंश को हराकर 'मौर्य वंश' की स्थापना किसने की थी?",
+    "highlight_phrase": "Maurya Dynasty",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ashoka"
+      },
+      {
+        "letter": "B",
+        "text": "Bindusara"
+      },
+      {
+        "letter": "C",
+        "text": "Chandragupta Maurya"
+      },
+      {
+        "letter": "D",
+        "text": "Brihadratha"
+      }
+    ],
+    "correct_answer": "(C) Chandragupta Maurya",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 History",
+    "revision_notes": [
+      {
+        "label": "Maurya Empire",
+        "detail": "Founded by Chandragupta Maurya with the guidance of Chanakya (Kautilya)."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_02",
+    "day_theme": "Indian History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "The 'Doctrine of Lapse' annexation policy was devised by which British Governor-General?",
+    "question_hi": "'व्यपगत का सिद्धांत' (Doctrine of Lapse) किस ब्रिटिश गवर्नर-जनरल द्वारा लागू किया गया था?",
+    "highlight_phrase": "Doctrine of Lapse",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lord Wellesley"
+      },
+      {
+        "letter": "B",
+        "text": "Lord Dalhousie"
+      },
+      {
+        "letter": "C",
+        "text": "Lord Canning"
+      },
+      {
+        "letter": "D",
+        "text": "Lord Hastings"
+      }
+    ],
+    "correct_answer": "(B) Lord Dalhousie",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "revision_notes": [
+      {
+        "label": "Satara First (1848)",
+        "detail": "Satara was the first state annexed under Doctrine of Lapse, followed by Sambalpur, Udaipur, Nagpur, and Jhansi."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_03",
+    "day_theme": "Indian History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Who was the founder of the 'Forward Bloc' political party in 1939?",
+    "question_hi": "1939 में 'फॉरवर्ड ब्लॉक' (Forward Bloc) की स्थापना किसने की थी?",
+    "highlight_phrase": "Forward Bloc",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bhagat Singh"
+      },
+      {
+        "letter": "B",
+        "text": "Subhas Chandra Bose"
+      },
+      {
+        "letter": "C",
+        "text": "Lala Lajpat Rai"
+      },
+      {
+        "letter": "D",
+        "text": "Bal Gangadhar Tilak"
+      }
+    ],
+    "correct_answer": "(B) Subhas Chandra Bose",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "revision_notes": [
+      {
+        "label": "Tripuri Crisis (1939)",
+        "detail": "Netaji Subhas Chandra Bose formed Forward Bloc in May 1939 after resigning as INC President."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_01",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which river originates from the Amarkantak Plateau in Madhya Pradesh?",
+    "question_hi": "मध्य प्रदेश के अमरकंटक पठार से कौन सी नदी निकलती है?",
+    "highlight_phrase": "Amarkantak Plateau",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mahanadi"
+      },
+      {
+        "letter": "B",
+        "text": "Narmada"
+      },
+      {
+        "letter": "C",
+        "text": "Tapi"
+      },
+      {
+        "letter": "D",
+        "text": "Chambal"
+      }
+    ],
+    "correct_answer": "(B) Narmada",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "revision_notes": [
+      {
+        "label": "Narmada & Son",
+        "detail": "Both Narmada (west-flowing) and Son (north-flowing tributary of Ganga) originate near Amarkantak."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_02",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Kaziranga National Park in Assam is world-famous for conserving which animal?",
+    "question_hi": "असम का काजीरंगा राष्ट्रीय उद्यान किस जानवर के संरक्षण के लिए विश्व प्रसिद्ध है?",
+    "highlight_phrase": "Kaziranga National Park",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Asiatic Lion"
+      },
+      {
+        "letter": "B",
+        "text": "One-horned Rhinoceros"
+      },
+      {
+        "letter": "C",
+        "text": "Snow Leopard"
+      },
+      {
+        "letter": "D",
+        "text": "Royal Bengal Tiger"
+      }
+    ],
+    "correct_answer": "(B) One-horned Rhinoceros",
+    "verified_source": "SSC CGL Official PYQ • NCERT Geography",
+    "revision_notes": [
+      {
+        "label": "UNESCO Site",
+        "detail": "Kaziranga hosts two-thirds of the world's Great Indian One-horned Rhinoceroses."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_03",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which strait separates India from Sri Lanka?",
+    "question_hi": "कौन सा जलडमरूमध्य (Strait) भारत को श्रीलंका से अलग करता है?",
+    "highlight_phrase": "separates India from Sri Lanka",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Malacca Strait"
+      },
+      {
+        "letter": "B",
+        "text": "Palk Strait"
+      },
+      {
+        "letter": "C",
+        "text": "Hormuz Strait"
+      },
+      {
+        "letter": "D",
+        "text": "Bering Strait"
+      }
+    ],
+    "correct_answer": "(B) Palk Strait",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "revision_notes": [
+      {
+        "label": "Palk Strait & Gulf of Mannar",
+        "detail": "Connects the Bay of Bengal in the northeast with the Gulf of Mannar in the southwest."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_01",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which pigment gives human blood its red color and carries oxygen?",
+    "question_hi": "कौन सा वर्णक मानव रक्त को लाल रंग देता है और ऑक्सीजन का परिवहन करता है?",
+    "highlight_phrase": "carries oxygen",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Chlorophyll"
+      },
+      {
+        "letter": "B",
+        "text": "Hemoglobin"
+      },
+      {
+        "letter": "C",
+        "text": "Melanin"
+      },
+      {
+        "letter": "D",
+        "text": "Bilirubin"
+      }
+    ],
+    "correct_answer": "(B) Hemoglobin",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "revision_notes": [
+      {
+        "label": "Iron-Rich Protein",
+        "detail": "Hemoglobin in Red Blood Cells (RBCs) contains Iron (Fe) which binds with oxygen."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_02",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which gas is released during Photosynthesis by green plants?",
+    "question_hi": "हरे पौधों द्वारा प्रकाश संश्लेषण (Photosynthesis) के दौरान कौन सी गैस निकलती है?",
+    "highlight_phrase": "released during Photosynthesis",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Carbon Dioxide"
+      },
+      {
+        "letter": "B",
+        "text": "Nitrogen"
+      },
+      {
+        "letter": "C",
+        "text": "Oxygen"
+      },
+      {
+        "letter": "D",
+        "text": "Hydrogen"
+      }
+    ],
+    "correct_answer": "(C) Oxygen",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "revision_notes": [
+      {
+        "label": "Photosynthesis",
+        "detail": "Plants absorb CO2 + H2O in sunlight to produce Glucose + Oxygen (O2)."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_03",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which instrument is used to measure Atmospheric Pressure?",
+    "question_hi": "वायुमंडलीय दाब (Atmospheric Pressure) को मापने के लिए किस यंत्र का उपयोग किया जाता है?",
+    "highlight_phrase": "Atmospheric Pressure",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Thermometer"
+      },
+      {
+        "letter": "B",
+        "text": "Barometer"
+      },
+      {
+        "letter": "C",
+        "text": "Hygrometer"
+      },
+      {
+        "letter": "D",
+        "text": "Anemometer"
+      }
+    ],
+    "correct_answer": "(B) Barometer",
+    "verified_source": "SSC CGL Official PYQ • NCERT Physics",
+    "revision_notes": [
+      {
+        "label": "Key Instruments",
+        "detail": "Barometer = Pressure | Hygrometer = Humidity | Anemometer = Wind Speed."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eng_01",
+    "day_theme": "English Vocab",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • IDIOM",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Select the meaning of the idiom: 'Burn the midnight oil'",
+    "question_hi": "मुहावरे 'Burn the midnight oil' का सही अर्थ चुनें",
+    "highlight_phrase": "Burn the midnight oil",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To waste fuel"
+      },
+      {
+        "letter": "B",
+        "text": "To work or study late into the night"
+      },
+      {
+        "letter": "C",
+        "text": "To start a fire"
+      },
+      {
+        "letter": "D",
+        "text": "To wake up early"
+      }
+    ],
+    "correct_answer": "(B) Work or study late into the night",
+    "verified_source": "SSC CGL Official PYQ • Blackbook Idioms",
+    "revision_notes": [
+      {
+        "label": "Study Idiom",
+        "detail": "Means putting in late-night effort studying or working hard."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eng_02",
+    "day_theme": "English Vocab",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ONE WORD",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "One-Word Substitution: A speech delivered without any previous preparation.",
+    "question_hi": "बिना किसी पूर्व तैयारी के दिया गया भाषण क्या कहलाता है?",
+    "highlight_phrase": "without any previous preparation",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Verbose"
+      },
+      {
+        "letter": "B",
+        "text": "Extempore"
+      },
+      {
+        "letter": "C",
+        "text": "Soliloquy"
+      },
+      {
+        "letter": "D",
+        "text": "Eulogy"
+      }
+    ],
+    "correct_answer": "(B) Extempore",
+    "verified_source": "SSC CGL Official PYQ • Blackbook One-Word",
+    "revision_notes": [
+      {
+        "label": "Extempore / Impromptu",
+        "detail": "Eulogy = speech praising someone (often deceased); Soliloquy = speaking one's thoughts aloud alone."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eng_03",
+    "day_theme": "English Vocab",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • SYNONYM",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Select the most appropriate synonym of: 'BENEVOLENT'",
+    "question_hi": "'BENEVOLENT' शब्द का सही पर्यायवाची (Synonym) चुनें",
+    "highlight_phrase": "BENEVOLENT",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cruel"
+      },
+      {
+        "letter": "B",
+        "text": "Kind and generous"
+      },
+      {
+        "letter": "C",
+        "text": "Selfish"
+      },
+      {
+        "letter": "D",
+        "text": "Arrogant"
+      }
+    ],
+    "correct_answer": "(B) Kind and generous",
+    "verified_source": "SSC CGL Official PYQ • Blackbook Vocab",
+    "revision_notes": [
+      {
+        "label": "Root 'Bene'",
+        "detail": "Latin root 'Bene' = good/well (Benevolent, Benefit, Benign). Antonym: Malevolent."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eco_01",
+    "day_theme": "Economy & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which organization regulates the Stock Market (Securities Market) in India?",
+    "question_hi": "भारत में शेयर बाजार (Stock Market) को कौन सी संस्था नियंत्रित करती है?",
+    "highlight_phrase": "Stock Market",
+    "options": [
+      {
+        "letter": "A",
+        "text": "RBI"
+      },
+      {
+        "letter": "B",
+        "text": "SEBI"
+      },
+      {
+        "letter": "C",
+        "text": "NABARD"
+      },
+      {
+        "letter": "D",
+        "text": "IRDAI"
+      }
+    ],
+    "correct_answer": "(B) SEBI",
+    "verified_source": "SSC CGL Official PYQ • NCERT Economics",
+    "revision_notes": [
+      {
+        "label": "SEBI (HQ: Mumbai)",
+        "detail": "Securities and Exchange Board of India got statutory status in 1992."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eco_02",
+    "day_theme": "Economy & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • ECONOMY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "NABARD was established in 1982 primarily for the development of which sector?",
+    "question_hi": "1982 में NABARD की स्थापना मुख्य रूप से किस क्षेत्र के विकास के लिए की गई थी?",
+    "highlight_phrase": "NABARD",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Heavy Industries"
+      },
+      {
+        "letter": "B",
+        "text": "Agriculture and Rural Development"
+      },
+      {
+        "letter": "C",
+        "text": "Information Technology"
+      },
+      {
+        "letter": "D",
+        "text": "Civil Aviation"
+      }
+    ],
+    "correct_answer": "(B) Agriculture and Rural Development",
+    "verified_source": "SSC CGL Official PYQ • NCERT Economics",
+    "revision_notes": [
+      {
+        "label": "Sivaraman Committee",
+        "detail": "NABARD (National Bank for Agriculture and Rural Development) was set up on 12 July 1982."
+      }
+    ]
+  },
+  {
+    "id": "mock2_eco_03",
+    "day_theme": "Economy & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "What does 'HTTP' stand for in web addresses?",
+    "question_hi": "वेब एड्रेस में 'HTTP' का पूरा नाम क्या होता है?",
+    "highlight_phrase": "HTTP",
+    "options": [
+      {
+        "letter": "A",
+        "text": "HyperText Transfer Protocol"
+      },
+      {
+        "letter": "B",
+        "text": "High Transmission Text Program"
+      },
+      {
+        "letter": "C",
+        "text": "Hyperlink Tracking Tool Protocol"
+      },
+      {
+        "letter": "D",
+        "text": "Host Transfer Terminal Process"
+      }
+    ],
+    "correct_answer": "(A) HyperText Transfer Protocol",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Networks",
+    "revision_notes": [
+      {
+        "label": "Web Protocol",
+        "detail": "HTTP transfers web pages between client browsers and web servers; HTTPS adds TLS/SSL encryption."
+      }
+    ]
+  },
+  {
+    "id": "mock2_stk_01",
+    "day_theme": "Static GK",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Kathakali is a major classical dance form of which Indian state?",
+    "question_hi": "'कथकली' (Kathakali) किस भारतीय राज्य का प्रमुख शास्त्रीय नृत्य है?",
+    "highlight_phrase": "Kathakali",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tamil Nadu"
+      },
+      {
+        "letter": "B",
+        "text": "Kerala"
+      },
+      {
+        "letter": "C",
+        "text": "Andhra Pradesh"
+      },
+      {
+        "letter": "D",
+        "text": "Karnataka"
+      }
+    ],
+    "correct_answer": "(B) Kerala",
+    "verified_source": "SSC CGL Official PYQ • Sangeet Natak Akademi",
+    "revision_notes": [
+      {
+        "label": "Kerala Classical Dances",
+        "detail": "Kerala has TWO classical dances: Kathakali and Mohiniyattam. Tamil Nadu = Bharatanatyam."
+      }
+    ]
+  },
+  {
+    "id": "mock2_stk_02",
+    "day_theme": "Static GK",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "question_hi": "किस शहर को 'भारत की सिलिकॉन वैली' (Silicon Valley of India) कहा जाता है?",
+    "highlight_phrase": "Silicon Valley of India",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hyderabad"
+      },
+      {
+        "letter": "B",
+        "text": "Pune"
+      },
+      {
+        "letter": "C",
+        "text": "Bengaluru"
+      },
+      {
+        "letter": "D",
+        "text": "Chennai"
+      }
+    ],
+    "correct_answer": "(C) Bengaluru",
+    "verified_source": "SSC CGL Official PYQ • Static GK",
+    "revision_notes": [
+      {
+        "label": "IT Capital",
+        "detail": "Bengaluru (Karnataka) is India's leading IT and startup hub, also known as the Garden City."
+      }
+    ]
+  },
+  {
+    "id": "mock2_stk_03",
+    "day_theme": "Static GK",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • STATIC GK",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Where is the headquarters of ISRO (Indian Space Research Organisation) located?",
+    "question_hi": "ISRO (भारतीय अंतरिक्ष अनुसंधान संगठन) का मुख्यालय कहाँ स्थित है?",
+    "highlight_phrase": "headquarters of ISRO",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sriharikota"
+      },
+      {
+        "letter": "B",
+        "text": "Thiruvananthapuram"
+      },
+      {
+        "letter": "C",
+        "text": "Bengaluru"
+      },
+      {
+        "letter": "D",
+        "text": "Ahmedabad"
+      }
+    ],
+    "correct_answer": "(C) Bengaluru",
+    "verified_source": "SSC CGL Official PYQ • Static GK",
+    "revision_notes": [
+      {
+        "label": "Founded 15 Aug 1969",
+        "detail": "ISRO HQ is in Bengaluru; Sriharikota (AP) is its primary launchpad (Satish Dhawan Space Centre)."
+      }
+    ]
+  },
+  {
+    "id": "mock2_pol_04",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which Article is called the 'Heart and Soul of the Indian Constitution' by Dr. B.R. Ambedkar?",
+    "question_hi": "डॉ. बी.आर. अंबेडकर ने किस अनुच्छेद को 'भारतीय संविधान की हृदय और आत्मा' कहा था?",
+    "highlight_phrase": "Heart and Soul",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 14"
+      },
+      {
+        "letter": "B",
+        "text": "Article 19"
+      },
+      {
+        "letter": "C",
+        "text": "Article 21"
+      },
+      {
+        "letter": "D",
+        "text": "Article 32"
+      }
+    ],
+    "correct_answer": "(D) Article 32",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Polity",
+    "revision_notes": [
+      {
+        "label": "Constitutional Remedies",
+        "detail": "Article 32 empowers citizens to directly approach the Supreme Court to enforce Fundamental Rights."
+      }
+    ]
+  },
+  {
+    "id": "mock2_pol_05",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "How many members can the President nominate to the Rajya Sabha?",
+    "question_hi": "राष्ट्रपति राज्यसभा में अधिकतम कितने सदस्यों को मनोनीत (Nominate) कर सकते हैं?",
+    "highlight_phrase": "nominate to the Rajya Sabha",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2 members"
+      },
+      {
+        "letter": "B",
+        "text": "10 members"
+      },
+      {
+        "letter": "C",
+        "text": "12 members"
+      },
+      {
+        "letter": "D",
+        "text": "14 members"
+      }
+    ],
+    "correct_answer": "(C) 12 members",
+    "verified_source": "SSC CGL Official PYQ • Article 80(3)",
+    "revision_notes": [
+      {
+        "label": "4 Fields",
+        "detail": "12 members are nominated from Literature, Science, Art, and Social Service."
+      }
+    ]
+  },
+  {
+    "id": "mock2_pol_06",
+    "day_theme": "Indian Polity",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • POLITY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Under which Article can the Parliament amend the Constitution of India?",
+    "question_hi": "किस अनुच्छेद के तहत संसद भारतीय संविधान में संशोधन (Amend) कर सकती है?",
+    "highlight_phrase": "amend the Constitution",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Article 352"
+      },
+      {
+        "letter": "B",
+        "text": "Article 356"
+      },
+      {
+        "letter": "C",
+        "text": "Article 360"
+      },
+      {
+        "letter": "D",
+        "text": "Article 368"
+      }
+    ],
+    "correct_answer": "(D) Article 368",
+    "verified_source": "SSC CGL Official PYQ • Part XX, Constitution",
+    "revision_notes": [
+      {
+        "label": "Borrowed from South Africa",
+        "detail": "Article 368 (Part XX) lays down the procedure for Constitutional Amendments."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_04",
+    "day_theme": "Modern History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Who gave the famous slogan 'Swaraj is my birthright and I shall have it'?",
+    "question_hi": "'स्वराज मेरा जन्मसिद्ध अधिकार है और मैं इसे लेकर रहूँगा' का नारा किसने दिया था?",
+    "highlight_phrase": "Swaraj is my birthright",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lala Lajpat Rai"
+      },
+      {
+        "letter": "B",
+        "text": "Bal Gangadhar Tilak"
+      },
+      {
+        "letter": "C",
+        "text": "Bipin Chandra Pal"
+      },
+      {
+        "letter": "D",
+        "text": "Gopal Krishna Gokhale"
+      }
+    ],
+    "correct_answer": "(B) Bal Gangadhar Tilak",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 8 History",
+    "revision_notes": [
+      {
+        "label": "Lokmanya Tilak",
+        "detail": "Bal Gangadhar Tilak also started the Kesari (Marathi) and Mahratta (English) newspapers."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_05",
+    "day_theme": "Modern History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "In which year was the Indian National Congress (INC) founded?",
+    "question_hi": "भारतीय राष्ट्रीय कांग्रेस (INC) की स्थापना किस वर्ष हुई थी?",
+    "highlight_phrase": "Indian National Congress",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1882"
+      },
+      {
+        "letter": "B",
+        "text": "1885"
+      },
+      {
+        "letter": "C",
+        "text": "1890"
+      },
+      {
+        "letter": "D",
+        "text": "1905"
+      }
+    ],
+    "correct_answer": "(B) 1885",
+    "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
+    "revision_notes": [
+      {
+        "label": "Bombay Session (1885)",
+        "detail": "Founded by A.O. Hume in Dec 1885; first President was Womesh Chandra Bonnerjee (72 delegates)."
+      }
+    ]
+  },
+  {
+    "id": "mock2_his_06",
+    "day_theme": "Modern History",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • HISTORY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "The Jallianwala Bagh Massacre took place in Amritsar on which date?",
+    "question_hi": "अमृतसर में जलियांवाला बाग हत्याकांड किस तिथि को हुआ था?",
+    "highlight_phrase": "Jallianwala Bagh Massacre",
+    "options": [
+      {
+        "letter": "A",
+        "text": "13 April 1919"
+      },
+      {
+        "letter": "B",
+        "text": "15 August 1919"
+      },
+      {
+        "letter": "C",
+        "text": "13 April 1920"
+      },
+      {
+        "letter": "D",
+        "text": "26 January 1919"
+      }
+    ],
+    "correct_answer": "(A) 13 April 1919",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 History",
+    "revision_notes": [
+      {
+        "label": "Baisakhi Day 1919",
+        "detail": "General Dyer ordered firing on a peaceful crowd protesting the Rowlatt Act; Tagore renounced his Knighthood."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_04",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • CHEMISTRY",
+    "repeat_tag": "Asked 6x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which gas is the most abundant in Earth's atmosphere (~78%)?",
+    "question_hi": "पृथ्वी के वायुमंडल में सबसे अधिक मात्रा (~78%) में कौन सी गैस पाई जाती है?",
+    "highlight_phrase": "most abundant in Earth's atmosphere",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oxygen"
+      },
+      {
+        "letter": "B",
+        "text": "Carbon Dioxide"
+      },
+      {
+        "letter": "C",
+        "text": "Nitrogen"
+      },
+      {
+        "letter": "D",
+        "text": "Argon"
+      }
+    ],
+    "correct_answer": "(C) Nitrogen",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 7 Geography/Science",
+    "revision_notes": [
+      {
+        "label": "Atmosphere Mix",
+        "detail": "Nitrogen ~78%, Oxygen ~21%, Argon ~0.93%, Carbon Dioxide ~0.04%."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_05",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • PHYSICS",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "What is the SI unit of Force?",
+    "question_hi": "बल (Force) की SI इकाई क्या है?",
+    "highlight_phrase": "SI unit of Force",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Joule"
+      },
+      {
+        "letter": "B",
+        "text": "Newton"
+      },
+      {
+        "letter": "C",
+        "text": "Pascal"
+      },
+      {
+        "letter": "D",
+        "text": "Watt"
+      }
+    ],
+    "correct_answer": "(B) Newton",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
+    "revision_notes": [
+      {
+        "label": "SI Units",
+        "detail": "Force = Newton (N) | Work/Energy = Joule (J) | Pressure = Pascal (Pa) | Power = Watt (W)."
+      }
+    ]
+  },
+  {
+    "id": "mock2_sci_06",
+    "day_theme": "General Science",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • BIOLOGY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which part of the human brain controls body balance and posture?",
+    "question_hi": "मानव मस्तिष्क का कौन सा भाग शरीर का संतुलन (Balance & Posture) नियंत्रित करता है?",
+    "highlight_phrase": "body balance and posture",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cerebrum"
+      },
+      {
+        "letter": "B",
+        "text": "Cerebellum"
+      },
+      {
+        "letter": "C",
+        "text": "Medulla Oblongata"
+      },
+      {
+        "letter": "D",
+        "text": "Hypothalamus"
+      }
+    ],
+    "correct_answer": "(B) Cerebellum",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
+    "revision_notes": [
+      {
+        "label": "Hindbrain",
+        "detail": "Cerebellum coordinates voluntary movements and balance; Medulla controls involuntary actions like breathing and heartbeat."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_04",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which is the largest Delta in the world formed by the Ganga and Brahmaputra rivers?",
+    "question_hi": "गंगा और ब्रह्मपुत्र नदियों द्वारा निर्मित विश्व का सबसे बड़ा डेल्टा कौन सा है?",
+    "highlight_phrase": "largest Delta in the world",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mahanadi Delta"
+      },
+      {
+        "letter": "B",
+        "text": "Sundarbans Delta"
+      },
+      {
+        "letter": "C",
+        "text": "Godavari Delta"
+      },
+      {
+        "letter": "D",
+        "text": "Nile Delta"
+      }
+    ],
+    "correct_answer": "(B) Sundarbans Delta",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
+    "revision_notes": [
+      {
+        "label": "Sundari Trees",
+        "detail": "Named after Sundari mangrove trees; home to the Royal Bengal Tiger and a UNESCO World Heritage Site."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_05",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Which planet is known as 'Earth's Twin' due to its similar size and mass?",
+    "question_hi": "समान आकार और द्रव्यमान के कारण किस ग्रह को 'पृथ्वी की जुड़वाँ बहन' (Earth's Twin) कहा जाता है?",
+    "highlight_phrase": "Earth's Twin",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mars"
+      },
+      {
+        "letter": "B",
+        "text": "Mercury"
+      },
+      {
+        "letter": "C",
+        "text": "Venus"
+      },
+      {
+        "letter": "D",
+        "text": "Neptune"
+      }
+    ],
+    "correct_answer": "(C) Venus",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 6 Geography",
+    "revision_notes": [
+      {
+        "label": "Hottest Planet",
+        "detail": "Venus is also the hottest planet in our Solar System due to its thick CO2 greenhouse atmosphere."
+      }
+    ]
+  },
+  {
+    "id": "mock2_geo_06",
+    "day_theme": "Geography",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Medium",
+    "question": "Hirakud Dam, one of the longest earthen dams in the world, is built across which river?",
+    "question_hi": "हीराकुंड बाँध (Hirakud Dam) किस नदी पर बनाया गया है?",
+    "highlight_phrase": "Hirakud Dam",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Godavari"
+      },
+      {
+        "letter": "B",
+        "text": "Mahanadi"
+      },
+      {
+        "letter": "C",
+        "text": "Krishna"
+      },
+      {
+        "letter": "D",
+        "text": "Sutlej"
+      }
+    ],
+    "correct_answer": "(B) Mahanadi",
+    "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Geography",
+    "revision_notes": [
+      {
+        "label": "Odisha",
+        "detail": "Hirakud Dam is built across the Mahanadi river near Sambalpur, Odisha."
+      }
+    ]
+  },
+  {
+    "id": "mock2_mix_01",
+    "day_theme": "English & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL PYQ • IDIOM",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Select the meaning of the idiom: 'A piece of cake'",
+    "question_hi": "मुहावरे 'A piece of cake' का सही अर्थ चुनें",
+    "highlight_phrase": "A piece of cake",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A sweet dish"
+      },
+      {
+        "letter": "B",
+        "text": "Something very easy to do"
+      },
+      {
+        "letter": "C",
+        "text": "A small share"
+      },
+      {
+        "letter": "D",
+        "text": "A difficult task"
+      }
+    ],
+    "correct_answer": "(B) Something very easy to do",
+    "verified_source": "SSC CGL Official PYQ • Blackbook Idioms",
+    "revision_notes": [
+      {
+        "label": "Common Idiom",
+        "detail": "Means a task that can be accomplished effortlessly."
+      }
+    ]
+  },
+  {
+    "id": "mock2_mix_02",
+    "day_theme": "English & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which shortcut key is used to 'Undo' the last action in Windows / MS Office?",
+    "question_hi": "Windows / MS Office में अंतिम कार्य को 'Undo' करने के लिए किस शॉर्टकट का उपयोग होता है?",
+    "highlight_phrase": "Undo",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ctrl + Y"
+      },
+      {
+        "letter": "B",
+        "text": "Ctrl + Z"
+      },
+      {
+        "letter": "C",
+        "text": "Ctrl + X"
+      },
+      {
+        "letter": "D",
+        "text": "Ctrl + U"
+      }
+    ],
+    "correct_answer": "(B) Ctrl + Z",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • MS Office",
+    "revision_notes": [
+      {
+        "label": "Shortcuts",
+        "detail": "Ctrl + Z = Undo | Ctrl + Y = Redo | Ctrl + X = Cut | Ctrl + U = Underline."
+      }
+    ]
+  },
+  {
+    "id": "mock2_mix_03",
+    "day_theme": "English & Computer",
+    "posted": false,
+    "brand_handle": "@ssc1.daily",
+    "exam_tag": "SSC CGL TIER-2 • COMPUTER",
+    "repeat_tag": "Asked 5x+ in SSC",
+    "difficulty": "Easy",
+    "question": "Which component is called the 'Brain of the Computer'?",
+    "question_hi": "किस घटक को 'कंप्यूटर का मस्तिष्क' (Brain of the Computer) कहा जाता है?",
+    "highlight_phrase": "Brain of the Computer",
+    "options": [
+      {
+        "letter": "A",
+        "text": "RAM"
+      },
+      {
+        "letter": "B",
+        "text": "Hard Disk"
+      },
+      {
+        "letter": "C",
+        "text": "CPU"
+      },
+      {
+        "letter": "D",
+        "text": "Motherboard"
+      }
+    ],
+    "correct_answer": "(C) CPU",
+    "verified_source": "SSC CGL Tier-2 Official PYQ • Computer Fundamentals",
+    "revision_notes": [
+      {
+        "label": "CPU Parts",
+        "detail": "Central Processing Unit (CPU) consists of the ALU (Arithmetic Logic Unit), CU (Control Unit), and Registers."
+      }
+    ]
   }
 ]

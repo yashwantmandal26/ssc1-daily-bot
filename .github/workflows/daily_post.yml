@@ -2,12 +2,15 @@ name: Daily SSC CGL Viral Reel & Mini Mock
 
 on:
   schedule:
-    # Runs daily at 8:47 AM IST (03:17 UTC — off-peak minute for reliable GitHub cron)
-    - cron: '17 3 * * *'
+    # 2x Daily at India peak study/scroll times (off-peak cron minutes):
+    # - Morning: 8:17 AM IST (02:47 UTC) -> Mon/Tue/Thu/Fri/Sat: Viral Reel; Wed/Sun: 4-Slide iOS Mini Mock
+    # - Evening: 7:17 PM IST (13:47 UTC) -> Daily Viral Open-Loop Quiz Reel
+    - cron: '47 2 * * *'
+    - cron: '47 13 * * *'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Post format (auto = 5x/wk Viral Open-Loop Reel, Wed/Sun = 4-Slide Mini Mock)'
+        description: 'Post format (auto = 2x/day hybrid schedule, reel = Viral Reel, carousel = 4-Slide Mini Mock)'
         required: false
         default: 'auto'
         type: choice
@@ -41,7 +44,7 @@ jobs:
         run: |
           pip install -q selenium pillow jinja2 requests
 
-      - name: Render Viral Reel or Mini Mock Carousel
+      - name: Render Viral Reel or iOS Mini Mock Carousel
         run: |
           MODE="${{ github.event.inputs.mode || 'auto' }}"
           python3 auto_post.py --render-only --mode "$MODE"

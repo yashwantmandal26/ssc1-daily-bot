@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-Viral Hybrid SSC CGL Auto-Publisher (@ssc1.daily) — v5.1
---------------------------------------------------------
-Engineered for maximum 2026 Instagram discovery reach, comments & saves:
-  - Mon / Tue / Thu / Fri / Sat -> 6-second 9:16 (1080x1920) Open-Loop Exam-Paper Quiz Reel
-      * Pattern-interrupt cream exam-paper UI + bold yellow trap highlighter
-      * NO answer shown on screen -> drives 150%+ looping watch time & comments
-      * Verified answer hidden below caption fold (`...more`)
-      * Direct Meta Resumable Upload (`rupload.facebook.com`) with `video_url` fallback
-  - Wed / Sun -> 4-Slide 3-Question Mini Mock Carousel (Dark Obsidian + Orange)
-      * Drives high Saves & DM Sends for revision
+Viral Hybrid SSC CGL Auto-Publisher (@ssc1.daily) - v6
+------------------------------------------------------
+Runs 2x daily on GitHub Actions (8:17 AM IST & 7:17 PM IST):
+  - Morning (8:17 AM IST):
+      * Mon / Tue / Thu / Fri / Sat -> 7-second 9:16 Exam-Paper Open-Loop Quiz Reel
+      * Wed / Sun                   -> 4-Slide iOS Liquid Glass Light-Orange Mini Mock Carousel
+  - Evening (7:17 PM IST):
+      * Every day (Mon–Sun)         -> 7-second 9:16 Exam-Paper Open-Loop Quiz Reel
 
-Supports manual override via `--mode auto|reel|carousel`.
+Features:
+  - Soft, 100% copyright-free warm ambient lo-fi study pad BGM synthesized locally
+  - Direct Meta Resumable Binary Upload (`rupload.facebook.com`) with `video_url` fallback
+  - Detailed container `status_code,status` polling
+  - Supports manual override via `--mode auto|reel|carousel`
 """
 
 import argparse
@@ -19,11 +21,15 @@ import base64
 import datetime
 import html
 import json
+import math
 import os
+import random
+import struct
 import subprocess
 import sys
 import tempfile
 import time
+import wave
 from pathlib import Path
 
 import requests
@@ -46,15 +52,19 @@ IG_API_BASE = (
     else "https://graph.facebook.com/v21.0"
 )
 
-# IST = UTC+5:30; Wed(2) & Sun(6) -> 4-Slide Mini Mock Carousel; other 5 days -> Viral Open-Loop Reel
+# IST = UTC+5:30; Wed(2) & Sun(6) morning (<15:00 IST) -> 4-Slide Mini Mock; all other slots -> Viral Reel
 CAROUSEL_WEEKDAYS = {2, 6}
 
 
 def resolve_mode(requested: str) -> str:
     if requested in ("carousel", "reel"):
         return requested
-    ist_now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
-    return "carousel" if ist_now.weekday() in CAROUSEL_WEEKDAYS else "reel"
+    ist_now = datetime.datetime.now(
+        datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    )
+    if ist_now.hour < 15 and ist_now.weekday() in CAROUSEL_WEEKDAYS:
+        return "carousel"
+    return "reel"
 
 
 def format_question_html(
@@ -72,7 +82,7 @@ def format_question_html(
     return escaped_q
 
 
-def create_driver(width: int = 1080, height: int = 1500) -> webdriver.Chrome:
+def create_driver(width: int = 1080, height: int = 2000) -> webdriver.Chrome:
     os.environ.setdefault("DBUS_SESSION_BUS_ADDRESS", "/dev/null")
     options = Options()
     options.add_argument("--headless=new")
@@ -112,11 +122,58 @@ def render_html_to_image(
             rgb_img.save(output_path, format=fmt, **save_kwargs)
 
 
+def generate_ambient_pad_wav(output_wav: Path, duration_sec: float = 6.0, sr: int = 48000) -> None:
+    """Synthesize a soft, warm, copyright-free lo-fi study pad (Cmaj9 -> Fmaj7 gentle swell)."""
+    n_samples = int(duration_sec * sr)
+    # Warm low-mid chord voices (Hz): C3, G3, B3, D4, E4 with subtle stereo detune
+    chord_a = [130.81, 196.00, 246.94, 293.66, 329.63]
+    chord_b = [174.61, 220.00, 261.63, 329.63, 392.00]
+    amp = 0.055  # Gentle background ambience (~-22 dBFS)
+
+    frames = bytearray()
+    for i in range(n_samples):
+        t = i / sr
+        # Smooth crossfade from chord A to chord B around midpoint
+        blend = 0.5 * (1.0 + math.tanh((t - duration_sec * 0.52) * 1.4))
+        # Gentle breathing LFO
+        lfo = 0.85 + 0.15 * math.sin(2.0 * math.pi * 0.35 * t)
+        # Smooth 0.6s fade-in and 0.8s fade-out for seamless Reel looping
+        env = 1.0
+        if t < 0.6:
+            env = t / 0.6
+        elif t > duration_sec - 0.8:
+            env = max(0.0, (duration_sec - t) / 0.8)
+
+        left = 0.0
+        right = 0.0
+        for idx, (fa, fb) in enumerate(zip(chord_a, chord_b)):
+            wa = math.sin(2.0 * math.pi * fa * t) + 0.25 * math.sin(4.0 * math.pi * fa * t)
+            wb = math.sin(2.0 * math.pi * fb * t) + 0.25 * math.sin(4.0 * math.pi * fb * t)
+            val = (1.0 - blend) * wa + blend * wb
+            # Slight stereo width via tiny frequency offset
+            wa_r = math.sin(2.0 * math.pi * (fa + 0.25) * t + 0.4)
+            wb_r = math.sin(2.0 * math.pi * (fb + 0.25) * t + 0.4)
+            val_r = (1.0 - blend) * wa_r + blend * wb_r
+            weight = 1.0 if idx < 2 else 0.65
+            left += val * weight
+            right += val_r * weight
+
+        s_l = max(-0.95, min(0.95, left * amp * lfo * env))
+        s_r = max(-0.95, min(0.95, right * amp * lfo * env))
+        frames += struct.pack("<hh", int(s_l * 32767), int(s_r * 32767))
+
+    with wave.open(str(output_wav), "wb") as wf:
+        wf.setnchannels(2)
+        wf.setsampwidth(2)
+        wf.setframerate(sr)
+        wf.writeframes(bytes(frames))
+
+
 def build_carousel_caption(batch: list[dict]) -> str:
     handle = batch[0].get("brand_handle", "@ssc1.daily")
     topics = " • ".join(q.get("highlight_phrase", "Static GK") for q in batch)
     return (
-        f"SSC CGL Daily 3-Question Mini Mock ({topics}) — Can you score 3/3? 🔥👇\n\n"
+        f"SSC CGL Daily 3-Question Mini Mock ({topics}) - Can you score 3/3? 🔥👇\n\n"
         f"90% aspirants miss at least 1 question! Solve Q1, Q2, and Q3 honestly, then swipe to Slide 4 for the verified Answer Key & NCERT notes.\n\n"
         f"💬 Comment your score: 3/3 🔥 | 2/3 ⚡ | 1/3 📖\n"
         f"✈️ Send this to your SSC study buddy and challenge them!\n"
@@ -138,7 +195,7 @@ def build_viral_reel_caption(quiz: dict) -> str:
 
     return (
         f"Comment (a), (b), (c), or (d) BEFORE checking the answer! 👇🔥\n"
-        f"Most SSC CGL aspirants fall for this '{topic}' trap — let's see who gets it right!\n\n"
+        f"Most SSC CGL aspirants fall for this '{topic}' trap - let's see who gets it right!\n\n"
         f"✈️ Send this to your SSC study partner to test them!\n"
         f"🔖 Save for quick revision • Follow {handle} for daily PYQ traps.\n"
         f".\n.\n.\n.\n"
@@ -182,7 +239,7 @@ def render_mini_mock(driver: webdriver.Chrome, template: Template, batch: list[d
             brand_handle=handle,
         )
         out_path = PUBLISHED_DIR / f"{mock_id}_slide{idx + 1}.jpg"
-        render_html_to_image(driver, slide_html, out_path)
+        render_html_to_image(driver, slide_html, out_path, width=1080, height=1350)
         slide_rels.append(f"published/{out_path.name}")
 
     mock_answers = []
@@ -208,7 +265,7 @@ def render_mini_mock(driver: webdriver.Chrome, template: Template, batch: list[d
         brand_handle=handle,
     )
     out_path4 = PUBLISHED_DIR / f"{mock_id}_slide4.jpg"
-    render_html_to_image(driver, slide4_html, out_path4)
+    render_html_to_image(driver, slide4_html, out_path4, width=1080, height=1350)
     slide_rels.append(f"published/{out_path4.name}")
 
     return {
@@ -246,41 +303,53 @@ def render_viral_open_loop_reel(
         options=paper_options,
         brand_handle=handle,
     )
-    render_html_to_image(driver, reel_html, preview_path, quality=96)
+    # Render native full 9:16 (1080x1920) Exam-Paper Reel frame
+    render_html_to_image(
+        driver, reel_html, preview_path, width=1080, height=1920, quality=96
+    )
 
-    # Strict Meta Reels-compliant 9:16 (1080x1920) MP4:
-    # - Pads 1080x1350 card cleanly inside 1080x1920 safe zones with matching #fbf7ee cream
-    # - Standard H.264 Main Profile, closed GOP (30fps, keyframe every 1s), 48kHz stereo AAC, faststart
-    cmd = [
-        "ffmpeg",
-        "-y",
-        "-loop", "1",
-        "-framerate", "30",
-        "-i", str(preview_path),
-        "-f", "lavfi",
-        "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
-        "-t", "6",
-        "-vf", "pad=1080:1920:0:285:color=#fbf7ee,format=yuv420p,fps=30",
-        "-c:v", "libx264",
-        "-profile:v", "main",
-        "-level", "4.0",
-        "-g", "30",
-        "-keyint_min", "30",
-        "-sc_threshold", "0",
-        "-b:v", "2500k",
-        "-maxrate", "4000k",
-        "-bufsize", "5000k",
-        "-c:a", "aac",
-        "-ar", "48000",
-        "-ac", "2",
-        "-b:a", "128k",
-        "-shortest",
-        "-movflags", "+faststart",
-        str(video_path),
-    ]
-    res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
-    if res.returncode != 0 or not video_path.exists():
-        raise RuntimeError(f"ffmpeg failed: {res.stderr}")
+    with tempfile.TemporaryDirectory(prefix="ig_bgm_") as tmpdir:
+        bgm_dir = ROOT_DIR / "bgm"
+        mp3s = sorted(bgm_dir.glob("*.mp3")) if bgm_dir.exists() else []
+        if mp3s:
+            audio_input = random.choice(mp3s)
+            print(f"Using royalty-free BGM track: {audio_input.name}")
+            audio_filter = "volume=0.35,afade=t=in:st=0:d=0.5,afade=t=out:st=6.2:d=0.8"
+        else:
+            audio_input = Path(tmpdir) / "ambient_pad.wav"
+            generate_ambient_pad_wav(audio_input, duration_sec=7.0, sr=48000)
+            audio_filter = "anull"
+
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-loop", "1",
+            "-framerate", "30",
+            "-i", str(preview_path),
+            "-i", str(audio_input),
+            "-t", "7",
+            "-vf", "format=yuv420p,fps=30",
+            "-af", audio_filter,
+            "-c:v", "libx264",
+            "-profile:v", "main",
+            "-level", "4.0",
+            "-g", "30",
+            "-keyint_min", "30",
+            "-sc_threshold", "0",
+            "-b:v", "2500k",
+            "-maxrate", "4000k",
+            "-bufsize", "5000k",
+            "-c:a", "aac",
+            "-ar", "48000",
+            "-ac", "2",
+            "-b:a", "128k",
+            "-shortest",
+            "-movflags", "+faststart",
+            str(video_path),
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        if res.returncode != 0 or not video_path.exists():
+            raise RuntimeError(f"ffmpeg failed: {res.stderr}")
 
     return {
         "post_type": "reel",
@@ -315,7 +384,7 @@ def render_next(mode: str) -> None:
                 sys.exit(0)
             target_quiz = unposted[0]
 
-        driver = create_driver()
+        driver = create_driver(width=1080, height=2000)
         try:
             pending = render_viral_open_loop_reel(driver, template, target_quiz, source_file)
         finally:
@@ -326,7 +395,7 @@ def render_next(mode: str) -> None:
         if len(unposted) < 3:
             if len(unposted) >= 1:
                 print("Less than 3 PYQs left in pyqs.json; falling back to Viral Reel mode.")
-                driver = create_driver()
+                driver = create_driver(width=1080, height=2000)
                 try:
                     pending = render_viral_open_loop_reel(driver, template, unposted[0], "pyqs.json")
                 finally:
@@ -335,7 +404,7 @@ def render_next(mode: str) -> None:
                 print("All PYQs posted! Add more questions to pyqs.json.")
                 sys.exit(0)
         else:
-            driver = create_driver()
+            driver = create_driver(width=1080, height=1500)
             try:
                 pending = render_mini_mock(driver, template, unposted[:3])
             finally:
@@ -376,7 +445,6 @@ def wait_for_container(container_id: str, token: str, timeout_sec: int = 120) ->
 def upload_reel_resumable(
     ig_user_id: str, video_file: Path, caption: str, token: str
 ) -> str:
-    """Upload local MP4 directly to Meta rupload.facebook.com (bypasses GitHub raw MIME issues)."""
     init_resp = ig_post(
         f"{ig_user_id}/media",
         {
@@ -430,7 +498,6 @@ def publish_pending() -> None:
         local_video = ROOT_DIR / pending["video_rel"]
         container_id = None
 
-        # Prefer direct binary resumable upload on Facebook Login / Unified Login (EAA... tokens)
         if not token.startswith("IG") and local_video.exists():
             try:
                 container_id = upload_reel_resumable(
@@ -441,7 +508,7 @@ def publish_pending() -> None:
 
         if not container_id:
             video_url = f"{raw_base}/{pending['video_rel']}"
-            print(f"Publishing 6s 9:16 Viral Quiz Reel via URL: {video_url}")
+            print(f"Publishing 7s 9:16 Viral Quiz Reel via URL: {video_url}")
             container_id = ig_post(
                 f"{ig_user_id}/media",
                 {
