@@ -97,7 +97,7 @@
   },
   {
     "id": "viral_polity_02",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "Topper-Level Article 61 Trap!",
@@ -124,7 +124,8 @@
     ],
     "correct_answer": "(c) Elected members of State Assemblies",
     "verified_source": "SSC CGL Official PYQ • Article 61, Constitution of India",
-    "explanation": "State MLAs vote in the President's election, NOT in impeachment. Both elected and nominated members of Parliament participate in impeachment."
+    "explanation": "State MLAs vote in the President's election, NOT in impeachment. Both elected and nominated members of Parliament participate in impeachment.",
+    "ig_media_id": "17953558773054461"
   },
   {
     "id": "viral_history_01",
