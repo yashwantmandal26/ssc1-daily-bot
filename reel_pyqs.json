@@ -65,7 +65,7 @@
   },
   {
     "id": "viral_geo_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
     "curiosity_tag": "Most Confused North-East Trap!",
@@ -92,7 +92,8 @@
     ],
     "correct_answer": "(c) Manipur",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
-    "explanation": "Tropic of Cancer passes through 8 states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram — NOT Manipur."
+    "explanation": "Tropic of Cancer passes through 8 states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, and Mizoram — NOT Manipur.",
+    "ig_media_id": "18191943028411614"
   },
   {
     "id": "viral_polity_02",
