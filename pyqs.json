@@ -119,7 +119,7 @@
   {
     "id": "tue_eng_01",
     "day_theme": "Tuesday • English Vocab",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • ENGLISH IDIOM",
     "repeat_tag": "Asked 5x+ in SSC",
@@ -152,12 +152,13 @@
         "label": "Memory Hook",
         "detail": "Soldiers used to bite a bullet during painful surgery—meaning enduring hardship bravely."
       }
-    ]
+    ],
+    "ig_media_id": "18099835106442815"
   },
   {
     "id": "tue_eng_02",
     "day_theme": "Tuesday • English Vocab",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • ONE WORD",
     "repeat_tag": "Asked 6x+ in SSC",
@@ -190,12 +191,13 @@
         "label": "Root Word",
         "detail": "'Poly' (many) + 'glot' (tongue/language). Bibliophile = lover of books."
       }
-    ]
+    ],
+    "ig_media_id": "18099835106442815"
   },
   {
     "id": "tue_eng_03",
     "day_theme": "Tuesday • English Vocab",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • ENGLISH IDIOM",
     "repeat_tag": "Asked 5x+ in SSC",
@@ -228,7 +230,8 @@
         "label": "Similar Idiom",
         "detail": "'Let the cat out of the bag' also means revealing a secret unintentionally."
       }
-    ]
+    ],
+    "ig_media_id": "18099835106442815"
   },
   {
     "id": "wed_hist_01",
