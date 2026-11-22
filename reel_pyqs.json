@@ -129,7 +129,7 @@
   },
   {
     "id": "viral_history_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
     "curiosity_tag": "Repeated 7x+ in SSC Exams!",
@@ -156,7 +156,8 @@
     ],
     "correct_answer": "(d) Iron",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 12 History",
-    "explanation": "Indus Valley was a Bronze Age civilization (copper, bronze, gold, silver were known). Iron came into use later during the Later Vedic period."
+    "explanation": "Indus Valley was a Bronze Age civilization (copper, bronze, gold, silver were known). Iron came into use later during the Later Vedic period.",
+    "ig_media_id": "18133671535696228"
   },
   {
     "id": "viral_science_01",
