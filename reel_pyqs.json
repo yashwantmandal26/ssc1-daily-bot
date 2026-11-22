@@ -161,7 +161,7 @@
   },
   {
     "id": "viral_science_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • SCIENCE",
     "curiosity_tag": "Don't Confuse Donor vs Recipient!",
@@ -188,7 +188,8 @@
     ],
     "correct_answer": "(c) AB Positive",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 11 Biology",
-    "explanation": "AB+ has both A & B antigens and Rh factor with no antibodies, making it the Universal Recipient. O- is the Universal Donor."
+    "explanation": "AB+ has both A & B antigens and Rh factor with no antibodies, making it the Universal Recipient. O- is the Universal Donor.",
+    "ig_media_id": "18167648062497468"
   },
   {
     "id": "viral_polity_03",
