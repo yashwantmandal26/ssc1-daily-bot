@@ -193,7 +193,7 @@
   },
   {
     "id": "viral_polity_03",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "Classic Article 110 Trap!",
@@ -220,7 +220,8 @@
     ],
     "correct_answer": "(c) Speaker of Lok Sabha",
     "verified_source": "SSC CGL Official PYQ • Article 110(3), Constitution of India",
-    "explanation": "Under Article 110(3), the Speaker of Lok Sabha has the final authority to certify a Money Bill, and it cannot be questioned in any court."
+    "explanation": "Under Article 110(3), the Speaker of Lok Sabha has the final authority to certify a Money Bill, and it cannot be questioned in any court.",
+    "ig_media_id": "18141381466643991"
   },
   {
     "id": "viral_science_02",
