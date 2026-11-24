@@ -236,7 +236,7 @@
   {
     "id": "wed_hist_01",
     "day_theme": "Wednesday • History & Static GK",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • STATIC GK",
     "repeat_tag": "Asked 7x+ in SSC",
@@ -269,12 +269,13 @@
         "label": "Founder",
         "detail": "15th-century Vaishnava saint Srimanta Sankardev; recognized as classical in 2000."
       }
-    ]
+    ],
+    "ig_media_id": "17905916628672839"
   },
   {
     "id": "wed_hist_02",
     "day_theme": "Wednesday • History & Static GK",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
     "repeat_tag": "Asked 8x+ in SSC",
@@ -307,12 +308,13 @@
         "label": "Key Date",
         "detail": "23 June 1757 (Robert Clive vs Siraj-ud-Daulah). Trap: 1764 = Battle of Buxar."
       }
-    ]
+    ],
+    "ig_media_id": "17905916628672839"
   },
   {
     "id": "wed_hist_03",
     "day_theme": "Wednesday • History & Static GK",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
     "repeat_tag": "Asked 6x+ in SSC",
@@ -345,7 +347,8 @@
         "label": "Trap Check",
         "detail": "Brahmo Samaj (1828) = Raja Ram Mohan Roy | Arya Samaj (1875) = Dayanand Saraswati."
       }
-    ]
+    ],
+    "ig_media_id": "17905916628672839"
   },
   {
     "id": "thu_sci_01",
