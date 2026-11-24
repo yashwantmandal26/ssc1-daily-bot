@@ -257,7 +257,7 @@
   },
   {
     "id": "viral_polity_04",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "Article 19(1) Memory Test!",
@@ -284,7 +284,8 @@
     ],
     "correct_answer": "(c) Right to acquire and hold property",
     "verified_source": "SSC CGL Official PYQ • 44th Amendment Act (1978)",
-    "explanation": "Article 19(1)(f) (Right to acquire, hold and dispose of property) was deleted by the 44th Amendment Act, 1978."
+    "explanation": "Article 19(1)(f) (Right to acquire, hold and dispose of property) was deleted by the 44th Amendment Act, 1978.",
+    "ig_media_id": "18122549903052743"
   },
   {
     "id": "viral_computer_01",
