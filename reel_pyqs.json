@@ -225,7 +225,7 @@
   },
   {
     "id": "viral_science_02",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • CHEMISTRY",
     "curiosity_tag": "Quick Periodic Table Check!",
@@ -252,7 +252,8 @@
     ],
     "correct_answer": "(d) Hydrogen",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 10 Science",
-    "explanation": "Group 18 Noble Gases are Helium, Neon, Argon, Krypton, Xenon, and Radon. Hydrogen (Group 1) is highly reactive, not an inert gas."
+    "explanation": "Group 18 Noble Gases are Helium, Neon, Argon, Krypton, Xenon, and Radon. Hydrogen (Group 1) is highly reactive, not an inert gas.",
+    "ig_media_id": "18136952521740596"
   },
   {
     "id": "viral_polity_04",
