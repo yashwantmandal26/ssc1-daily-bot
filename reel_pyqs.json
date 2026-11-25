@@ -289,7 +289,7 @@
   },
   {
     "id": "viral_computer_01",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL TIER-2 • COMPUTER",
     "curiosity_tag": "Mandatory Tier-2 Computer PYQ!",
@@ -316,7 +316,8 @@
     ],
     "correct_answer": "(c) RAM (Random Access Memory)",
     "verified_source": "SSC CGL Tier-2 Official PYQ • NCERT Computer Science",
-    "explanation": "RAM is volatile primary memory (temporary working memory), whereas ROM, EPROM, and SSD are non-volatile and retain data without power."
+    "explanation": "RAM is volatile primary memory (temporary working memory), whereas ROM, EPROM, and SSD are non-volatile and retain data without power.",
+    "ig_media_id": "18118381385014797"
   },
   {
     "id": "viral_polity_05",
