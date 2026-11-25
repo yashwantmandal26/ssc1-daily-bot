@@ -231,22 +231,26 @@ def fetch_comments(media_id: str, token: str) -> list[dict]:
     return data.get("data", [])
 
 
-def like_comment(ig_user_id: str, comment_id: str, token: str) -> None:
-    """Best-effort Like on a comment via official Meta User Likes API (requires instagram_manage_engagement)."""
+def like_comment(ig_user_id: str, comment_id: str, token: str) -> bool:
+    """Like a comment via official Meta User Likes API (requires instagram_manage_engagement)."""
     if not ig_user_id or token.startswith("IG"):
-        return
+        print("Like skipped: IG_USER_ID missing or IG token used (requires Facebook/Unified Login EAA token).")
+        return False
     try:
         resp = requests.post(
             f"https://graph.facebook.com/v27.0/{ig_user_id}/likes",
             data={"comment_id": comment_id, "access_token": token},
             timeout=20,
         )
-        if resp.status_code < 400:
-            print(f"Liked comment {comment_id}!")
-        else:
-            print(f"Like skipped (add instagram_manage_engagement permission if needed): {resp.text}")
+        data = resp.json() if resp.text else {}
+        if resp.status_code < 400 and data.get("success", True):
+            print(f"Liked comment {comment_id}! Response: {data}")
+            return True
+        print(f"Like failed (ensure instagram_manage_engagement is granted on token): {resp.status_code} {resp.text}")
+        return False
     except Exception as exc:
-        print(f"Like skipped: {exc}")
+        print(f"Like error: {exc}")
+        return False
 
 
 def post_reply(comment_id: str, message: str, token: str) -> dict:
@@ -297,6 +301,7 @@ def main() -> None:
         return
 
     total_replied = 0
+    total_liked = 0
     max_replies_per_run = 15
 
     for media_id, quiz, is_carousel in posts:
@@ -330,7 +335,8 @@ def main() -> None:
 
             print(f"Replying to @{username} ('{comment_text}') -> '{reply_msg}'")
             try:
-                like_comment(ig_user_id, c["id"], token)
+                if like_comment(ig_user_id, c["id"], token):
+                    total_liked += 1
                 time.sleep(random.uniform(1.0, 2.2))
                 res = post_reply(c["id"], reply_msg, token)
                 print(f"Replied! Reply ID: {res.get('id')}")
@@ -339,7 +345,7 @@ def main() -> None:
             except Exception as exc:
                 print(f"Error replying to {c['id']}: {exc}")
 
-    print(f"Done! Total new replies sent: {total_replied}")
+    print(f"Done! Total comments liked: {total_liked} | Total new replies sent: {total_replied}")
 
 
 if __name__ == "__main__":

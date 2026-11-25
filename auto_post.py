@@ -53,7 +53,7 @@ IG_API_BASE = (
 )
 
 # IST = UTC+5:30; Wed(2) & Sun(6) morning (<15:00 IST) -> 4-Slide Mini Mock; all other slots -> Viral Reel
-CAROUSEL_WEEKDAYS = {2, 6}
+CAROUSEL_WEEKDAYS = set()  # 100% Reels (2/day) until 500+ followers; set {2, 6} to re-enable Carousels
 
 
 def resolve_mode(requested: str) -> str:

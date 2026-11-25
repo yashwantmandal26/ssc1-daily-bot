@@ -1,0 +1,99 @@
+name: Daily SSC Story (With Mobile Approval)
+
+on:
+  schedule:
+    # Runs daily at 1:17 PM IST (07:47 UTC) - renders preview and pings your GitHub Mobile App for approval
+    - cron: '47 7 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Story source (auto = live SSC news if fresh, else sarcasm/quote/trick bank)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - news
+          - curated
+
+permissions:
+  contents: write
+
+jobs:
+  render-story:
+    runs-on: ubuntu-latest
+    outputs:
+      image_rel: ${{ steps.render.outputs.image_rel }}
+      headline: ${{ steps.render.outputs.headline }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Noto Hindi fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core
+
+      - name: Install Python dependencies
+        run: |
+          pip install -q selenium pillow jinja2 requests
+
+      - name: Render Daily SSC Story & Mark Consumed (So Reject Moves to Next Tomorrow)
+        id: render
+        run: |
+          MODE="${{ github.event.inputs.mode || 'auto' }}"
+          python3 auto_story.py --render-only --mode "$MODE"
+
+      - name: Commit Preview Image & Story Queue State
+        run: |
+          git config user.name "SSC1 Daily Bot"
+          git config user.email "bot@ssc1.daily"
+          git add published/ stories.json posted_news.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Prepare daily SSC Story preview for approval"
+            git push
+          fi
+
+      - name: Attach Story Preview to GitHub Mobile Summary
+        run: |
+          IMG_URL="https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/${{ steps.render.outputs.image_rel }}"
+          {
+            echo "## Story Preview Ready for Approval"
+            echo "**Headline:** ${{ steps.render.outputs.headline }}"
+            echo ""
+            echo "Tap **Review deployments -> story-approval -> Approve** to publish to @ssc1.daily, or **Reject** to skip (a different Story will appear tomorrow)."
+            echo ""
+            echo "![Story Preview](${IMG_URL})"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  publish-story:
+    needs: render-story
+    runs-on: ubuntu-latest
+    environment: story-approval
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install -q requests
+
+      - name: Publish Approved Story to Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          python3 auto_story.py --publish-image "${{ needs.render-story.outputs.image_rel }}"
