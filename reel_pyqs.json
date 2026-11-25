@@ -321,7 +321,7 @@
   },
   {
     "id": "viral_polity_05",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "85% Confuse President vs Governor!",
@@ -348,7 +348,8 @@
     ],
     "correct_answer": "(c) Chief Justice of the State High Court",
     "verified_source": "SSC CGL Official PYQ • Article 159, Constitution of India",
-    "explanation": "The Governor is appointed by the President (Art. 155), but the Oath of Office is administered by the Chief Justice of the concerned State High Court (Art. 159)."
+    "explanation": "The Governor is appointed by the President (Art. 155), but the Oath of Office is administered by the Chief Justice of the concerned State High Court (Art. 159).",
+    "ig_media_id": "18123121348954462"
   },
   {
     "id": "viral_geo_02",
