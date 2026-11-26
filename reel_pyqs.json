@@ -353,7 +353,7 @@
   },
   {
     "id": "viral_geo_02",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • GEOGRAPHY",
     "curiosity_tag": "Classic West-Flowing River Trap!",
@@ -380,7 +380,9 @@
     ],
     "correct_answer": "(c) Narmada",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Geography",
-    "explanation": "Narmada and Tapi are major west-flowing peninsular rivers that flow through rift valleys into the Arabian Sea, not the Bay of Bengal."
+    "explanation": "Narmada and Tapi are major west-flowing peninsular rivers that flow through rift valleys into the Arabian Sea, not the Bay of Bengal.",
+    "ig_media_id": "18084768869361104",
+    "yt_video_id": "OC9Y0kgBZ04"
   },
   {
     "id": "viral_history_02",
