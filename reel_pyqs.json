@@ -818,7 +818,7 @@
   },
   {
     "id": "viral_history_04",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
     "curiosity_tag": "1905 vs 1906 vs 1907 Trap!",
@@ -845,7 +845,9 @@
     ],
     "correct_answer": "(c) 1907 (Surat)",
     "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
-    "explanation": "Moderates and Extremists split in 1907 at the Surat Session (presided by Rash Behari Ghosh) and reunited in 1916 (Lucknow Pact)."
+    "explanation": "Moderates and Extremists split in 1907 at the Surat Session (presided by Rash Behari Ghosh) and reunited in 1916 (Lucknow Pact).",
+    "ig_media_id": "17918854950469461",
+    "yt_video_id": "PEAUw5CYmiQ"
   },
   {
     "id": "viral_geo_04",
