@@ -415,7 +415,7 @@
   },
   {
     "id": "viral_science_03",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • BIOLOGY",
     "curiosity_tag": "90% Mix Up Vitamin B & C!",
@@ -442,7 +442,9 @@
     ],
     "correct_answer": "(c) Vitamin C",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 12 Biology",
-    "explanation": "Vitamins A, D, E, and K are fat-soluble (memory trick: KEDA). Vitamins B-complex and C are water-soluble."
+    "explanation": "Vitamins A, D, E, and K are fat-soluble (memory trick: KEDA). Vitamins B-complex and C are water-soluble.",
+    "ig_media_id": "17995764045065743",
+    "yt_video_id": "zBH3b3QxCQ8"
   },
   {
     "id": "viral_polity_06",
