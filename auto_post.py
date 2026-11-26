@@ -56,6 +56,69 @@ IG_API_BASE = (
 CAROUSEL_WEEKDAYS = set()  # 100% Reels (2/day) until 500+ followers; set {2, 6} to re-enable Carousels
 
 
+
+LEVEL_CYCLE = ["Easy", "Medium", "Hard"]
+
+# Balanced Easy -> Medium -> Hard rotation across all SSC CGL Reel PYQs
+DIFFICULTY_MAP = {
+    # Easy (direct NCERT / high-frequency fundamentals)
+    "viral_science_03": "Easy", "viral_science_04": "Easy", "viral_science_05": "Easy",
+    "viral_polity_08": "Easy", "viral_science_06": "Easy", "viral_science_07": "Easy",
+    "viral_computer_03": "Easy", "viral_polity_11": "Easy", "viral_polity_15": "Easy",
+    "viral_polity_17": "Easy", "viral_polity_18": "Easy", "viral_polity_22": "Easy",
+    "viral_polity_23": "Easy", "viral_polity_24": "Easy", "viral_history_08": "Easy",
+    "viral_history_10": "Easy", "viral_history_15": "Easy", "viral_history_16": "Easy",
+    "viral_history_17": "Easy", "viral_geo_06": "Easy", "viral_geo_08": "Easy",
+    "viral_geo_09": "Easy", "viral_geo_11": "Easy", "viral_geo_14": "Easy",
+    "viral_geo_16": "Easy", "viral_science_08": "Easy", "viral_science_10": "Easy",
+    "viral_science_11": "Easy", "viral_science_13": "Easy", "viral_science_15": "Easy",
+    "viral_science_16": "Easy", "viral_science_18": "Easy", "viral_science_21": "Easy",
+    "viral_science_22": "Easy", "viral_static_05": "Easy", "viral_computer_07": "Easy",
+    "viral_computer_11": "Easy", "viral_eng_05": "Easy",
+    # Medium (classic SSC traps & comparison questions)
+    "viral_geo_02": "Medium", "viral_history_02": "Medium", "viral_polity_06": "Medium",
+    "viral_polity_07": "Medium", "viral_history_03": "Medium", "viral_economy_02": "Medium",
+    "viral_geo_03": "Medium", "viral_computer_02": "Medium", "viral_static_01": "Medium",
+    "viral_polity_09": "Medium", "viral_geo_04": "Medium", "viral_polity_10": "Medium",
+    "viral_polity_12": "Medium", "viral_polity_13": "Medium", "viral_polity_20": "Medium",
+    "viral_polity_21": "Medium", "viral_history_05": "Medium", "viral_history_07": "Medium",
+    "viral_history_09": "Medium", "viral_history_11": "Medium", "viral_history_13": "Medium",
+    "viral_history_14": "Medium", "viral_geo_07": "Medium", "viral_geo_10": "Medium",
+    "viral_geo_12": "Medium", "viral_geo_13": "Medium", "viral_science_09": "Medium",
+    "viral_science_12": "Medium", "viral_science_14": "Medium", "viral_science_17": "Medium",
+    "viral_science_19": "Medium", "viral_economy_04": "Medium", "viral_economy_05": "Medium",
+    "viral_economy_06": "Medium", "viral_static_02": "Medium", "viral_static_07": "Medium",
+    "viral_computer_04": "Medium", "viral_computer_06": "Medium", "viral_computer_09": "Medium",
+    "viral_eng_01": "Medium", "viral_eng_03": "Medium", "viral_eng_06": "Medium",
+    # Hard (tricky exceptions, deep Articles, Tier-2 & chronology traps)
+    "viral_history_04": "Hard", "viral_polity_14": "Hard", "viral_polity_16": "Hard",
+    "viral_polity_19": "Hard", "viral_history_06": "Hard", "viral_history_12": "Hard",
+    "viral_geo_05": "Hard", "viral_geo_15": "Hard", "viral_science_20": "Hard",
+    "viral_economy_03": "Hard", "viral_static_03": "Hard", "viral_static_04": "Hard",
+    "viral_static_06": "Hard", "viral_computer_05": "Hard", "viral_computer_08": "Hard",
+    "viral_computer_10": "Hard", "viral_eng_02": "Hard", "viral_eng_04": "Hard",
+    "viral_eng_07": "Hard",
+}
+
+
+def get_quiz_difficulty(quiz: dict) -> str:
+    if quiz.get("difficulty") in ("Easy", "Medium", "Hard"):
+        return quiz["difficulty"]
+    return DIFFICULTY_MAP.get(quiz.get("id", ""), "Medium")
+
+
+def pick_next_reel_by_difficulty(all_reels: list[dict]) -> dict | None:
+    unposted = [q for q in all_reels if not q.get("posted", False)]
+    if not unposted:
+        return None
+    posted_count = sum(1 for q in all_reels if q.get("posted", False))
+    target_level = LEVEL_CYCLE[posted_count % 3]
+    print(f"Difficulty loop -> Posted so far: {posted_count} | Target next level: {target_level}")
+    for q in unposted:
+        if get_quiz_difficulty(q) == target_level:
+            return q
+    return unposted[0]
+
 def resolve_mode(requested: str) -> str:
     if requested in ("carousel", "reel"):
         return requested
@@ -292,9 +355,17 @@ def render_viral_open_loop_reel(
         for opt in quiz["options"]
     ]
 
+    tag_parts = [p.strip() for p in quiz["exam_tag"].split("•")]
+    exam_main = tag_parts[0] if tag_parts else "SSC CGL • PYQ"
+    subject_name = tag_parts[1] if len(tag_parts) > 1 else "GENERAL AWARENESS"
+    if exam_main.upper() == "SSC CGL PYQ":
+        exam_main = "SSC CGL • PYQ"
+
     reel_html = template.render(
         slide_type="viral_reel",
         badge_text=quiz["exam_tag"],
+        exam_main=exam_main,
+        subject_name=subject_name,
         hook_text=quiz.get("curiosity_tag", "90% Aspirants Get This Wrong!"),
         question_html=format_question_html(
             quiz["question"], quiz.get("highlight_phrase"), "highlight-yellow"
@@ -369,13 +440,12 @@ def render_next(mode: str) -> None:
     if chosen_mode == "reel":
         source_file = "reel_pyqs.json"
         unposted_reel = []
+        target_quiz = None
         if REEL_PYQS_PATH.exists():
             reel_pyqs = json.loads(REEL_PYQS_PATH.read_text(encoding="utf-8"))
-            unposted_reel = [q for q in reel_pyqs if not q.get("posted", False)]
+            target_quiz = pick_next_reel_by_difficulty(reel_pyqs)
 
-        if unposted_reel:
-            target_quiz = unposted_reel[0]
-        else:
+        if not target_quiz:
             source_file = "pyqs.json"
             pyqs = json.loads(PYQS_PATH.read_text(encoding="utf-8"))
             unposted = [q for q in pyqs if not q.get("posted", False)]
