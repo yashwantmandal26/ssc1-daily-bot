@@ -245,30 +245,140 @@ def build_carousel_caption(batch: list[dict]) -> str:
     )
 
 
+def _extract_subject(exam_tag: str) -> str:
+    if "•" in exam_tag:
+        raw_subject = exam_tag.split("•", 1)[1].strip()
+    elif "|" in exam_tag:
+        raw_subject = exam_tag.split("|", 1)[1].strip()
+    else:
+        raw_subject = ""
+
+    raw_subject = " ".join(raw_subject.replace("—", "-").replace("–", "-").split())
+    if not raw_subject or raw_subject.upper() in {"PYQ", "SSC", "SSC CGL"}:
+        return "Static GK"
+
+    acronyms = {"GK", "GS", "IT", "CA"}
+    words = []
+    for word in raw_subject.split():
+        if word.upper() in acronyms:
+            words.append(word.upper())
+        else:
+            words.append(word.capitalize())
+    return " ".join(words)
+
+
 def build_youtube_short_title(quiz: dict) -> str:
-    suffix = " #Shorts"
-    max_total = 99
-    exam_tag = " ".join(
-        quiz.get("exam_tag", "SSC CGL PYQ")
+    subject = _extract_subject(quiz.get("exam_tag", ""))
+    suffix = f" | SSC CGL {subject} PYQ #shorts #ssccgl"
+    max_total = 94
+
+    highlight = " ".join(
+        (quiz.get("highlight_phrase") or "")
         .replace("—", "-")
         .replace("–", "-")
-        .replace("•", "|")
         .split()
     )
     question = " ".join(
-        quiz.get("question", "Daily GK Quiz")
+        (quiz.get("question") or "Daily GK Quiz")
         .replace("—", "-")
         .replace("–", "-")
         .split()
     )
-    raw = f"{exam_tag}: {question}"
+
+    topic = highlight if len(highlight) >= 12 else question
     budget = max_total - len(suffix)
-    if len(raw) > budget:
-        trimmed = raw[: budget - 3].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+    if len(topic) > budget:
+        trimmed = topic[: max(1, budget - 3)].rsplit(" ", 1)[0].rstrip(" ,.;:-?!")
         if not trimmed:
-            trimmed = raw[: budget - 3].rstrip()
-        raw = f"{trimmed}..."
-    return f"{raw}{suffix}"
+            trimmed = topic[: max(1, budget - 3)].rstrip()
+        topic = f"{trimmed}..."
+
+    return f"{topic}{suffix}"[:max_total]
+
+
+def build_youtube_short_description(quiz: dict) -> str:
+    subject = _extract_subject(quiz.get("exam_tag", ""))
+    subject_hashtag = "".join(ch for ch in subject.lower() if ch.isalnum()) or "staticgk"
+
+    ans = quiz["correct_answer"]
+    src = quiz.get("verified_source", "Official SSC PYQ & NCERT")
+    explanation = quiz.get("explanation")
+    if not explanation and quiz.get("revision_notes"):
+        first = quiz["revision_notes"][0]
+        explanation = f"{first.get('label', '')}: {first.get('detail', '')}".strip(": ")
+    explanation = explanation or "Verified from Official SSC Answer Key & NCERT."
+
+    lines = [
+        "Comment (a), (b), (c), or (d) before checking the answer below!",
+        "",
+        f"Q: {quiz['question']}",
+    ]
+    question_hi = (quiz.get("question_hi") or "").strip()
+    if question_hi:
+        lines.append(f"प्रश्न: {question_hi}")
+
+    lines.append("")
+    for opt in quiz["options"]:
+        lines.append(f"({opt['letter'].lower()}) {opt['text']}")
+
+    lines.extend([
+        ".",
+        ".",
+        ".",
+        f"✅ Correct Answer: {ans}",
+        f"📖 Explanation: {explanation}",
+        f"✓ Source: {src}",
+        "",
+        "Subscribe to @ssc1daily for 2 daily 7-second SSC CGL, CHSL, CPO & MTS PYQ quizzes!",
+        "Instagram: https://www.instagram.com/ssc1.daily/",
+        "",
+    ])
+
+    hashtags: list[str] = []
+    for tag in ["shorts", "ssccgl", "sscpyq", subject_hashtag, "staticgk", "gkquiz"]:
+        clean = f"#{tag.lower()}"
+        if clean not in hashtags:
+            hashtags.append(clean)
+        if len(hashtags) == 5:
+            break
+    lines.append(" ".join(hashtags))
+    return "\n".join(lines)
+
+
+def build_youtube_short_tags(quiz: dict) -> list[str]:
+    subject = _extract_subject(quiz.get("exam_tag", ""))
+    candidates = [
+        "SSC CGL",
+        "SSC CGL 2026",
+        "SSC CGL PYQ",
+        "SSC CHSL",
+        "SSC CPO",
+        "SSC MTS",
+        "Static GK",
+        "SSC GK Quiz",
+        "Shorts",
+        f"{subject} PYQ",
+        f"{subject} for SSC CGL",
+    ]
+    if subject.lower() in {"polity", "history", "geography", "economy", "economics", "constitution"}:
+        candidates.append(f"Indian {subject}")
+
+    highlight = " ".join((quiz.get("highlight_phrase") or "").split())
+    if highlight:
+        candidates.append(highlight)
+
+    tags: list[str] = []
+    seen: set[str] = set()
+    for tag in candidates:
+        key = tag.strip().lower()
+        if not key or key in seen:
+            continue
+        candidate_list = tags + [tag.strip()]
+        if len(",".join(candidate_list)) >= 500:
+            continue
+        seen.add(key)
+        tags.append(tag.strip())
+    return tags
 
 
 def build_viral_reel_caption(quiz: dict) -> str:
@@ -458,6 +568,8 @@ def render_viral_open_loop_reel(
         "preview_rel": f"published/{preview_path.name}",
         "caption": build_viral_reel_caption(quiz),
         "yt_title": build_youtube_short_title(quiz),
+        "yt_description": build_youtube_short_description(quiz),
+        "yt_tags": build_youtube_short_tags(quiz),
     }
 
 
@@ -575,7 +687,9 @@ def upload_reel_resumable(
     return container_id
 
 
-def upload_youtube_short(video_path: Path, title: str, description: str) -> str | None:
+def upload_youtube_short(
+    video_path: Path, title: str, description: str, tags: list[str] | None = None
+) -> str | None:
     client_id = os.environ.get("YT_CLIENT_ID", "").strip()
     client_secret = os.environ.get("YT_CLIENT_SECRET", "").strip()
     refresh_token = os.environ.get("YT_REFRESH_TOKEN", "").strip()
@@ -611,8 +725,8 @@ def upload_youtube_short(video_path: Path, title: str, description: str) -> str 
         json={
             "snippet": {
                 "title": title[:100],
-                "description": f"{description}\n\n#Shorts #SSCCGL #StaticGK",
-                "tags": ["SSC CGL", "SSC CGL PYQ", "Static GK", "SSC CHSL", "SSC Exam", "Shorts"],
+                "description": description,
+                "tags": tags or ["SSC CGL", "SSC CGL PYQ", "Static GK", "SSC CHSL", "SSC Exam", "Shorts"],
                 "categoryId": "27",
                 "defaultLanguage": "en-IN",
             },
@@ -696,8 +810,9 @@ def publish_pending() -> None:
         try:
             yt_video_id = upload_youtube_short(
                 local_video,
-                pending.get("yt_title", "SSC CGL Daily PYQ #Shorts"),
-                pending["caption"],
+                pending.get("yt_title") or "SSC CGL Daily PYQ #shorts",
+                pending.get("yt_description", pending["caption"]),
+                pending.get("yt_tags"),
             )
             if yt_video_id:
                 print(f"Published YouTube Short! https://youtube.com/shorts/{yt_video_id}")
