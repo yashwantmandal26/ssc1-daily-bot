@@ -366,6 +366,7 @@ def render_viral_open_loop_reel(
         badge_text=quiz["exam_tag"],
         exam_main=exam_main,
         subject_name=subject_name,
+        difficulty_level=get_quiz_difficulty(quiz),
         hook_text=quiz.get("curiosity_tag", "90% Aspirants Get This Wrong!"),
         question_html=format_question_html(
             quiz["question"], quiz.get("highlight_phrase"), "highlight-yellow"
@@ -439,7 +440,6 @@ def render_next(mode: str) -> None:
 
     if chosen_mode == "reel":
         source_file = "reel_pyqs.json"
-        unposted_reel = []
         target_quiz = None
         if REEL_PYQS_PATH.exists():
             reel_pyqs = json.loads(REEL_PYQS_PATH.read_text(encoding="utf-8"))

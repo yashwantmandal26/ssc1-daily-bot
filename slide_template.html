@@ -507,6 +507,44 @@
     color: #ffffff;
   }
 
+
+  .level-badge {
+    position: absolute;
+    top: -24px;
+    right: 26px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 22px;
+    border-radius: 999px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 16px rgba(11, 31, 58, 0.14);
+  }
+  .level-badge.easy {
+    background: linear-gradient(180deg, #dcfce7 0%, #bbf7d0 100%);
+    border: 2px solid #16a34a;
+    color: #14532d;
+  }
+  .level-badge.medium {
+    background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
+    border: 2px solid #d97706;
+    color: #78350f;
+  }
+  .level-badge.hard {
+    background: linear-gradient(180deg, #fee2e2 0%, #fecaca 100%);
+    border: 2px solid #dc2626;
+    color: #7f1d1d;
+  }
+  .level-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+
   .royal-q-en {
     font-family: "Georgia", "Liberation Serif", "Noto Serif", "Times New Roman", serif;
     font-size: 58px;
@@ -730,6 +768,9 @@
     <!-- Gold-Bordered Question Card -->
     <div class="royal-q-card layer">
       <div class="q-badge">Q.</div>
+      {% if difficulty_level %}
+      <div class="level-badge {{ difficulty_level | lower }}"><span class="level-dot"></span>LEVEL: {{ difficulty_level }}</div>
+      {% endif %}
       <div class="royal-q-en">{{ question_html | safe }}</div>
       {% if question_hi %}
       <div class="q-divider">
