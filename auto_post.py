@@ -245,6 +245,32 @@ def build_carousel_caption(batch: list[dict]) -> str:
     )
 
 
+def build_youtube_short_title(quiz: dict) -> str:
+    suffix = " #Shorts"
+    max_total = 99
+    exam_tag = " ".join(
+        quiz.get("exam_tag", "SSC CGL PYQ")
+        .replace("—", "-")
+        .replace("–", "-")
+        .replace("•", "|")
+        .split()
+    )
+    question = " ".join(
+        quiz.get("question", "Daily GK Quiz")
+        .replace("—", "-")
+        .replace("–", "-")
+        .split()
+    )
+    raw = f"{exam_tag}: {question}"
+    budget = max_total - len(suffix)
+    if len(raw) > budget:
+        trimmed = raw[: budget - 3].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+        if not trimmed:
+            trimmed = raw[: budget - 3].rstrip()
+        raw = f"{trimmed}..."
+    return f"{raw}{suffix}"
+
+
 def build_viral_reel_caption(quiz: dict) -> str:
     handle = quiz.get("brand_handle", "@ssc1.daily")
     topic = quiz.get("highlight_phrase", "SSC CGL PYQ")
@@ -431,6 +457,7 @@ def render_viral_open_loop_reel(
         "video_rel": f"published/{video_path.name}",
         "preview_rel": f"published/{preview_path.name}",
         "caption": build_viral_reel_caption(quiz),
+        "yt_title": build_youtube_short_title(quiz),
     }
 
 
@@ -548,6 +575,76 @@ def upload_reel_resumable(
     return container_id
 
 
+def upload_youtube_short(video_path: Path, title: str, description: str) -> str | None:
+    client_id = os.environ.get("YT_CLIENT_ID", "").strip()
+    client_secret = os.environ.get("YT_CLIENT_SECRET", "").strip()
+    refresh_token = os.environ.get("YT_REFRESH_TOKEN", "").strip()
+    if not (client_id and client_secret and refresh_token):
+        print("Skipping YouTube Shorts upload (missing YT_CLIENT_ID, YT_CLIENT_SECRET, or YT_REFRESH_TOKEN).")
+        return None
+
+    token_resp = requests.post(
+        "https://oauth2.googleapis.com/token",
+        data={
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "refresh_token": refresh_token,
+            "grant_type": "refresh_token",
+        },
+        timeout=30,
+    )
+    if token_resp.status_code >= 400:
+        raise RuntimeError(
+            f"YouTube OAuth token refresh failed ({token_resp.status_code}): {token_resp.text}"
+        )
+    access_token = token_resp.json()["access_token"]
+
+    video_bytes = video_path.read_bytes()
+    init_resp = requests.post(
+        "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+        headers={
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json; charset=UTF-8",
+            "X-Upload-Content-Type": "video/mp4",
+            "X-Upload-Content-Length": str(len(video_bytes)),
+        },
+        json={
+            "snippet": {
+                "title": title[:100],
+                "description": f"{description}\n\n#Shorts #SSCCGL #StaticGK",
+                "tags": ["SSC CGL", "SSC CGL PYQ", "Static GK", "SSC CHSL", "SSC Exam", "Shorts"],
+                "categoryId": "27",
+                "defaultLanguage": "en-IN",
+            },
+            "status": {
+                "privacyStatus": "public",
+                "selfDeclaredMadeForKids": False,
+            },
+        },
+        timeout=30,
+    )
+    if init_resp.status_code >= 400:
+        raise RuntimeError(
+            f"YouTube resumable upload init failed ({init_resp.status_code}): {init_resp.text}"
+        )
+
+    upload_url = init_resp.headers.get("Location")
+    if not upload_url:
+        raise RuntimeError("YouTube resumable upload init did not return a Location header.")
+
+    put_resp = requests.put(
+        upload_url,
+        headers={"Content-Type": "video/mp4"},
+        data=video_bytes,
+        timeout=180,
+    )
+    if put_resp.status_code >= 400:
+        raise RuntimeError(
+            f"YouTube video upload failed ({put_resp.status_code}): {put_resp.text}"
+        )
+    return put_resp.json()["id"]
+
+
 def publish_pending() -> None:
     if not PENDING_PATH.exists():
         print("No pending post found (.pending_post.json missing). Skipping.")
@@ -563,6 +660,7 @@ def publish_pending() -> None:
 
     pending = json.loads(PENDING_PATH.read_text(encoding="utf-8"))
     raw_base = f"https://raw.githubusercontent.com/{repo}/{branch}"
+    yt_video_id = None
 
     if pending.get("post_type") == "reel":
         local_video = ROOT_DIR / pending["video_rel"]
@@ -595,6 +693,16 @@ def publish_pending() -> None:
             f"{ig_user_id}/media_publish",
             {"creation_id": container_id, "access_token": token},
         )
+        try:
+            yt_video_id = upload_youtube_short(
+                local_video,
+                pending.get("yt_title", "SSC CGL Daily PYQ #Shorts"),
+                pending["caption"],
+            )
+            if yt_video_id:
+                print(f"Published YouTube Short! https://youtube.com/shorts/{yt_video_id}")
+        except Exception as exc:
+            print(f"YouTube Shorts upload failed (non-blocking): {exc}")
     else:
         child_ids = []
         for rel in pending["slides"]:
@@ -630,6 +738,8 @@ def publish_pending() -> None:
         if q["id"] in posted_set:
             q["posted"] = True
             q["ig_media_id"] = published["id"]
+            if yt_video_id:
+                q["yt_video_id"] = yt_video_id
     source_path.write_text(
         json.dumps(pyqs, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
