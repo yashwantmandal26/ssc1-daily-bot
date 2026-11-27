@@ -481,7 +481,7 @@
   },
   {
     "id": "viral_science_04",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • PHYSICS",
     "curiosity_tag": "Sound Wave Speed Trap!",
@@ -508,7 +508,8 @@
     ],
     "correct_answer": "(d) Steel",
     "verified_source": "SSC CGL Official PYQ • NCERT Class 9 Science",
-    "explanation": "Sound is a mechanical wave: it cannot travel in vacuum at all and travels fastest in solids (like Steel ~5960 m/s) > liquids > gases."
+    "explanation": "Sound is a mechanical wave: it cannot travel in vacuum at all and travels fastest in solids (like Steel ~5960 m/s) > liquids > gases.",
+    "ig_media_id": "18129346598488375"
   },
   {
     "id": "viral_polity_07",
