@@ -1072,7 +1072,7 @@
   },
   {
     "id": "viral_polity_14",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • POLITY",
     "curiosity_tag": "NOT Suspended Even in Emergency!",
@@ -1099,7 +1099,9 @@
     ],
     "correct_answer": "(c) Articles 20 and 21",
     "verified_source": "SSC CGL Official PYQ • Article 359 (44th Amendment)",
-    "explanation": "By the 44th Amendment (1978), Articles 20 (protection in conviction) and 21 (right to life) cannot be suspended during Emergency."
+    "explanation": "By the 44th Amendment (1978), Articles 20 (protection in conviction) and 21 (right to life) cannot be suspended during Emergency.",
+    "ig_media_id": "18120364711820293",
+    "yt_video_id": "ny1Bqw4SOcw"
   },
   {
     "id": "viral_polity_15",
