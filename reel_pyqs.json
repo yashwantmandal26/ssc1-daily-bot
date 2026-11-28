@@ -386,7 +386,7 @@
   },
   {
     "id": "viral_history_02",
-    "posted": false,
+    "posted": true,
     "brand_handle": "@ssc1.daily",
     "exam_tag": "SSC CGL PYQ • HISTORY",
     "curiosity_tag": "Repeated 8x+ in SSC Exams!",
@@ -413,7 +413,9 @@
     ],
     "correct_answer": "(b) Lord Mountbatten",
     "verified_source": "SSC CGL Official PYQ • NCERT Modern History",
-    "explanation": "Lord Mountbatten was the first Governor-General of Independent India (1947–48). C. Rajagopalachari was the first INDIAN Governor-General."
+    "explanation": "Lord Mountbatten was the first Governor-General of Independent India (1947–48). C. Rajagopalachari was the first INDIAN Governor-General.",
+    "ig_media_id": "18113241647292325",
+    "yt_video_id": "fFhiofItBGE"
   },
   {
     "id": "viral_science_03",
